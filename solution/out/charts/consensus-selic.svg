@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="100%" height="auto" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto;max-width:620px" role="img" aria-label="Consenso de mercado — Selic 2025">
+  <style>
+    .t  { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .st { font: 400 10.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+    .l  { font: 400 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .v  { font: 600 11px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .ax { font: 400 9.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+  </style>
+  <text class="t" x="0" y="14">Consenso de mercado — Selic 2025</text>
+  <text class="st" x="0" y="30">Mediana do Boletim Focus, 583 pesquisas. Faixa sombreada: mínimo e máximo das projeções.</text>
+  <line x1="46" y1="230.0" x2="452" y2="230.0" stroke="#e5e7eb"/>
+  <text class="ax" x="40" y="233.0" text-anchor="end">7%</text>
+  <line x1="46" y1="141.0" x2="452" y2="141.0" stroke="#e5e7eb"/>
+  <text class="ax" x="40" y="144.0" text-anchor="end">12%</text>
+  <line x1="46" y1="52.0" x2="452" y2="52.0" stroke="#e5e7eb"/>
+  <text class="ax" x="40" y="55.0" text-anchor="end">17%</text>
+  <path d="M46.0,141.0 L61.0,158.8 L76.1,158.8 L91.1,158.8 L106.1,132.1 L121.2,154.4 L136.2,154.4 L151.3,167.7 L166.3,167.7 L181.3,167.7 L196.4,163.3 L211.4,167.7 L226.4,167.7 L241.5,176.6 L256.5,176.6 L271.6,172.2 L286.6,167.7 L301.6,132.1 L316.7,132.1 L331.7,132.1 L346.7,123.2 L361.8,114.3 L376.8,87.6 L391.9,64.0 L406.9,65.3 L421.9,65.3 L437.0,74.3 L452.0,74.3 L452.0,114.3 L437.0,118.8 L421.9,136.6 L406.9,136.6 L391.9,145.4 L376.8,176.6 L361.8,185.5 L346.7,194.4 L331.7,221.1 L316.7,221.1 L301.6,221.1 L286.6,221.1 L271.6,230.0 L256.5,230.0 L241.5,230.0 L226.4,230.0 L211.4,292.3 L196.4,247.8 L181.3,238.9 L166.3,238.9 L151.3,247.8 L136.2,230.0 L121.2,230.0 L106.1,230.0 L91.1,247.8 L76.1,247.8 L61.0,247.8 L46.0,247.8 Z" fill="#111111" opacity="0.08"/>
+  <path d="M46.0,201.1 L61.0,194.4 L76.1,194.4 L91.1,194.4 L106.1,194.4 L121.2,194.4 L136.2,198.8 L151.3,203.3 L166.3,203.3 L181.3,201.1 L196.4,201.1 L211.4,203.3 L226.4,203.3 L241.5,203.3 L256.5,203.3 L271.6,194.4 L286.6,191.1 L301.6,185.5 L316.7,185.5 L331.7,176.6 L346.7,163.3 L361.8,154.4 L376.8,129.9 L391.9,92.0 L406.9,87.6 L421.9,87.6 L437.0,87.6 L452.0,87.6" fill="none" stroke="#111111" stroke-width="2"/>
+  <circle cx="452.0" cy="87.6" r="3.5" fill="#111111"/>
+  <text class="ax" x="466" y="90.6" fill="#111111" font-weight="600">consenso 15,00%</text>
+  <line x1="46" y1="78.7" x2="462" y2="78.7" stroke="#8a6a00" stroke-width="1.5"/>
+  <text class="ax" x="466" y="66.6" fill="#8a6a00" font-weight="600">XP (fev/25)</text>
+  <text class="ax" x="466" y="78.6" fill="#8a6a00">15,50%</text>
+  <circle cx="61.0" cy="194.4" r="4.5" fill="none" stroke="#c4262e" stroke-width="2"/>
+  <line x1="61.0" y1="194.4" x2="462" y2="194.4" stroke="#c4262e" stroke-dasharray="2 3"/>
+  <text class="ax" x="466" y="192.4" fill="#c4262e" font-weight="600">carta v1</text>
+  <text class="ax" x="466" y="204.4" fill="#c4262e">9,00% em fev/23</text>
+  <text class="ax" x="46.0" y="246" text-anchor="middle">jan/23</text>
+  <text class="ax" x="256.5" y="246" text-anchor="middle">mar/24</text>
+  <text class="ax" x="452.0" y="246" text-anchor="middle">abr/25</text>
+</svg>

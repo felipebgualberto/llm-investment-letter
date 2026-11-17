@@ -1,0 +1,199 @@
+{
+  "_readme": [
+    "House policy parameters for the suitability engine.",
+    "",
+    "WHY THIS FILE EXISTS AND WHY IT IS NOT CODE",
+    "The client's signed risk profile states a classification ('Moderado') and two",
+    "compatible product families in prose. It contains NO numbers: no maximum",
+    "position size, no minimum cash, no cap on any asset class.",
+    "",
+    "Every threshold below is therefore an ASSUMPTION made by this implementation,",
+    "not a rule the client agreed to. Keeping them here, versioned and readable,",
+    "means an advisor can see exactly which part of a finding came from the client",
+    "document and which part came from a parameter that a compliance team could",
+    "reasonably set differently. Each finding produced by the engine cites the",
+    "parameter it used and repeats its source.",
+    "",
+    "The one figure below that is NOT a house choice is",
+    "qualified_investor_threshold_brl: R$1,000,000 is the CVM definition of an",
+    "investidor qualificado, and it is marked as such."
+  ],
+  "version": "1.0.0",
+  "effective_from": "2025-04-30",
+  "profiles": {
+    "moderado": {
+      "label": "Moderado",
+      "source": "Client risk profile statement, 'Classificação do Perfil de Investimento'",
+      "idle_cash": {
+        "max_share_of_net_worth": 0.1,
+        "rationale": "Cash beyond a working reserve earns nothing while the policy rate is in double digits. The threshold is a house parameter; the profile document sets none.",
+        "assumption": true
+      },
+      "concentration": {
+        "max_single_position_share_of_invested": 0.2,
+        "max_single_sleeve_share_of_invested": 0.7,
+        "rationale": "The profile calls for 'uma estratégia de diversificação'. It gives no limit, so these are house parameters chosen to make that qualitative instruction checkable.",
+        "assumption": true
+      },
+      "eligibility": {
+        "qualified_investor_threshold_brl": 1000000,
+        "source": "CVM Resolution 30 definition of investidor qualificado",
+        "assumption": false,
+        "note": "Visible net worth at XP is only part of a client's financial assets. A breach is an eligibility REVIEW, never an assertion that the client is unqualified."
+      },
+      "equity_screen": {
+        "min_trailing_dividend_yield": 0.02,
+        "lookback_months": 12,
+        "min_dividend_events": 2,
+        "rationale": "Operationalises 'ações de empresas consolidadas que historicamente pagam dividendos anuais' from the profile. Yield and event count are measured from actual dividend history, not assumed.",
+        "assumption": true,
+        "profile_basis": "Produtos Financeiros Compatíveis, item a"
+      },
+      "loss_review": {
+        "review_below_return_since_purchase": -0.5,
+        "rationale": "A position down more than half since purchase is surfaced for review. Not a sell signal on its own - it is paired with profile alignment before any action is proposed.",
+        "assumption": true
+      }
+    }
+  },
+  "recommendation_limits": {
+    "max_buy_candidates": 3,
+    "min_ticket_brl": 1000,
+    "rationale": "A letter that proposes everything proposes nothing. The engine ranks and truncates, and always reports how many candidates were considered and how many were shown."
+  },
+  "letter_budget": {
+    "_why": [
+      "The challenge caps the letter at two pages. Two A4 pages of Portuguese business",
+      "correspondence is roughly 750-850 words, and less once charts occupy space. The",
+      "engine currently produces 27 items across findings, recommendations and attribution",
+      "lines - far more than fits.",
+      "",
+      "Something must be cut, and WHO cuts is the whole thesis of this rewrite. If the",
+      "payload goes to the model whole and the prompt says 'keep it to two pages', the",
+      "model decides which of the client's findings he never hears about. That is exactly",
+      "the class of decision the deterministic layer exists to own.",
+      "",
+      "So selection happens here, by rule, before the narration node sees anything. What",
+      "was dropped is counted and disclosed in the letter, never silently omitted."
+    ],
+    "max_words": 800,
+    "findings": {
+      "in_letter": [
+        "action_required"
+      ],
+      "summarised_with_count": [
+        "review"
+      ],
+      "advisor_annex_only": [
+        "informational"
+      ]
+    },
+    "attribution": {
+      "max_contributors": 2,
+      "max_detractors": 2,
+      "remainder_line": true,
+      "remainder_label_pt": "demais posições"
+    },
+    "recommendations": {
+      "max_in_letter": 2,
+      "disclose_total_count": true
+    },
+    "benchmarks_in_letter": [
+      "cdi",
+      "ipca"
+    ],
+    "benchmarks_in_annex": [
+      "ibovespa"
+    ],
+    "chart_placement": {
+      "_why": [
+        "A chart belongs next to the sentence it explains. Stacking them all at the",
+        "end turns the letter into a report with an appendix, and the reader has to",
+        "hold a paragraph in memory while walking back to the picture.",
+        "",
+        "The composer is instructed to write five paragraphs in a fixed order, so the",
+        "placement is by index and deterministic. If a run produces fewer paragraphs",
+        "than the map expects, the leftover charts are appended rather than dropped,",
+        "and the renderer says so.",
+        "",
+        "Paragraph 4 now carries the BEFORE/AFTER pair rather than the single ring. It sits",
+        "beside the proposals block, where the question it answers - \"what would my",
+        "portfolio look like?\" - is actually being asked. The detailed 13-position ring",
+        "moved to the annex: both cannot fit, and the pair is what the proposals need.",
+        "",
+        "The consensus range chart moved to the annex once the buy/sell ideas block",
+        "entered the letter. Two pages hold two charts, and the macro paragraph already",
+        "states every figure that chart plotted - Selic 15,50% against a 15,00% median,",
+        "the 88,9 percentile, IPCA 6,10% against 5,55%. The two that stayed answer the",
+        "client's own questions: what happened to my money, and what should I do about",
+        "it. The consensus chart answers why the house thinks what it thinks, which is",
+        "the one a client is least likely to need in front of him."
+      ],
+      "_positions_note": [
+        "The positions ring sits in the slot the coverage bar used to hold, at the",
+        "paragraph that proposes what to do. It answers the same question the bar",
+        "answered - how much money is sitting still - and also answers 'what do I",
+        "actually own', which the letter had never shown at all.",
+        "",
+        "The coverage bar was not deleted. It carries a different message: how much",
+        "of the portfolio the reported return could be MEASURED over. That belongs",
+        "next to the sensitivity table in the advisor annex, which is where it now",
+        "renders. Two charts, two messages, each where its argument is being made."
+      ],
+      "after_paragraph": {
+        "2": "attribution",
+        "4": "allocation-shift"
+      },
+      "annex_only": [
+        "benchmarks",
+        "allocation",
+        "positions",
+        "consensus",
+        "consensus-selic",
+        "consensus-ipca"
+      ]
+    },
+    "_proposals_why": [
+      "The 'Próximos passos' block is printed by the renderer from",
+      "plan.letter.recommendations, immediately after this paragraph. Paragraph 4",
+      "became a one-sentence lead-in rather than a wall of figures: the amounts,",
+      "dates and rates now live in the block, where the model cannot rephrase",
+      "them, drop one, or reorder them.",
+      "",
+      "This was the paragraph the composer got wrong most often. One run argued",
+      "that high rates hurt fixed income two paragraphs before proposing to buy",
+      "post-fixed income, because it was left to infer a conclusion the engine",
+      "had already derived."
+    ],
+    "proposals_after_paragraph": 4
+  },
+  "disclosures": {
+    "_why": "Emitted as data so the renderer can fail when one is missing, rather than trusting a prompt to remember them.",
+    "required": [
+      {
+        "id": "past_performance",
+        "text_pt": "Rentabilidade passada não é garantia de rentabilidade futura."
+      },
+      {
+        "id": "trailing_yield",
+        "text_pt": "Os dividend yields citados são apurados sobre os 12 meses encerrados na data de referência e não constituem projeção."
+      },
+      {
+        "id": "fund_quota_date",
+        "text_pt": "As posições em fundos refletem cotas informadas pelos gestores com data de 04/04/2024; os valores em reais são indicativos."
+      },
+      {
+        "id": "advisor_confirmation",
+        "text_pt": "As sugestões desta carta são candidatas à análise do seu assessor e não constituem ordem de compra ou venda."
+      },
+      {
+        "id": "fgc_coverage",
+        "text_pt": "Aplicações em CDB contam com cobertura do FGC até os limites vigentes, por CPF e por instituição."
+      },
+      {
+        "id": "source_divergence",
+        "text_pt": "Onde a base de preços da XP diverge do fechamento de mercado, a carta reporta a diferença e mantém o valor do seu extrato."
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "ano_de_referencia": 2025,
+  "data_da_pesquisa": "30/04/2025",
+  "instituicoes_consultadas": 140,
+  "o_que_isso_significa": "O ambiente de juros altos por mais tempo favorece a renda fixa PÓS-FIXADA e os títulos indexados à inflação, que acompanham a taxa. Não diga que juros altos prejudicam a renda fixa: isso vale para prefixados e prazos longos, não para o que está sendo proposto.",
+  "indicadores": [
+    {
+      "indicador": "Selic",
+      "projecao_da_xp": "15,50%",
+      "mediana_do_mercado": "15,00%",
+      "menor_projecao": "13,50%",
+      "maior_projecao": "15,75%",
+      "posicao_da_xp_na_faixa": "percentil 88,9",
+      "xp_esta": "acima do consenso"
+    },
+    {
+      "indicador": "IPCA",
+      "projecao_da_xp": "6,10%",
+      "mediana_do_mercado": "5,55%",
+      "menor_projecao": "4,35%",
+      "maior_projecao": "6,67%",
+      "posicao_da_xp_na_faixa": "percentil 75,4",
+      "xp_esta": "acima do consenso"
+    }
+  ]
+}

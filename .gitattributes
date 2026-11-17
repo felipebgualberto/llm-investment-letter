@@ -1,0 +1,14 @@
+# Line endings are normalised in the repository and resolved per machine on
+# checkout. Set here rather than left to each clone's core.autocrlf, so a
+# Linux CI runner and a Windows laptop read the same bytes for the same file.
+# The parsers strip \r before splitting, so both CRLF and LF inputs are valid.
+* text=auto
+
+# Never touch these. The .bin files are raw ZIP archives from CVM, cached
+# verbatim so a re-run reproduces the same numbers without re-downloading.
+*.bin   binary
+*.zip   binary
+*.png   binary
+*.pdf   binary
+*.docx  binary
+*.pptx  binary

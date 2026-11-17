@@ -1,0 +1,448 @@
+{
+  "generated_for": "Albert da Silva",
+  "profile": "Moderado",
+  "house_stance": {
+    "indicator": "Selic",
+    "house_value": 15.5,
+    "consensus_median": 15,
+    "consensus_range": [
+      13.5,
+      15.75
+    ],
+    "percentile_in_range": 88.9,
+    "respondents": 140,
+    "survey_date": "2025-04-30",
+    "stance": "above_consensus",
+    "tilt": "favour_post_fixed_income",
+    "rationale": "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+  },
+  "recommendations": [
+    {
+      "id": "deploy-idle-cash",
+      "addresses_finding": {
+        "code": "idle_cash_above_policy",
+        "position": "Saldo disponível"
+      },
+      "action": "evaluate_allocation",
+      "priority": 1,
+      "instrument_class": "renda_fixa_pos_fixada",
+      "headline": "Proposta: alocar o saldo parado em renda fixa pós-fixada",
+      "amount_brl": 35986.74,
+      "evidence": {
+        "idle_cash_brl": 74672.62,
+        "share_of_net_worth": 0.193023,
+        "policy_limit": 0.1,
+        "cdi_annualised": 0.1415,
+        "matured_and_pending_brl": 40478.75,
+        "combined_idle_brl": 115151.37
+      },
+      "profile_basis": {
+        "quote": "Instrumentos de Renda Fixa com Classificação BB+ ou Superior",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item b"
+      },
+      "house_basis": {
+        "indicator": "Selic",
+        "house_value": 15.5,
+        "consensus_median": 15,
+        "consensus_range": [
+          13.5,
+          15.75
+        ],
+        "percentile_in_range": 88.9,
+        "respondents": 140,
+        "survey_date": "2025-04-30",
+        "stance": "above_consensus",
+        "tilt": "favour_post_fixed_income",
+        "rationale": "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+      },
+      "rationale_inputs": [
+        "Saldo disponível de R$ 74.672,62 representa 19,30% do patrimônio.",
+        "A 14,15% ao ano, aplicar R$ 35.986,74 recupera R$ 5.092,12 em 12 meses.",
+        "Etapa seguinte, condicionada à liquidação do CDB vencido: mais R$ 40.478,75, totalizando R$ 76.465,49 a realocar.",
+        "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+      ],
+      "requires_advisor_confirmation": true
+    },
+    {
+      "id": "settle-cdb-banco-c6-consignado-s-a-set-2024",
+      "addresses_finding": {
+        "code": "matured_instrument_in_position",
+        "position": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024"
+      },
+      "action": "confirm_settlement",
+      "priority": 1,
+      "headline": "Pendência: confirmar liquidação de título vencido",
+      "amount_brl": 40478.75,
+      "evidence": {
+        "maturity_date": "2024-09-05",
+        "statement_date": "2025-05-07",
+        "days_since_maturity": 244,
+        "contracted_rate": "IPC-A +5,45%",
+        "weight": 0.129662
+      },
+      "rationale_inputs": [
+        "CDB BANCO C6 CONSIGNADO S.A. - SET/2024 venceu em 05/09/2024, 244 dias antes da data do extrato.",
+        "Enquanto a liquidação não for confirmada, este valor não pode ser tratado como remunerado."
+      ],
+      "requires_advisor_confirmation": true
+    },
+    {
+      "id": "buy-petr4",
+      "addresses_finding": null,
+      "action": "evaluate_purchase",
+      "priority": 2,
+      "instrument_class": "acoes",
+      "ticker": "PETR4",
+      "headline": "Candidato para análise: PETR4",
+      "evidence": {
+        "trailing_dividend_yield": 0.251058,
+        "dividend_events": 6,
+        "dividends_paid_per_share": 7.529228,
+        "annualised_volatility": 0.259666,
+        "max_drawdown": -0.289,
+        "last_close": 29.99,
+        "monthly_return": 0.06666667,
+        "window": {
+          "start": "2024-04-30",
+          "end": "2025-04-30",
+          "months": 12
+        }
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+        "screen": {
+          "min_trailing_dividend_yield": 0.02,
+          "min_dividend_events": 2,
+          "assumption": true
+        }
+      },
+      "price_reconciliation": {
+        "xp_price_file": 37.12,
+        "market_close": 29.99,
+        "market_close_date": "2025-04-30",
+        "gap": 0.237746,
+        "status": "divergent",
+        "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+      },
+      "rationale_inputs": [
+        "Pagou 6 dividendos nos últimos 12 meses, dividend yield de 25,11% sobre o preço de mercado.",
+        "Volatilidade anualizada de 25,97%.",
+        "Candidato extraído da lista de ativos precificados pela própria XP.",
+        "Atenção: o arquivo de preços da XP marca R$ 37,12 contra fechamento de mercado de R$ 29,99 em 2025-04-30 (23,8%). Confirmar a fonte de preço antes de dimensionar a ordem."
+      ],
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/PETR4.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:07:45.369Z"
+      },
+      "requires_advisor_confirmation": true
+    },
+    {
+      "id": "buy-bbas3",
+      "addresses_finding": null,
+      "action": "evaluate_purchase",
+      "priority": 3,
+      "instrument_class": "acoes",
+      "ticker": "BBAS3",
+      "headline": "Candidato para análise: BBAS3",
+      "evidence": {
+        "trailing_dividend_yield": 0.09069,
+        "dividend_events": 7,
+        "dividends_paid_per_share": 2.623661,
+        "annualised_volatility": 0.19186,
+        "max_drawdown": -0.188653,
+        "last_close": 28.93,
+        "monthly_return": 0.05204461,
+        "window": {
+          "start": "2024-04-30",
+          "end": "2025-04-30",
+          "months": 12
+        }
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+        "screen": {
+          "min_trailing_dividend_yield": 0.02,
+          "min_dividend_events": 2,
+          "assumption": true
+        }
+      },
+      "price_reconciliation": {
+        "xp_price_file": 28.3,
+        "market_close": 28.93,
+        "market_close_date": "2025-04-30",
+        "gap": -0.021777,
+        "status": "consistent",
+        "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+      },
+      "rationale_inputs": [
+        "Pagou 7 dividendos nos últimos 12 meses, dividend yield de 9,07% sobre o preço de mercado.",
+        "Volatilidade anualizada de 19,19%.",
+        "Candidato extraído da lista de ativos precificados pela própria XP."
+      ],
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/BBAS3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:07:45.376Z"
+      },
+      "requires_advisor_confirmation": true
+    },
+    {
+      "id": "buy-vale3",
+      "addresses_finding": null,
+      "action": "evaluate_purchase",
+      "priority": 4,
+      "instrument_class": "acoes",
+      "ticker": "VALE3",
+      "headline": "Candidato para análise: VALE3",
+      "evidence": {
+        "trailing_dividend_yield": 0.089977,
+        "dividend_events": 3,
+        "dividends_paid_per_share": 4.756176,
+        "annualised_volatility": 0.256914,
+        "max_drawdown": -0.256573,
+        "last_close": 52.86,
+        "monthly_return": 0.03846154,
+        "window": {
+          "start": "2024-04-30",
+          "end": "2025-04-30",
+          "months": 12
+        }
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+        "screen": {
+          "min_trailing_dividend_yield": 0.02,
+          "min_dividend_events": 2,
+          "assumption": true
+        }
+      },
+      "price_reconciliation": {
+        "xp_price_file": 63.45,
+        "market_close": 52.86,
+        "market_close_date": "2025-04-30",
+        "gap": 0.200341,
+        "status": "divergent",
+        "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+      },
+      "rationale_inputs": [
+        "Pagou 3 dividendos nos últimos 12 meses, dividend yield de 9,00% sobre o preço de mercado.",
+        "Volatilidade anualizada de 25,69%.",
+        "Candidato extraído da lista de ativos precificados pela própria XP.",
+        "Atenção: o arquivo de preços da XP marca R$ 63,45 contra fechamento de mercado de R$ 52,86 em 2025-04-30 (20,0%). Confirmar a fonte de preço antes de dimensionar a ordem."
+      ],
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/VALE3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:07:45.316Z"
+      },
+      "requires_advisor_confirmation": true
+    },
+    {
+      "id": "review-hapv3",
+      "addresses_finding": {
+        "code": "position_deeply_below_cost",
+        "position": "HAPV3"
+      },
+      "action": "review_for_reduction",
+      "priority": 5,
+      "ticker": "HAPV3",
+      "headline": "Revisão sugerida: posição em HAPV3",
+      "amount_brl": 6143.14,
+      "evidence": {
+        "return_since_purchase": -0.745839,
+        "return_reference_month": 0.76444444,
+        "average_price": 15.62,
+        "last_price": 3.97,
+        "weight": 0.019678
+      },
+      "rationale_inputs": [
+        "Acumula -74,58% desde a compra em 2022-11-02.",
+        "No mês de referência a posição variou 76,44%, o que não altera o resultado acumulado.",
+        "A revisão se apoia no perfil, que privilegia empresas consolidadas pagadoras de dividendos, e não no movimento do mês."
+      ],
+      "requires_advisor_confirmation": true
+    }
+  ],
+  "universe_report": {
+    "considered": 8,
+    "screened": 8,
+    "eligible": 7,
+    "shown": 3,
+    "truncated_by_policy": 4,
+    "rejected": [
+      {
+        "ticker": "WEGE3",
+        "reasons": [
+          "dividend yield de 1,76% nos últimos 12 meses, mínimo 2,00%"
+        ]
+      }
+    ],
+    "not_screened": [],
+    "price_divergences": [
+      {
+        "ticker": "GGBR4",
+        "xp_price_file": 23.45,
+        "market_close": 14.99,
+        "gap": 0.564376
+      },
+      {
+        "ticker": "PETR4",
+        "xp_price_file": 37.12,
+        "market_close": 29.99,
+        "gap": 0.237746
+      },
+      {
+        "ticker": "VALE3",
+        "xp_price_file": 63.45,
+        "market_close": 52.86,
+        "gap": 0.200341
+      },
+      {
+        "ticker": "ITUB4",
+        "xp_price_file": 27.8,
+        "market_close": 34.5437,
+        "gap": -0.195222
+      },
+      {
+        "ticker": "B3SA3",
+        "xp_price_file": 12.05,
+        "market_close": 13.49,
+        "gap": -0.106746
+      }
+    ]
+  },
+  "all_require_advisor_confirmation": true,
+  "disclosures": [
+    {
+      "id": "past_performance",
+      "text_pt": "Rentabilidade passada não é garantia de rentabilidade futura."
+    },
+    {
+      "id": "trailing_yield",
+      "text_pt": "Os dividend yields citados são apurados sobre os 12 meses encerrados na data de referência e não constituem projeção."
+    },
+    {
+      "id": "fund_quota_date",
+      "text_pt": "As posições em fundos refletem cotas informadas pelos gestores com data de 04/04/2024; os valores em reais são indicativos."
+    },
+    {
+      "id": "advisor_confirmation",
+      "text_pt": "As sugestões desta carta são candidatas à análise do seu assessor e não constituem ordem de compra ou venda."
+    },
+    {
+      "id": "fgc_coverage",
+      "text_pt": "Aplicações em CDB contam com cobertura do FGC até os limites vigentes, por CPF e por instituição."
+    },
+    {
+      "id": "source_divergence",
+      "text_pt": "Onde a base de preços da XP diverge do fechamento de mercado, a carta reporta a diferença e mantém o valor do seu extrato."
+    }
+  ],
+  "held_equity_screen": [
+    {
+      "ticker": "LREN3",
+      "resolved_symbol": "LREN3",
+      "via_successor": null,
+      "name": "Lojas Renner S.A.",
+      "status": "meets_profile_screen",
+      "reasons": [],
+      "market_value": 27812.04,
+      "weight": 0.089088,
+      "measured": {
+        "trailing_dividend_yield": 0.044732,
+        "dividend_events": 4,
+        "annualised_volatility": 0.469782
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a"
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/LREN3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:59:43.054Z"
+      }
+    },
+    {
+      "ticker": "MRFG3",
+      "resolved_symbol": "MBRF3",
+      "via_successor": "MBRF3",
+      "name": "MBRF Global Foods Company S.A.",
+      "status": "fails_profile_screen",
+      "reasons": [
+        "1 pagamento(s) de dividendo nos últimos 12 meses, contra o mínimo de 2 adotado para o perfil"
+      ],
+      "market_value": 15432.89,
+      "weight": 0.049435,
+      "measured": {
+        "trailing_dividend_yield": 0.131924,
+        "dividend_events": 1,
+        "annualised_volatility": 0.505073
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a"
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MBRF3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:59:43.048Z"
+      }
+    },
+    {
+      "ticker": "ARZZ3",
+      "resolved_symbol": "AZZA3",
+      "via_successor": "AZZA3",
+      "name": "Azzas 2154 S.A.",
+      "status": "meets_profile_screen",
+      "reasons": [],
+      "market_value": 10923.72,
+      "weight": 0.034991,
+      "measured": {
+        "trailing_dividend_yield": 0.035047,
+        "dividend_events": 2,
+        "annualised_volatility": 0.419137
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a"
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AZZA3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:59:42.990Z"
+      }
+    },
+    {
+      "ticker": "HAPV3",
+      "resolved_symbol": "HAPV3",
+      "via_successor": null,
+      "name": "Hapvida Participações e Investimentos S.A.",
+      "status": "fails_profile_screen",
+      "reasons": [
+        "0 pagamento(s) de dividendo nos últimos 12 meses, contra o mínimo de 2 adotado para o perfil",
+        "dividend yield de 0,00%, contra o mínimo de 2,00%"
+      ],
+      "market_value": 6143.14,
+      "weight": 0.019678,
+      "measured": {
+        "trailing_dividend_yield": 0,
+        "dividend_events": 0,
+        "annualised_volatility": 0.498455
+      },
+      "profile_basis": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "source": "Client risk profile, Produtos Financeiros Compatíveis, item a"
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HAPV3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+        "retrieved_at": "2026-08-28T20:59:42.982Z"
+      }
+    }
+  ]
+}

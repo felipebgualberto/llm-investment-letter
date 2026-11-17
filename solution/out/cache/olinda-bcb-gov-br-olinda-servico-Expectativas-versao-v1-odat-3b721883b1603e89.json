@@ -1,0 +1,22 @@
+{
+  "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'PIB%20Total'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+  "retrieved_at": "2026-08-27T04:02:16.162Z",
+  "data": {
+    "@odata.context": "https://was-p.bcnet.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata$metadata#ExpectativasMercadoAnuais",
+    "value": [
+      {
+        "Indicador": "PIB Total",
+        "IndicadorDetalhe": null,
+        "Data": "2025-04-30",
+        "DataReferencia": "2025",
+        "Media": 2.0309,
+        "Mediana": 2,
+        "DesvioPadrao": 0.2984,
+        "Minimo": 1.2571,
+        "Maximo": 2.9572,
+        "numeroRespondentes": 111,
+        "baseCalculo": 0
+      }
+    ]
+  }
+}

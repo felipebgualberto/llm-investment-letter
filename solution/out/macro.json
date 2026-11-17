@@ -1,0 +1,116 @@
+{
+  "report_date": "2025-02-06",
+  "title": "Brasil Macro Mensal",
+  "subtitle": "Pax brasileira ou calmaria antes de outra tempestade?",
+  "house_view": {
+    "PIB Total": {
+      "indicator": "PIB Total",
+      "unit": "percent_year",
+      "by_year": {
+        "2018": 1.8,
+        "2019": 1.2,
+        "2020": -3.3,
+        "2021": 4.8,
+        "2022": 3,
+        "2023": 3.2,
+        "2024": 3.6,
+        "2025": 2,
+        "2026": 1
+      },
+      "source_line": 52
+    },
+    "IPCA": {
+      "indicator": "IPCA",
+      "unit": "percent_year",
+      "by_year": {
+        "2018": 3.8,
+        "2019": 4.3,
+        "2020": 4.5,
+        "2021": 10.1,
+        "2022": 5.8,
+        "2023": 4.6,
+        "2024": 4.8,
+        "2025": 6.1,
+        "2026": 4.5
+      },
+      "source_line": 73
+    },
+    "Selic": {
+      "indicator": "Selic",
+      "unit": "percent_year",
+      "by_year": {
+        "2018": 6.5,
+        "2019": 4.5,
+        "2020": 2,
+        "2021": 9.25,
+        "2022": 13.75,
+        "2023": 11.75,
+        "2024": 12.25,
+        "2025": 15.5,
+        "2026": 12.5
+      },
+      "source_line": 83
+    },
+    "Câmbio": {
+      "indicator": "Câmbio",
+      "unit": "brl_per_usd",
+      "by_year": {
+        "2018": 3.87,
+        "2019": 4.03,
+        "2020": 5.2,
+        "2021": 5.58,
+        "2022": 5.28,
+        "2023": 4.86,
+        "2024": 6.17,
+        "2025": 6.2,
+        "2026": 6.4
+      },
+      "source_line": 93
+    },
+    "Dívida bruta (DBGG)": {
+      "indicator": "Dívida bruta (DBGG)",
+      "unit": "percent_gdp",
+      "by_year": {
+        "2018": 75.3,
+        "2019": 74.4,
+        "2020": 86.9,
+        "2021": 77.3,
+        "2022": 71.7,
+        "2023": 73.8,
+        "2024": 76.1,
+        "2025": 80.3,
+        "2026": 83.9
+      },
+      "source_line": 143
+    },
+    "Desemprego": {
+      "indicator": "Desemprego",
+      "unit": "percent",
+      "by_year": {
+        "2018": 12.1,
+        "2019": 11.5,
+        "2020": 14.7,
+        "2021": 11.7,
+        "2022": 8.3,
+        "2023": 7.6,
+        "2024": 6.5,
+        "2025": 7,
+        "2026": 7.8
+      },
+      "source_line": 63
+    }
+  },
+  "projection_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "data_quality_flags": [],
+  "source": "XP Macro Research monthly report (text extraction)"
+}

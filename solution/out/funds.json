@@ -1,0 +1,550 @@
+{
+  "results": [
+    {
+      "statement_name": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+      "weight": 0.308081,
+      "market_value": 96178.73,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "43917493000131",
+      "matched_name": "RIZA LOTUS PLUS ADVISORY FI FINANCEIRO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA",
+      "name_source": "historical_legal",
+      "name_valid_from": "2025-03-24",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "RIZA LOTUS PLUS ADVISORY FI FINANCEIRO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA",
+      "renamed": false,
+      "class_type": "Classes de Cotas de Fundos FIF",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Público Geral",
+      "declared_benchmark": "DI de um dia",
+      "anbima_class": "Renda Fixa Duração Livre Grau de Invest.",
+      "cvm_class": "Renda Fixa",
+      "fund_net_assets": 459061944.59,
+      "extra_tokens": [],
+      "distinctive": [
+        "RIZA",
+        "LOTUS",
+        "PLUS",
+        "ADVISORY"
+      ],
+      "dataset": "INF_DIARIO",
+      "method": "closing quota of prior month to closing quota of reference month",
+      "from": {
+        "date": "2025-03-31",
+        "quota": 1.5044227
+      },
+      "to": {
+        "date": "2025-04-30",
+        "quota": 1.5226835
+      },
+      "value": 0.01213808,
+      "shareholders": 8909,
+      "net_assets": 597751594.17,
+      "business_days": 20,
+      "as_of": "2025-04-30",
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_202504.zip"
+      },
+      "fees": {
+        "cnpj": "43917493000131",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 0.5,
+          "in_force_since": "2021-11-01",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2021-11-01",
+          "terms": null
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    },
+    {
+      "statement_name": "Brave I FIC FIM CP",
+      "weight": 0.232449,
+      "market_value": 72567.43,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "35726300000137",
+      "matched_name": "BRAVE I FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO CRÉDITO PRIVADO",
+      "name_source": "historical_commercial",
+      "name_valid_from": "2020-01-31",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "BRAVE 90 FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO EM DIREITOS CREDITÓRIOS",
+      "renamed": true,
+      "class_type": "Classes de Cotas de Fundos FIDC",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Qualificado",
+      "declared_benchmark": null,
+      "anbima_class": null,
+      "cvm_class": null,
+      "fund_net_assets": 1582671096.97,
+      "extra_tokens": [],
+      "distinctive": [
+        "BRAVE",
+        "I"
+      ],
+      "dataset": "INF_MENSAL_FIDC",
+      "method": "monthly return as published by the fund (TAB_X_VL_RENTAB_MES)",
+      "series": "Subclasse Sênior Série 1",
+      "value": 0.0119,
+      "quota": 1.78,
+      "shareholders": 4747,
+      "as_of": "2025-04-30",
+      "cross_check": {
+        "status": "consistent",
+        "quota_implied": 0.011364,
+        "note": "FIDC quota values are rounded to two decimals; this check confirms magnitude only."
+      },
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FIDC/DOC/INF_MENSAL/DADOS/inf_mensal_fidc_202504.zip"
+      },
+      "fees": {
+        "cnpj": "35726300000137",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 0.9,
+          "in_force_since": "2020-11-23",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2020-11-23",
+          "terms": null
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    },
+    {
+      "statement_name": "Trend Investback FIC FIRF Simples",
+      "weight": 0.000978,
+      "market_value": 305.44,
+      "match_source": "cvm_registry",
+      "status": "not_found",
+      "distinctive": [
+        "TREND",
+        "INVESTBACK"
+      ],
+      "reason": "No CVM name record - current or historical - contains all of: TREND, INVESTBACK."
+    },
+    {
+      "statement_name": "Truxt Long Bias Advisory FIC FIM",
+      "weight": 0.040111,
+      "market_value": 12522.05,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "30830162000118",
+      "matched_name": "TRUXT LONG BIAS ADVISORY FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO",
+      "name_source": "historical_commercial",
+      "name_valid_from": "2019-05-27",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "TRUXT LONG BIAS ADVISORY FIF EM COTAS DE FI FINANCEIROS MULTIMERCADOS RESPONSABILIDADE LIMITADA",
+      "renamed": true,
+      "class_type": "Classes de Cotas de Fundos FIF",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Qualificado",
+      "declared_benchmark": "DI de um dia",
+      "anbima_class": "Multimercados Livre",
+      "cvm_class": "Multimercado",
+      "fund_net_assets": 104616167.43,
+      "extra_tokens": [],
+      "distinctive": [
+        "TRUXT",
+        "LONG",
+        "BIAS",
+        "ADVISORY"
+      ],
+      "dataset": "INF_DIARIO",
+      "method": "closing quota of prior month to closing quota of reference month",
+      "from": {
+        "date": "2025-03-31",
+        "quota": 1.4707655
+      },
+      "to": {
+        "date": "2025-04-30",
+        "quota": 1.6202784
+      },
+      "value": 0.10165652,
+      "shareholders": 1532,
+      "net_assets": 70728032.69,
+      "business_days": 20,
+      "as_of": "2025-04-30",
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_202504.zip"
+      },
+      "fees": {
+        "cnpj": "30830162000118",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 1.9,
+          "in_force_since": "2022-12-29",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2022-12-29",
+          "terms": "A TAXA DE PERFORMANCE SERÁ DE 20% DO QUE EXCEDER A 100% DO IPCAIMAB"
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    },
+    {
+      "statement_name": "STK Long Biased FIC FIA",
+      "weight": 0.031218,
+      "market_value": 9745.97,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "12282747000169",
+      "matched_name": "STK LONG BIASED FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO DE AÇÕES",
+      "name_source": "historical_commercial",
+      "name_valid_from": "2010-09-15",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "STK LONG BIASED FIC DE FUNDOS DE INVESTIMENTO FINANCEIRO DE AÇÕES - RESPONSABILIDADE LIMITADA",
+      "renamed": true,
+      "class_type": "Classes de Cotas de Fundos FIF",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Qualificado",
+      "declared_benchmark": null,
+      "anbima_class": "Ações Valor/Crescimento",
+      "cvm_class": "Ações",
+      "fund_net_assets": 197592672.88,
+      "extra_tokens": [],
+      "distinctive": [
+        "STK",
+        "LONG",
+        "BIASED"
+      ],
+      "dataset": "INF_DIARIO",
+      "method": "closing quota of prior month to closing quota of reference month",
+      "from": {
+        "date": "2025-03-31",
+        "quota": 318.31657924
+      },
+      "to": {
+        "date": "2025-04-30",
+        "quota": 339.19281546
+      },
+      "value": 0.06558325,
+      "shareholders": 111,
+      "net_assets": 152508985.71,
+      "business_days": 20,
+      "as_of": "2025-04-30",
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_202504.zip"
+      },
+      "fees": {
+        "cnpj": "12282747000169",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 2,
+          "in_force_since": "2019-04-03",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2020-10-19",
+          "terms": "Para informacoes adicionais, vide o Regulamento"
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    },
+    {
+      "statement_name": "Constellation Institucional Advisory FIC FIA",
+      "weight": 0.027147,
+      "market_value": 8475.02,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "34462109000162",
+      "matched_name": "CONSTELLATION INSTITUCIONAL ADVISORY FI EM COTAS DE FUNDOS DE INVESTIMENTO DE AÇÕES",
+      "name_source": "historical_commercial",
+      "name_valid_from": "2019-12-05",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "CONSTELLATION INSTITUCIONAL ADVISORY FI FINANCEIRO EM COTAS DE FI EM AÇÕES",
+      "renamed": true,
+      "class_type": "Classes de Cotas de Fundos FIF",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Público Geral",
+      "declared_benchmark": "Ibovespa",
+      "anbima_class": "Ações Valor/Crescimento",
+      "cvm_class": "Ações",
+      "fund_net_assets": 155859505.19,
+      "extra_tokens": [],
+      "distinctive": [
+        "CONSTELLATION",
+        "INSTITUCIONAL",
+        "ADVISORY"
+      ],
+      "dataset": "INF_DIARIO",
+      "method": "closing quota of prior month to closing quota of reference month",
+      "from": {
+        "date": "2025-03-31",
+        "quota": 2.40030293
+      },
+      "to": {
+        "date": "2025-04-30",
+        "quota": 2.66742281
+      },
+      "value": 0.1112859,
+      "shareholders": 4115,
+      "net_assets": 130937334.37,
+      "business_days": 20,
+      "as_of": "2025-04-30",
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_202504.zip"
+      },
+      "fees": {
+        "cnpj": "34462109000162",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 2.2,
+          "in_force_since": "2021-09-06",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2021-09-06",
+          "terms": "Para informacoes adicionais, vide o Regulamento"
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    },
+    {
+      "statement_name": "Ibiuna Hedge ST Advisory FIC FIM",
+      "weight": 0.037161,
+      "market_value": 11601.02,
+      "match_source": "cvm_registry",
+      "status": "measured",
+      "cnpj": "30493349000173",
+      "matched_name": "IBIUNA HEDGE ST ADVISORY FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO MULTIMERCADO",
+      "name_source": "historical_commercial",
+      "name_valid_from": "2018-07-16",
+      "name_valid_to": null,
+      "valid_at_statement": true,
+      "current_name": "IBIUNA HEDGE ST ADVISORY FIF - CLASSE DE INVESTIMENTO EM COTAS MULTIMERCADO - RESP LIMITADA",
+      "renamed": true,
+      "class_type": "Classes de Cotas de Fundos FIF",
+      "situation": "Em Funcionamento Normal",
+      "target_investor": "Público Geral",
+      "declared_benchmark": "DI de um dia",
+      "anbima_class": "Multimercados Macro",
+      "cvm_class": "Multimercado",
+      "fund_net_assets": 600935786.96,
+      "extra_tokens": [],
+      "distinctive": [
+        "IBIUNA",
+        "HEDGE",
+        "ST",
+        "ADVISORY"
+      ],
+      "dataset": "INF_DIARIO",
+      "method": "closing quota of prior month to closing quota of reference month",
+      "from": {
+        "date": "2025-03-31",
+        "quota": 194.9656387
+      },
+      "to": {
+        "date": "2025-04-30",
+        "quota": 201.8534708
+      },
+      "value": 0.03532844,
+      "shareholders": 20550,
+      "net_assets": 933858977.63,
+      "business_days": 20,
+      "as_of": "2025-04-30",
+      "source": {
+        "provider": "CVM Dados Abertos",
+        "url": "https://dados.cvm.gov.br/dados/FI/DOC/INF_DIARIO/DADOS/inf_diario_fi_202504.zip"
+      },
+      "fees": {
+        "cnpj": "30493349000173",
+        "as_of": "2025-04-30",
+        "administration": {
+          "rate_pct": 1.96,
+          "in_force_since": "2018-07-16",
+          "note": null
+        },
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2019-11-01",
+          "terms": null
+        },
+        "source": {
+          "provider": "CVM Dados Abertos",
+          "url": "https://dados.cvm.gov.br/dados/FI/CAD/DADOS/cad_fi_hist.zip",
+          "files": [
+            "cad_fi_hist_taxa_adm.csv",
+            "cad_fi_hist_taxa_perfm.csv"
+          ],
+          "rule": "row in force on the reference date, not the most recent row"
+        }
+      }
+    }
+  ],
+  "cost": {
+    "lines": [
+      {
+        "label": "Brave I FIC FIM CP",
+        "cnpj": "35726300000137",
+        "market_value": 72567.43,
+        "administration_pct": 0.9,
+        "administration_in_force_since": "2020-11-23",
+        "annual_cost_brl": 653.11,
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2020-11-23",
+          "terms": null
+        }
+      },
+      {
+        "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+        "cnpj": "43917493000131",
+        "market_value": 96178.73,
+        "administration_pct": 0.5,
+        "administration_in_force_since": "2021-11-01",
+        "annual_cost_brl": 480.89,
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2021-11-01",
+          "terms": null
+        }
+      },
+      {
+        "label": "Truxt Long Bias Advisory FIC FIM",
+        "cnpj": "30830162000118",
+        "market_value": 12522.05,
+        "administration_pct": 1.9,
+        "administration_in_force_since": "2022-12-29",
+        "annual_cost_brl": 237.92,
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2022-12-29",
+          "terms": "A TAXA DE PERFORMANCE SERÁ DE 20% DO QUE EXCEDER A 100% DO IPCAIMAB"
+        }
+      },
+      {
+        "label": "Ibiuna Hedge ST Advisory FIC FIM",
+        "cnpj": "30493349000173",
+        "market_value": 11601.02,
+        "administration_pct": 1.96,
+        "administration_in_force_since": "2018-07-16",
+        "annual_cost_brl": 227.38,
+        "performance": {
+          "rate_pct": 0,
+          "in_force_since": "2019-11-01",
+          "terms": null
+        }
+      },
+      {
+        "label": "STK Long Biased FIC FIA",
+        "cnpj": "12282747000169",
+        "market_value": 9745.97,
+        "administration_pct": 2,
+        "administration_in_force_since": "2019-04-03",
+        "annual_cost_brl": 194.92,
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2020-10-19",
+          "terms": "Para informacoes adicionais, vide o Regulamento"
+        }
+      },
+      {
+        "label": "Constellation Institucional Advisory FIC FIA",
+        "cnpj": "34462109000162",
+        "market_value": 8475.02,
+        "administration_pct": 2.2,
+        "administration_in_force_since": "2021-09-06",
+        "annual_cost_brl": 186.45,
+        "performance": {
+          "rate_pct": 20,
+          "in_force_since": "2021-09-06",
+          "terms": "Para informacoes adicionais, vide o Regulamento"
+        }
+      },
+      {
+        "label": "Trend Investback FIC FIRF Simples",
+        "cnpj": null,
+        "market_value": 305.44,
+        "administration_pct": null,
+        "annual_cost_brl": null,
+        "performance": null,
+        "reason": "no fee published for the reference date"
+      }
+    ],
+    "priced_value_brl": 211090.22,
+    "unpriced_value_brl": 305.44,
+    "coverage": 0.9985551264392089,
+    "annual_cost_brl": 1980.67,
+    "monthly_cost_brl": 165.06,
+    "weighted_average_pct": 0.9383,
+    "basis": "Administration fee only, applied to the position value on the statement date. Performance fees are reported as declared rates and are not converted to reais, because they depend on a high-water mark no public dataset carries."
+  },
+  "coverage": {
+    "measured_count": 6,
+    "total_count": 7,
+    "measured_weight": 0.676167,
+    "total_weight": 0.677145,
+    "share_of_sleeve": 0.998556
+  },
+  "data_quality_flags": [
+    {
+      "code": "fee_version_not_yet_in_force",
+      "severity": "info",
+      "detail": "1 TAXA_ADM row(s) start after 2025-04-30 and were ignored. Using the newest row instead of the one in force would report a fee that did not exist on the statement date.",
+      "origin": "cvm_fees"
+    }
+  ],
+  "resolved_as_of": "2025-05-07",
+  "registry_retrieved_at": "2026-08-27T17:05:05.061Z"
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 246" width="100%" height="auto" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto;max-width:620px" role="img" aria-label="Como a sua carteira está distribuída hoje">
+  <style>
+    .t  { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .st { font: 400 10.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+    .l  { font: 400 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .v  { font: 600 11px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .ax { font: 400 9.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+  </style>
+  <text class="t" x="0" y="14">Como a sua carteira está distribuída hoje</text>
+  <text class="st" x="0" y="30">Anel interno: classe de ativo. Anel externo: cada posição. Percentuais sobre o patrimônio total, a partir do topo, em sentido horário.</text>
+  <style>
+    .lg { font: 400 9.6px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .lg.b { font-weight: 600; fill: #111111; }
+    .lg.m { fill: #6b7280; }
+  </style>
+  <path d="M96.80,67.00 A67,67 0 1 1 77.50,198.39 L80.81,186.86 A55,55 0 1 0 96.66,79.00 Z" fill="#4d5259"/>
+  <path d="M97.03,48.01 A86,86 0 0 1 181.98,132.22 L166.98,132.53 A71,71 0 0 0 96.85,63.01 Z" fill="#4d5259"/>
+  <path d="M182.00,134.28 A86,86 0 0 1 130.51,212.77 L124.49,199.03 A71,71 0 0 0 167.00,134.23 Z" fill="#4d5259"/>
+  <path d="M128.61,213.58 A86,86 0 0 1 113.89,218.12 L110.77,203.45 A71,71 0 0 0 122.92,199.70 Z" fill="#4d5259"/>
+  <path d="M111.86,218.52 A86,86 0 0 1 97.81,219.98 L97.50,204.98 A71,71 0 0 0 109.10,203.78 Z" fill="#4d5259"/>
+  <path d="M95.75,220.00 A86,86 0 0 1 84.24,219.19 L86.29,204.33 A71,71 0 0 0 95.79,205.00 Z" fill="#4d5259"/>
+  <path d="M82.20,218.89 A86,86 0 0 1 72.66,216.77 L76.73,202.34 A71,71 0 0 0 84.60,204.08 Z" fill="#4d5259"/>
+  <path d="M70.68,216.19 A86,86 0 0 1 70.35,216.09 L74.83,201.77 A71,71 0 0 0 75.10,201.85 Z" fill="#4d5259"/>
+  <path d="M75.96,197.93 A67,67 0 0 1 29.20,139.23 L41.17,138.30 A55,55 0 0 0 79.55,186.48 Z" fill="#FFC709" stroke="#8a6a00" stroke-width="1"/>
+  <path d="M70.27,216.06 A86,86 0 0 1 10.26,140.72 L25.22,139.55 A71,71 0 0 0 74.76,201.75 Z" fill="#FFC709" stroke="#8a6a00" stroke-width="1"/>
+  <path d="M29.10,137.63 A67,67 0 0 1 54.42,81.46 L61.87,90.87 A55,55 0 0 0 41.08,136.98 Z" fill="#111111"/>
+  <path d="M10.13,138.66 A86,86 0 0 1 15.93,102.62 L29.90,108.09 A71,71 0 0 0 25.10,137.85 Z" fill="#111111"/>
+  <path d="M16.71,100.71 A86,86 0 0 1 26.22,83.74 L38.39,92.51 A71,71 0 0 0 30.54,106.51 Z" fill="#111111"/>
+  <path d="M27.44,82.08 A86,86 0 0 1 36.18,72.21 L46.61,82.99 A71,71 0 0 0 39.40,91.14 Z" fill="#111111"/>
+  <path d="M37.68,70.79 A86,86 0 0 1 42.63,66.56 L51.94,78.32 A71,71 0 0 0 47.85,81.82 Z" fill="#111111"/>
+  <path d="M55.70,80.48 A67,67 0 0 1 95.20,67.00 L95.34,79.00 A55,55 0 0 0 62.91,90.06 Z" fill="#8a8f98"/>
+  <path d="M44.27,65.30 A86,86 0 0 1 94.97,48.01 L95.15,63.01 A71,71 0 0 0 53.29,77.28 Z" fill="#8a8f98"/>
+  <rect x="200" y="46.5" width="9" height="9" rx="2" fill="#4d5259"/>
+  <text class="lg b" x="215" y="54.0">Fundos</text>
+  <text class="lg b" x="400" y="54.0" text-anchor="end">54,6%</text>
+  <text class="lg m" x="215" y="64.5">R$ 211.395,66</text>
+  <text class="lg m" x="215" y="77.7">Riza Lotus Plus Advisory F…</text>
+  <text class="lg m" x="400" y="77.7" text-anchor="end">24,9%</text>
+  <text class="lg m" x="215" y="90.9">Brave I FIC FIM CP</text>
+  <text class="lg m" x="400" y="90.9" text-anchor="end">18,8%</text>
+  <text class="lg m" x="215" y="104.1">Truxt Long Bias Advisory F…</text>
+  <text class="lg m" x="400" y="104.1" text-anchor="end">3,2%</text>
+  <text class="lg m" x="215" y="117.3">Ibiuna Hedge ST Advisory F…</text>
+  <text class="lg m" x="400" y="117.3" text-anchor="end">3,0%</text>
+  <text class="lg m" x="215" y="130.5">STK Long Biased FIC FIA</text>
+  <text class="lg m" x="400" y="130.5" text-anchor="end">2,5%</text>
+  <text class="lg m" x="215" y="143.7">Constellation Instituciona…</text>
+  <text class="lg m" x="400" y="143.7" text-anchor="end">2,2%</text>
+  <text class="lg m" x="215" y="156.9">Trend Investback FIC FIRF …</text>
+  <text class="lg m" x="400" y="156.9" text-anchor="end">0,1%</text>
+  <rect x="200" y="166.6" width="9" height="9" rx="2" fill="#FFC709" stroke="#8a6a00"/>
+  <text class="lg b" x="215" y="174.1">Saldo em conta</text>
+  <text class="lg b" x="400" y="174.1" text-anchor="end">19,3%</text>
+  <text class="lg m" x="215" y="184.6">R$ 74.672,62</text>
+  <rect x="413" y="46.5" width="9" height="9" rx="2" fill="#111111"/>
+  <text class="lg b" x="428" y="54.0">Ações</text>
+  <text class="lg b" x="613" y="54.0" text-anchor="end">15,6%</text>
+  <text class="lg m" x="428" y="64.5">R$ 60.311,79</text>
+  <text class="lg m" x="428" y="77.7">LREN3</text>
+  <text class="lg m" x="613" y="77.7" text-anchor="end">7,2%</text>
+  <text class="lg m" x="428" y="90.9">MRFG3</text>
+  <text class="lg m" x="613" y="90.9" text-anchor="end">4,0%</text>
+  <text class="lg m" x="428" y="104.1">ARZZ3</text>
+  <text class="lg m" x="613" y="104.1" text-anchor="end">2,8%</text>
+  <text class="lg m" x="428" y="117.3">HAPV3</text>
+  <text class="lg m" x="613" y="117.3" text-anchor="end">1,6%</text>
+  <rect x="413" y="127.0" width="9" height="9" rx="2" fill="#8a8f98"/>
+  <text class="lg b" x="428" y="134.5">Renda fixa</text>
+  <text class="lg b" x="613" y="134.5" text-anchor="end">10,5%</text>
+  <text class="lg m" x="428" y="145.0">R$ 40.478,75</text>
+  <text class="lg m" x="428" y="158.2">CDB BANCO C6 CONSIGNADO S.…</text>
+  <text x="96" y="133" text-anchor="middle" font-size="10.5" font-weight="600" fill="#111111">R$ 386.858,82</text>
+  <text class="ax" x="96" y="146" text-anchor="middle">patrimônio total</text>
+  <line x1="0" y1="226" x2="620" y2="226" stroke="#e5e7eb"/>
+  <text class="st" x="0" y="240">13 posições, mas a concentração equivale a 6,4 de tamanho igual — 3 delas somam metade do patrimônio.</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 198" width="100%" height="auto" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto;max-width:620px" role="img" aria-label="Como o mês se compara">
+  <style>
+    .t  { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .st { font: 400 10.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+    .l  { font: 400 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .v  { font: 600 11px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .ax { font: 400 9.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+  </style>
+  <text class="t" x="0" y="14">Como o mês se compara</text>
+  <text class="st" x="0" y="30">A diferença de 0,80 p.p. entre as duas primeiras barras é o custo do saldo parado.</text>
+  <text class="l" x="0" y="63">Carteira (parcela medida)</text>
+  <rect x="200" y="51" width="342.0" height="17" rx="2" fill="#111111" opacity="0.9"/>
+  <text class="v" x="550.0" y="64" fill="#111111">2,62%</text>
+  <text class="l" x="0" y="97">Seu patrimônio</text>
+  <rect x="200" y="85" width="238.1" height="17" rx="2" fill="#FFC709" opacity="0.9" stroke="#8a6a00" stroke-width="1"/>
+  <text class="v" x="446.1" y="98" fill="#8a6a00">1,82%</text>
+  <text class="l" x="0" y="131">CDI</text>
+  <rect x="200" y="119" width="137.8" height="17" rx="2" fill="#6b7280" opacity="0.9"/>
+  <text class="v" x="345.8" y="132" fill="#6b7280">1,06%</text>
+  <text class="l" x="0" y="165">Inflação (IPCA)</text>
+  <rect x="200" y="153" width="56.1" height="17" rx="2" fill="#6b7280" opacity="0.9"/>
+  <text class="v" x="264.1" y="166" fill="#6b7280">0,43%</text>
+</svg>

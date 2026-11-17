@@ -1,0 +1,10 @@
+{
+  "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+  "retrieved_at": "2026-08-27T04:02:14.793Z",
+  "data": [
+    {
+      "data": "01/04/2025",
+      "valor": "0.43"
+    }
+  ]
+}

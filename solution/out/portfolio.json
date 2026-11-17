@@ -1,0 +1,262 @@
+{
+  "client": {
+    "name": "Albert da Silva",
+    "account": "792854"
+  },
+  "advisor": {
+    "code": "A7699",
+    "name": "Antonio Bicudo"
+  },
+  "totals": {
+    "net_worth": 386858.82,
+    "invested": 312186.2,
+    "available_cash": 74672.62
+  },
+  "sleeve_weights": {
+    "stocks": 0.1932,
+    "funds": 0.6771,
+    "fixed_income": 0.1297
+  },
+  "holdings": [
+    {
+      "sleeve": "stocks",
+      "ticker": "LREN3",
+      "name": "LREN3",
+      "market_value": 27812.04,
+      "weight_stated": 0.0891,
+      "return_since_purchase_stated": -0.417,
+      "investment_date": "2021-04-22",
+      "average_price": 29.05,
+      "last_price": 16.94,
+      "quantity": 1642,
+      "weight": 0.089088,
+      "return_since_purchase": -0.416867
+    },
+    {
+      "sleeve": "stocks",
+      "ticker": "MRFG3",
+      "name": "MRFG3",
+      "market_value": 15432.89,
+      "weight_stated": 0.0494,
+      "return_since_purchase_stated": 0.435,
+      "investment_date": "2021-04-22",
+      "average_price": 7.15,
+      "last_price": 10.26,
+      "quantity": 1504,
+      "weight": 0.049435,
+      "return_since_purchase": 0.434965
+    },
+    {
+      "sleeve": "stocks",
+      "ticker": "ARZZ3",
+      "name": "ARZZ3",
+      "market_value": 10923.72,
+      "weight_stated": 0.035,
+      "return_since_purchase_stated": -0.3105,
+      "investment_date": "2022-11-02",
+      "average_price": 82.06,
+      "last_price": 56.58,
+      "quantity": 193,
+      "weight": 0.034991,
+      "return_since_purchase": -0.310505
+    },
+    {
+      "sleeve": "stocks",
+      "ticker": "HAPV3",
+      "name": "HAPV3",
+      "market_value": 6143.14,
+      "weight_stated": 0.0197,
+      "return_since_purchase_stated": -0.7458,
+      "investment_date": "2022-11-02",
+      "average_price": 15.62,
+      "last_price": 3.97,
+      "quantity": 1547,
+      "weight": 0.019678,
+      "return_since_purchase": -0.745839
+    },
+    {
+      "sleeve": "funds",
+      "category": "fixed_income",
+      "category_source": "name_heuristic",
+      "name": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+      "market_value": 96178.73,
+      "weight_stated": 0.3081,
+      "return_since_purchase_stated": 0.1551,
+      "investment_date": "2021-04-22",
+      "applied_amount": 83267.36,
+      "net_value": 95254.02,
+      "quota_date": "2024-04-04",
+      "weight": 0.308081,
+      "return_since_purchase": 0.155059
+    },
+    {
+      "sleeve": "funds",
+      "category": "multimarket",
+      "category_source": "name_heuristic",
+      "name": "Brave I FIC FIM CP",
+      "market_value": 72567.43,
+      "weight_stated": 0.2324,
+      "return_since_purchase_stated": 0.1908,
+      "investment_date": "2021-04-22",
+      "applied_amount": 60940.01,
+      "net_value": 71811.89,
+      "quota_date": "2024-04-04",
+      "weight": 0.232449,
+      "return_since_purchase": 0.190801
+    },
+    {
+      "sleeve": "funds",
+      "category": "fixed_income",
+      "category_source": "name_heuristic",
+      "name": "Trend Investback FIC FIRF Simples",
+      "market_value": 305.44,
+      "weight_stated": 0.001,
+      "return_since_purchase_stated": 0.1601,
+      "investment_date": "2022-11-02",
+      "applied_amount": 263.29,
+      "net_value": 302.71,
+      "quota_date": "2024-04-05",
+      "weight": 0.000978,
+      "return_since_purchase": 0.16009
+    },
+    {
+      "sleeve": "funds",
+      "category": "equity",
+      "category_source": "name_heuristic",
+      "name": "Truxt Long Bias Advisory FIC FIM",
+      "market_value": 12522.05,
+      "weight_stated": 0.0401,
+      "return_since_purchase_stated": -0.1213,
+      "investment_date": "2022-11-02",
+      "applied_amount": 14250,
+      "net_value": 12522.05,
+      "quota_date": "2024-04-04",
+      "weight": 0.040111,
+      "return_since_purchase": -0.12126
+    },
+    {
+      "sleeve": "funds",
+      "category": "equity",
+      "category_source": "name_heuristic",
+      "name": "STK Long Biased FIC FIA",
+      "market_value": 9745.97,
+      "weight_stated": 0.0312,
+      "return_since_purchase_stated": -0.1451,
+      "investment_date": "2023-11-09",
+      "applied_amount": 11400,
+      "net_value": 9745.97,
+      "quota_date": "2024-04-04",
+      "weight": 0.031218,
+      "return_since_purchase": -0.14509
+    },
+    {
+      "sleeve": "funds",
+      "category": "equity",
+      "category_source": "name_heuristic",
+      "name": "Constellation Institucional Advisory FIC FIA",
+      "market_value": 8475.02,
+      "weight_stated": 0.0271,
+      "return_since_purchase_stated": -0.2566,
+      "investment_date": "2023-11-09",
+      "applied_amount": 11400,
+      "net_value": 8475.02,
+      "quota_date": "2024-04-04",
+      "weight": 0.027147,
+      "return_since_purchase": -0.256577
+    },
+    {
+      "sleeve": "funds",
+      "category": "multimarket",
+      "category_source": "name_heuristic",
+      "name": "Ibiuna Hedge ST Advisory FIC FIM",
+      "market_value": 11601.02,
+      "weight_stated": 0.0372,
+      "return_since_purchase_stated": 0.3374,
+      "investment_date": "2023-11-09",
+      "applied_amount": 8674.51,
+      "net_value": 11542.54,
+      "quota_date": "2024-04-04",
+      "weight": 0.037161,
+      "return_since_purchase": 0.337369
+    },
+    {
+      "sleeve": "fixed_income",
+      "name": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024",
+      "market_value": 40478.75,
+      "weight_stated": 0.1297,
+      "applied_amount": 30000,
+      "investment_date": "2023-11-09",
+      "rate": "IPC-A +5,45%",
+      "start_date": "2021-09-06",
+      "maturity_date": "2024-09-05",
+      "weight": 0.129662
+    }
+  ],
+  "statement_date": "2025-05-07",
+  "cash_share_of_net_worth": 0.193023,
+  "sleeve_totals": {
+    "stocks": {
+      "market_value": 60311.79,
+      "weight": 0.193192,
+      "count": 4
+    },
+    "funds": {
+      "market_value": 211395.66,
+      "weight": 0.677145,
+      "count": 7
+    },
+    "fixed_income": {
+      "market_value": 40478.75,
+      "weight": 0.129662,
+      "count": 1
+    }
+  },
+  "data_quality_flags": [
+    {
+      "code": "source_row_order_inverted",
+      "severity": "info",
+      "detail": "\"Ibiuna Hedge ST Advisory FIC FIM\" appears after its values in the source file; recovered by type-based reading."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Riza Lotus Plus Advisory FIC FIRF REF DI CP: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Brave I FIC FIM CP: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Trend Investback FIC FIRF Simples: quota dated 2024-04-05, 397 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Truxt Long Bias Advisory FIC FIM: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "STK Long Biased FIC FIA: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Constellation Institucional Advisory FIC FIA: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "stale_quota_date",
+      "severity": "warning",
+      "detail": "Ibiuna Hedge ST Advisory FIC FIM: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure."
+    },
+    {
+      "code": "matured_instrument_still_listed",
+      "severity": "warning",
+      "detail": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024: matured on 2024-09-05, before the statement date 2025-05-07."
+    }
+  ],
+  "source": "XP position statement (text extraction)"
+}

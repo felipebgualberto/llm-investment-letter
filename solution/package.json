@@ -1,0 +1,28 @@
+{
+  "name": "xp-monthly-advisor",
+  "version": "2.0.0",
+  "description": "Deterministic engine + LLM narration pipeline for XP's monthly client investment letter",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/parse-portfolio.js && node scripts/build-market.js && node scripts/measure-funds.js && node scripts/build-metrics.js && node scripts/build-recommendations.js && node scripts/plan-letter.js && node scripts/build-charts.js && node scripts/render-letter.js && node scripts/render-annex.js && node scripts/build-console.js",
+    "refresh": "npm run build -- --refresh",
+    "parse": "node scripts/parse-portfolio.js",
+    "market": "node scripts/build-market.js",
+    "funds": "node scripts/measure-funds.js",
+    "metrics": "node scripts/build-metrics.js",
+    "advise": "node scripts/build-recommendations.js",
+    "plan": "node scripts/plan-letter.js",
+    "test": "node --test test/*.test.js",
+    "charts": "node scripts/build-charts.js",
+    "letter": "node scripts/render-letter.js",
+    "annex": "node scripts/render-annex.js",
+    "palette": "node tools/check-palette.js",
+    "console": "node scripts/build-console.js",
+    "brand-mark": "node tools/extract-brand-mark.js",
+    "report-pages": "node tools/check-report-pages.js ../docs/RELATORIO.md 2",
+    "docx": "node tools/md-to-docx.js"
+  }
+}

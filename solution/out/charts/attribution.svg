@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 222" width="100%" height="auto" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto;max-width:620px" role="img" aria-label="O que moveu a sua carteira">
+  <style>
+    .t  { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .st { font: 400 10.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+    .l  { font: 400 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .v  { font: 600 11px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .ax { font: 400 9.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+  </style>
+  <text class="t" x="0" y="14">O que moveu a sua carteira</text>
+  <text class="st" x="0" y="30">Contribuição de cada classe apurada, e a posição que mais pesou dentro dela</text>
+  <line x1="364" y1="42" x2="364" y2="184" stroke="#e5e7eb" stroke-width="1"/>
+  <text class="l" x="0" y="59" font-weight="600">Fundos</text>
+  <text class="ax" x="192" y="59" text-anchor="end">6 posições · 2,43%</text>
+  <rect x="364.0" y="49" width="164.0" height="14" rx="2" fill="#111111" opacity="0.95"/>
+  <text class="v" x="536.0" y="59" text-anchor="start" fill="#111111">+1,89 p.p.</text>
+  <text class="l" x="12" y="83" fill="#6b7280">Truxt Long Bias Advisory FI…</text>
+  <rect x="364.0" y="75" width="37.8" height="9" rx="2" fill="#111111" opacity="0.5"/>
+  <text class="v" x="409.8" y="83" text-anchor="start" fill="#111111" font-weight="400">+0,44 p.p.</text>
+  <text class="l" x="12" y="107" fill="#6b7280">Riza Lotus Plus Advisory FI…</text>
+  <rect x="364.0" y="99" width="37.8" height="9" rx="2" fill="#111111" opacity="0.5"/>
+  <text class="v" x="409.8" y="107" text-anchor="start" fill="#111111" font-weight="400">+0,44 p.p.</text>
+  <text class="l" x="0" y="131" font-weight="600">Ações</text>
+  <text class="ax" x="192" y="131" text-anchor="end">4 posições · 3,30%</text>
+  <rect x="364.0" y="121" width="63.1" height="14" rx="2" fill="#111111" opacity="0.95"/>
+  <text class="v" x="435.1" y="131" text-anchor="start" fill="#111111">+0,73 p.p.</text>
+  <text class="l" x="12" y="155" fill="#6b7280">MRFG3</text>
+  <rect x="265.0" y="147" width="99.0" height="9" rx="2" fill="#c4262e" opacity="0.5"/>
+  <text class="v" x="257.0" y="155" text-anchor="end" fill="#c4262e" font-weight="400">−1,14 p.p.</text>
+  <text class="l" x="12" y="179" fill="#6b7280">HAPV3</text>
+  <rect x="364.0" y="171" width="87.2" height="9" rx="2" fill="#111111" opacity="0.5"/>
+  <text class="v" x="459.2" y="179" text-anchor="start" fill="#111111" font-weight="400">+1,01 p.p.</text>
+  <line x1="0" y1="196" x2="620" y2="196" stroke="#e5e7eb"/>
+  <text class="l" x="0" y="214" font-weight="600">Total</text>
+  <text class="v" x="620" y="214" text-anchor="end" fill="#111111">+2,62 p.p.</text>
+</svg>

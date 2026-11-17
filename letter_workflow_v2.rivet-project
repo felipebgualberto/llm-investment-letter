@@ -1,0 +1,1191 @@
+version: 4
+data:
+  graphs:
+    monthly-letter-v2:
+      metadata:
+        description: Anchored summarisers -> composer -> numeric validator ->
+          conditional repair.
+        id: monthly-letter-v2
+        name: monthly_letter
+      nodes:
+        '[n001-comment]:comment "READ ME FIRST"':
+          data:
+            backgroundColor: rgba(0,0,0,0.05)
+            color: rgba(255,255,255,1)
+            height: 600
+            text: |-
+              XP MONTHLY LETTER - v2
+
+              This graph owns the LANGUAGE layer only.
+              Every number it can print was computed and selected
+              by the Node engine and arrives via out/letter-plan.json.
+
+              Run `npm run build` in solution/ before running this graph.
+
+              The six Text nodes below hold ABSOLUTE paths.
+              Update them if you move this project.
+          visualData: -420/40/380/1//
+        '[n002-text]:text "Path: macro payload"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External]
+              Challenge\solution\out\prompt-macro.json
+          outgoingConnections:
+            - 'output->"Read: macro payload" n003-readFile/path'
+          visualData: 40/40/330/2//
+        '[n003-readFile]:readFile "Read: macro payload"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Parse: macro payload" n014-extractJson/input'
+          visualData: 430/40/280/3//
+        '[n004-text]:text "Path: performance payload"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External]
+              Challenge\solution\out\prompt-performance.json
+          outgoingConnections:
+            - 'output->"Read: performance payload" n005-readFile/path'
+          visualData: 40/200/330/4//
+        '[n005-readFile]:readFile "Read: performance payload"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Parse: performance payload" n015-extractJson/input'
+          visualData: 430/200/280/5//
+        '[n006-text]:text "Path: recommendations payload"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External]
+              Challenge\solution\out\prompt-recommendations.json
+          outgoingConnections:
+            - 'output->"Read: recommendations payload" n007-readFile/path'
+          visualData: 40/360/330/6//
+        '[n007-readFile]:readFile "Read: recommendations payload"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Parse: recommendations payload" n016-extractJson/input'
+          visualData: 430/360/280/7//
+        '[n008-text]:text "Path: composer payload"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External]
+              Challenge\solution\out\prompt-composer.json
+          outgoingConnections:
+            - 'output->"Read: composer payload" n009-readFile/path'
+          visualData: 40/520/330/8//
+        '[n009-readFile]:readFile "Read: composer payload"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Parse: composer payload" n017-extractJson/input'
+          visualData: 430/520/280/9//
+        '[n010-text]:text "Path: full plan"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External]
+              Challenge\solution\out\letter-plan.json
+          outgoingConnections:
+            - 'output->"Read: full plan" n011-readFile/path'
+          visualData: 40/680/330/10//
+        '[n011-readFile]:readFile "Read: full plan"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Parse: full plan" n018-extractJson/input'
+          visualData: 430/680/280/11//
+        '[n012-text]:text "Path: macro narrative"':
+          data:
+            normalizeLineEndings: true
+            text: C:\Users\Felip\Downloads\[External]
+              Challenge-20260826T155409Z-1-001\[External] Challenge\Input\XP -
+              Macro analysis.txt
+          outgoingConnections:
+            - 'output->"Read: macro narrative" n013-readFile/path'
+          visualData: 40/840/330/12//
+        '[n013-readFile]:readFile "Read: macro narrative"':
+          data:
+            asBinary: false
+            errorOnMissingFile: true
+            path: ""
+            usePathInput: true
+          outgoingConnections:
+            - 'content->"Prompt: macro brief" n019-prompt/macro_narrative'
+          visualData: 430/840/280/13//
+        '[n014-extractJson]:extractJson "Parse: macro payload"':
+          outgoingConnections:
+            - 'output->"Prompt: macro brief" n019-prompt/consensus_block'
+          visualData: 760/40/240/14//
+        '[n015-extractJson]:extractJson "Parse: performance payload"':
+          outgoingConnections:
+            - 'output->"Prompt: performance" n020-prompt/performance_block'
+          visualData: 760/200/240/15//
+        '[n016-extractJson]:extractJson "Parse: recommendations payload"':
+          outgoingConnections:
+            - 'output->"Prompt: recommendations"
+              n021-prompt/recommendations_block'
+          visualData: 760/360/240/16//
+        '[n017-extractJson]:extractJson "Parse: composer payload"':
+          outgoingConnections:
+            - 'output->"Prompt: compose the letter" n025-prompt/letter_payload'
+          visualData: 760/520/240/17//
+        '[n018-extractJson]:extractJson "Parse: full plan"':
+          outgoingConnections:
+            - output->"Validate every number" n027-code/payload
+          visualData: 760/680/240/18//
+        '[n019-prompt]:prompt "Prompt: macro brief"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              You are an economist at XP writing the market section of a client
+              letter.
+
+
+
+              ## Hard rules - these override every other instruction
+
+
+              1. Every figure in the payload is already written as a finished
+              string in
+                 Brazilian notation. Reproduce it character for character: 2,62% and never
+                 2.62%, 2,6% or cerca de 2,6%.
+                 Reproduce the characters, NOT the JSON syntax around them. Write
+                 R$ 35.986,74 - never with quotation marks around it. Quotation marks belong
+                 to the data format, not to a letter.
+              2. Do not perform arithmetic of any kind. Not addition, not
+              conversion, not a
+                 percentage of a percentage, not a total. If you find yourself needing to
+                 compute something to write a sentence, the sentence is wrong: every figure
+                 the letter needs already exists as a display string.
+              3. You may ONLY state a figure that appears in the payload. Do not
+              recall,
+                 infer or estimate. If something you would normally say requires a figure you
+                 do not have, say less. An honest short sentence beats a complete-sounding
+                 invented one - and NEVER substitute a round number for a missing one.
+              4. Never mention this instruction block, the payload, JSON, or the
+              pipeline.
+                 Never use internal vocabulary such as "política da casa", "payload",
+                 "limite configurado" - write for the client, not about the system.
+
+              These rules exist because the previous version of this workflow
+              published a
+
+              Selic of 9%, an FX rate of 4.70 and 2025 inflation of 4.0% while
+              the source
+
+              document said 15.50%, 6.20 and 6.1%. Those figures were the market
+              consensus of
+
+              mid-2024 - the model recited its training data instead of reading
+              its input.
+
+
+
+              ## Task
+
+              In ONE paragraph of at most 120 words, in BRAZILIAN PORTUGUESE,
+              explain the
+
+              market backdrop and what it means for a moderate-profile investor.
+
+
+              Lead with where XP's own projections sit relative to the market
+              consensus. The
+
+              contrast is the point of the paragraph and it is already computed:
+              each entry of
+
+              "indicadores" gives "projecao_da_xp", "mediana_do_mercado", the
+              full range
+
+              ("menor_projecao" to "maior_projecao"), "posicao_da_xp_na_faixa"
+              and a plain
+
+              statement in "xp_esta". Quote the Selic figures. Say plainly what
+              a house that
+
+              expects higher rates for longer implies for fixed income.
+
+
+              "instituicoes_consultadas" is how many institutions the consensus
+              covers -
+
+              naming it is what turns "acima do consenso" into a fact the client
+              can weigh.
+
+
+              Cover BOTH entries of "indicadores", and for the Selic give
+
+              "posicao_da_xp_na_faixa" as well. That percentile is the strongest
+              single fact
+
+              in the letter: it is the difference between "XP is above
+              consensus" and "XP sits
+
+              near the top of 140 forecasts". Do not drop it to save words.
+
+
+              Then close the paragraph with "o_que_isso_significa". Say what it
+              says. Do
+
+              NOT reason your way to your own conclusion about what high rates
+              do to fixed
+
+              income - that inference has already been made from the data and
+              handed to you,
+
+              and getting it backwards would contradict the proposal later in
+              the letter.
+
+
+              ## Style
+
+              Formal, direct, no jargon the client would need to look up. No
+              bullet points.
+
+              Never address the client by name here; the composer does that.
+
+
+              ## Payload - the only figures you may use
+
+              ### XP house view versus the market consensus
+
+              {{consensus_block}}
+
+
+              ### Narrative context from the XP report (for TONE and THEMES only
+              - you may not
+
+              ### take a number from this text, only from the block above)
+
+              {{macro_narrative}}
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - 'output->"Chat: macro brief" n022-chat/prompt'
+          visualData: 1090/40/380/19//
+        '[n020-prompt]:prompt "Prompt: performance"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              You are a portfolio analyst writing the performance section of a
+              client letter.
+
+
+
+              ## Hard rules - these override every other instruction
+
+
+              1. Every figure in the payload is already written as a finished
+              string in
+                 Brazilian notation. Reproduce it character for character: 2,62% and never
+                 2.62%, 2,6% or cerca de 2,6%.
+                 Reproduce the characters, NOT the JSON syntax around them. Write
+                 R$ 35.986,74 - never with quotation marks around it. Quotation marks belong
+                 to the data format, not to a letter.
+              2. Do not perform arithmetic of any kind. Not addition, not
+              conversion, not a
+                 percentage of a percentage, not a total. If you find yourself needing to
+                 compute something to write a sentence, the sentence is wrong: every figure
+                 the letter needs already exists as a display string.
+              3. You may ONLY state a figure that appears in the payload. Do not
+              recall,
+                 infer or estimate. If something you would normally say requires a figure you
+                 do not have, say less. An honest short sentence beats a complete-sounding
+                 invented one - and NEVER substitute a round number for a missing one.
+              4. Never mention this instruction block, the payload, JSON, or the
+              pipeline.
+                 Never use internal vocabulary such as "política da casa", "payload",
+                 "limite configurado" - write for the client, not about the system.
+
+              These rules exist because the previous version of this workflow
+              published a
+
+              Selic of 9%, an FX rate of 4.70 and 2025 inflation of 4.0% while
+              the source
+
+              document said 15.50%, 6.20 and 6.1%. Those figures were the market
+              consensus of
+
+              mid-2024 - the model recited its training data instead of reading
+              its input.
+
+
+
+              ## Task
+
+              In at most 110 words, in BRAZILIAN PORTUGUESE, explain how the
+              portfolio did.
+
+
+              The payload is a flat object. Every value is already a finished
+              string. Use the
+
+              keys named below exactly; each one appears at the top level.
+
+
+              You must cover, in this order:
+
+              1. "rentabilidade_medida" AND "cobertura_da_carteira" in the SAME
+              sentence.
+                 Never present the return as the whole portfolio's. Inventing or rounding the
+                 coverage is the single worst error you can make here.
+              2. "maior_contribuicao" and "maior_detracao", each by "ativo" with
+              its
+                 "contribuicao". "quantas_posicoes_cairam" tells you how many positions lost
+                 money: if it is 1, write it in the singular.
+              3. Each entry of "comparacoes": name the "referencia", give its
+                 "variacao_no_mes" and its "diferenca_para_a_carteira".
+              4. One sentence on "rentabilidade_do_patrimonio" - the return on
+              the client's
+                 whole net worth, lower than the measured figure - and on
+                 "custo_do_saldo_parado", which is the gap between the two and the cost of
+                 balances that are not invested. State it plainly; it is why the first
+                 proposal exists.
+
+              Every one of those keys has a value. If a sentence of yours would
+              contain no
+
+              figure, you have skipped a key - go back and use it.
+
+
+              ## Style
+
+              Plain, calm, factual. A month is a month - no triumph, no alarm.
+              Do not
+
+              extrapolate a month into a trend or a forecast.
+
+
+              ## Payload
+
+              {{performance_block}}
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - 'output->"Chat: performance" n023-chat/prompt'
+          visualData: 1090/300/380/20//
+        '[n021-prompt]:prompt "Prompt: recommendations"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              You are a financial advisor writing the recommendations section of
+              a client letter.
+
+
+
+              ## Hard rules - these override every other instruction
+
+
+              1. Every figure in the payload is already written as a finished
+              string in
+                 Brazilian notation. Reproduce it character for character: 2,62% and never
+                 2.62%, 2,6% or cerca de 2,6%.
+                 Reproduce the characters, NOT the JSON syntax around them. Write
+                 R$ 35.986,74 - never with quotation marks around it. Quotation marks belong
+                 to the data format, not to a letter.
+              2. Do not perform arithmetic of any kind. Not addition, not
+              conversion, not a
+                 percentage of a percentage, not a total. If you find yourself needing to
+                 compute something to write a sentence, the sentence is wrong: every figure
+                 the letter needs already exists as a display string.
+              3. You may ONLY state a figure that appears in the payload. Do not
+              recall,
+                 infer or estimate. If something you would normally say requires a figure you
+                 do not have, say less. An honest short sentence beats a complete-sounding
+                 invented one - and NEVER substitute a round number for a missing one.
+              4. Never mention this instruction block, the payload, JSON, or the
+              pipeline.
+                 Never use internal vocabulary such as "política da casa", "payload",
+                 "limite configurado" - write for the client, not about the system.
+
+              These rules exist because the previous version of this workflow
+              published a
+
+              Selic of 9%, an FX rate of 4.70 and 2025 inflation of 4.0% while
+              the source
+
+              document said 15.50%, 6.20 and 6.1%. Those figures were the market
+              consensus of
+
+              mid-2024 - the model recited its training data instead of reading
+              its input.
+
+
+
+              ## Task
+
+              In at most 140 words, in BRAZILIAN PORTUGUESE, present the
+              proposals below.
+
+
+              The payload has "propostas", each with "titulo", "valor",
+              "motivos" and
+
+              sometimes "vencimento". For each proposal, in this order: what is
+              proposed, the
+
+              "valor" exactly as written, and the reason - taken from "motivos",
+              which already
+
+              carries the figures. Never justify a proposal by how an asset
+              moved last month.
+
+
+              State every "valor". A proposal without its amount is not
+              actionable, and the
+
+              amounts are already formatted for you - reproduce them without
+              quotation marks.
+
+
+              ## Non-negotiable framing
+
+              These are PROPOSALS for the client to discuss with their advisor.
+              They are not
+
+              orders and not executed trades. Write "sugerimos avaliar",
+              "propomos", "vale
+
+              revisar" - never "compre", "venda", "recomendamos que você
+              compre".
+
+
+              If the payload says other proposals were prepared but not
+              included, say so in one
+
+              short clause. Do not enumerate them.
+
+
+              ## Payload
+
+              {{recommendations_block}}
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - 'output->"Chat: recommendations" n024-chat/prompt'
+          visualData: 1090/560/380/21//
+        '[n022-chat]:chat "Chat: macro brief"':
+          data:
+            additionalParameters: []
+            cache: false
+            enableFunctionUse: false
+            maxTokens: 1600
+            modalitiesIncludeAudio: false
+            modalitiesIncludeText: false
+            model: gpt-4o-mini
+            outputUsage: false
+            parallelFunctionCalling: true
+            reasoningEffort: ""
+            stop: ""
+            temperature: 0.3
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePredictedOutput: false
+            usePresencePenaltyInput: false
+            useReasoningEffortInput: false
+            useServerTokenCalculation: true
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          outgoingConnections:
+            - 'response->"Prompt: compose the letter" n025-prompt/macro_text'
+          visualData: 1520/40/260/22//
+        '[n023-chat]:chat "Chat: performance"':
+          data:
+            additionalParameters: []
+            cache: false
+            enableFunctionUse: false
+            maxTokens: 1600
+            modalitiesIncludeAudio: false
+            modalitiesIncludeText: false
+            model: gpt-4o-mini
+            outputUsage: false
+            parallelFunctionCalling: true
+            reasoningEffort: ""
+            stop: ""
+            temperature: 0.3
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePredictedOutput: false
+            usePresencePenaltyInput: false
+            useReasoningEffortInput: false
+            useServerTokenCalculation: true
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          outgoingConnections:
+            - 'response->"Prompt: compose the letter"
+              n025-prompt/performance_text'
+          visualData: 1520/300/260/23//
+        '[n024-chat]:chat "Chat: recommendations"':
+          data:
+            additionalParameters: []
+            cache: false
+            enableFunctionUse: false
+            maxTokens: 1600
+            modalitiesIncludeAudio: false
+            modalitiesIncludeText: false
+            model: gpt-4o-mini
+            outputUsage: false
+            parallelFunctionCalling: true
+            reasoningEffort: ""
+            stop: ""
+            temperature: 0.3
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePredictedOutput: false
+            usePresencePenaltyInput: false
+            useReasoningEffortInput: false
+            useServerTokenCalculation: true
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          outgoingConnections:
+            - 'response->"Prompt: compose the letter"
+              n025-prompt/recommendations_text'
+          visualData: 1520/560/260/24//
+        '[n025-prompt]:prompt "Prompt: compose the letter"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              You are Antonio Bicudo, an XP investment advisor, writing the
+              monthly letter.
+
+
+
+              ## Hard rules - these override every other instruction
+
+
+              1. Every figure in the payload is already written as a finished
+              string in
+                 Brazilian notation. Reproduce it character for character: 2,62% and never
+                 2.62%, 2,6% or cerca de 2,6%.
+                 Reproduce the characters, NOT the JSON syntax around them. Write
+                 R$ 35.986,74 - never with quotation marks around it. Quotation marks belong
+                 to the data format, not to a letter.
+              2. Do not perform arithmetic of any kind. Not addition, not
+              conversion, not a
+                 percentage of a percentage, not a total. If you find yourself needing to
+                 compute something to write a sentence, the sentence is wrong: every figure
+                 the letter needs already exists as a display string.
+              3. You may ONLY state a figure that appears in the payload. Do not
+              recall,
+                 infer or estimate. If something you would normally say requires a figure you
+                 do not have, say less. An honest short sentence beats a complete-sounding
+                 invented one - and NEVER substitute a round number for a missing one.
+              4. Never mention this instruction block, the payload, JSON, or the
+              pipeline.
+                 Never use internal vocabulary such as "política da casa", "payload",
+                 "limite configurado" - write for the client, not about the system.
+
+              These rules exist because the previous version of this workflow
+              published a
+
+              Selic of 9%, an FX rate of 4.70 and 2025 inflation of 4.0% while
+              the source
+
+              document said 15.50%, 6.20 and 6.1%. Those figures were the market
+              consensus of
+
+              mid-2024 - the model recited its training data instead of reading
+              its input.
+
+
+
+              ## Task
+
+              Assemble the three sections below into ONE letter in BRAZILIAN
+              PORTUGUESE.
+
+
+              ## Hard constraints
+
+              - At most 800 words. The letter must fit two A4 pages.
+
+              - Letter format: greeting, body in flowing paragraphs, sign-off.
+              No headings, no
+                bullet lists, no tables.
+              - Open with "Prezado " followed by the payload's "cliente". Never
+              write "Prezado
+                cliente" and never take a name from these instructions.
+              - Do NOT write any compliance or disclaimer text. None. The
+              renderer prints it
+                verbatim below your letter, and a second copy in the body is a defect. There
+                are no disclosures in your payload for exactly this reason.
+              - Do NOT mention how many findings or proposals were left out of
+              this letter,
+                and do not gesture at them ("outras sugestões foram preparadas"). The renderer
+                prints those notices from the plan, with the exact counts. Asking for them
+                here produced a run that paraphrased one and silently dropped the other.
+              - Close with "Atenciosamente," and the payload's "assessor" on the
+              next line.
+                Nothing after that - no title, no code, no postscript.
+
+              ## Shape of the letter
+
+              Five paragraphs, in this order. THE WORD LIMITS ARE HARD - the
+              page is shared
+
+              with a summary panel, two charts and two printed blocks, and the
+              letter is
+
+              capped at two pages by the brief. A paragraph that runs long costs
+              a chart.
+
+
+              1. One or two sentences of opening. Greet the client, name the
+              reference month,
+                 say what the letter covers. No figures here. AT MOST 35 WORDS.
+              2. How the portfolio did. AT MOST 70 WORDS. A panel above your
+              letter already
+                 prints the return, the CDI, the net worth and the cost, and a chart below it
+                 breaks the result down by asset class. Your job is what those cannot say:
+                 what the month meant. Do not walk through every figure again.
+              3. What the market backdrop means for it. AT MOST 70 WORDS.
+
+              4. ONE OR TWO SENTENCES ONLY, leading into the proposals. Say that
+              concrete
+                 steps follow and what connects them to the paragraph above. Do NOT list the
+                 proposals, do NOT give any amount, date, rate or count, and do NOT name the
+                 instruments. A numbered "Próximos passos" block is printed immediately after
+                 this paragraph, straight from the plan, carrying every figure. Repeating them
+                 here says everything twice and puts the numbers back in your hands, which is
+                 what this pipeline exists to avoid. "Diante desse cenário, proponho os passos
+                 abaixo." is a complete and correct paragraph 4.
+              5. A short close: you are available to talk any of it through.
+
+
+              ## Style
+
+              An experienced advisor writing to a client he knows: warm, direct,
+              unhurried.
+
+
+              Write PROSE, not a readout. The figures arrive as a list of facts;
+              your job is
+
+              the connective tissue between them. "A rentabilidade do patrimônio
+              foi de 1,82%,
+
+              resultando em um custo do saldo parado de +0,80 p.p." is a
+              database talking.
+
+              "Sobre o patrimônio total, o retorno foi de 1,82% - a diferença de
+              0,80 ponto
+
+              percentual é o que custa manter parte do saldo sem aplicação" is
+              an advisor
+
+              talking. Same figures, unchanged.
+
+
+              Never name a payload key in the prose. The client should not be
+              able to tell
+
+              what the fields were called.
+
+
+              Never promise a return. Never use "garantido", "certamente" or
+              "com certeza".
+
+
+              ## Sections, already written
+
+              ### Market
+
+              {{macro_text}}
+
+
+              ### Performance
+
+              {{performance_text}}
+
+
+              ### Proposals
+
+              {{recommendations_text}}
+
+
+              ## Payload - names, disclosures and omissions
+
+              {{letter_payload}}
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - 'output->"Chat: compose" n026-chat/prompt'
+          visualData: 1860/300/400/25//
+        '[n026-chat]:chat "Chat: compose"':
+          data:
+            additionalParameters: []
+            cache: false
+            enableFunctionUse: false
+            maxTokens: 2048
+            modalitiesIncludeAudio: false
+            modalitiesIncludeText: false
+            model: gpt-4o-mini
+            outputUsage: false
+            parallelFunctionCalling: true
+            reasoningEffort: ""
+            stop: ""
+            temperature: 0.3
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePredictedOutput: false
+            usePresencePenaltyInput: false
+            useReasoningEffortInput: false
+            useServerTokenCalculation: true
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          outgoingConnections:
+            - response->"Final letter" n031-coalesce/input2
+            - response->"Only if unsourced numbers" n028-if/value
+            - response->"Validate every number" n027-code/letter
+          visualData: 2320/300/260/26//
+        '[n027-code]:code "Validate every number"':
+          data:
+            allowConsole: false
+            allowFetch: false
+            allowProcess: false
+            allowRequire: false
+            allowRivet: false
+            code: >
+              /**
+               * Numeric validator for the generated letter.
+               *
+               * WHAT IT IS FOR
+               * --------------
+               * Every prompt in this pipeline forbids the model from inventing a figure. This
+               * module is what makes that a property of the system rather than a hope about
+               * the wording. It extracts every number the letter prints and checks each one
+               * against an allow-list built from the payload the model was actually given.
+               *
+               * WHY IT LIVES HERE AND NOT ONLY IN THE GRAPH
+               * -------------------------------------------
+               * The Rivet Code node runs this exact source, inlined by tools/build-rivet-graph.js.
+               * Keeping the function in the repository means it is unit-tested, reviewable and
+               * versioned, instead of being a blob of JavaScript trapped inside a YAML file
+               * where nothing can exercise it.
+               *
+               * MEASURED COVERAGE, AND ITS CEILING
+               * ----------------------------------
+               * Run against the v1 letter with the v2 payload, it rejects three of the seven
+               * invented figures: 17,4%, 19,32% and R$4,70. It does NOT reject "Selic de 9%",
+               * "IPCA de 4,0%", "PIB de 2%" or "retorno de 3,5%" - and the reason is worth
+               * stating precisely rather than hiding, because it will be asked.
+               *
+               * Those four coincide with figures that genuinely exist in this portfolio:
+               *
+               *   "9%"   vs LREN3 weighing 8,9977% of the measured base
+               *   "4,0%" vs Truxt weighing 4,0111%
+               *   "3,5%" vs ARZZ3 weighing 3,4991%
+               *   "2%"   vs the policy's 2% minimum dividend yield
+               *
+               * Value matching cannot separate a hallucinated rate from a real weight that
+               * rounds to the same number. Tightening the tolerance does not help: 8,9977
+               * rounds to 9,00 at two decimals too. This is a ceiling of the method, not a
+               * bug in the implementation.
+               *
+               * SO THE VALIDATOR IS A BACKSTOP, NOT THE DEFENCE
+               * -----------------------------------------------
+               * The defence is upstream, and it is why the v2 does not produce those figures
+               * in the first place:
+               *
+               *   1. The v1 prompt contained NO figures at all - the model had nothing to
+               *      read, so it recited its training data. The v2 composer receives the
+               *      correct numbers, already computed, already labelled.
+               *   2. Sections arrive PRE-WRITTEN and pre-labelled. The composer never holds a
+               *      bag of loose numbers it could attach to the wrong sentence.
+               *   3. Every prompt forbids arithmetic outright.
+               *
+               * This node catches what those three miss: a figure that exists nowhere in the
+               * payload. Claiming more than that would be the same overconfidence the whole
+               * rewrite exists to remove.
+               *
+               * WHAT IT DELIBERATELY ALLOWS
+               * ---------------------------
+               * Calendar years and bare small integers: a letter says "em abril de 2025" and
+               * "as duas propostas" structurally, not as data. Figures inside strings the
+               * ENGINE wrote are as authoritative as numeric fields, because the engine
+               * composed them - but only when they carry a decimal mark or a percent sign, so
+               * that "6 dividendos" cannot license "6%".
+               */
+
+              /** Absolute tolerance when matching a printed figure to an
+              allowed one. */
+
+              const TOLERANCE = 0.006;
+
+
+              /**
+               * Parse a number written in either Brazilian or US convention.
+               * The last separator is a thousands mark only when followed by exactly three
+               * digits; otherwise it is the decimal point.
+               */
+              function parseLocaleNumber(raw) {
+                const cleaned = String(raw).replace(/[^\d.,-]/g, '');
+                if (!/\d/.test(cleaned)) return Number.NaN;
+
+                const separators = [];
+                for (let i = 0; i < cleaned.length; i += 1) {
+                  if (cleaned[i] === '.' || cleaned[i] === ',') separators.push(i);
+                }
+                if (separators.length === 0) return Number(cleaned);
+
+                const last = separators[separators.length - 1];
+                const tail = cleaned.slice(last + 1);
+                if (/^\d{3}$/.test(tail)) return Number(cleaned.replace(/[.,]/g, ''));
+                return Number(`${cleaned.slice(0, last).replace(/[.,]/g, '')}.${tail}`);
+              }
+
+
+              /**
+               * Every figure the payload authorises, in every form a letter might print it.
+               * A fraction is also allowed as its percentage, because 0.02621 and 2.62 are
+               * the same fact.
+               */
+              function buildAllowList(payload) {
+                // Two lists, because not every number in the payload can authorise every
+                // kind of claim.
+                //
+                //   all          every figure, in every display form
+                //   percentSafe  the subset that may authorise a PERCENTAGE
+                //
+                // The distinction exists because the payload is full of structural counts -
+                // contributor_count, max_words, the number of findings - and they are stored
+                // as bare integers. A rate never is: every real percentage in this pipeline
+                // is stored as a FRACTION and becomes a percentage only when multiplied by
+                // 100, or is written into a sentence by the engine itself.
+                //
+                // Without the split, `contributor_count: 9` silently authorised the v1
+                // letter's "Selic de 9%", and two findings authorised "2%". The validator
+                // was certifying the exact figures it was built to catch.
+                const all = new Set();
+                const percentSafe = new Set();
+
+                // Only display forms a letter would legitimately print. Rounding to a whole
+                // number is NOT one of them: LREN3's 8.91% weight would round to 9 and
+                // authorise "9%" all over again.
+                const forms = (n) => {
+                  const v = Math.abs(n);
+                  return [Number(v.toFixed(4)), Number(v.toFixed(2)), Number(v.toFixed(1))];
+                };
+
+                const add = (n, { percentSafe: safe }) => {
+                  if (!Number.isFinite(n)) return;
+                  for (const f of forms(n)) {
+                    all.add(f);
+                    if (safe) percentSafe.add(f);
+                  }
+                };
+
+                const walk = (value) => {
+                  if (value === null || value === undefined) return;
+                  if (typeof value === 'number') {
+                    // A raw integer is a count until proven otherwise; a raw decimal is a
+                    // measured quantity and may back a percentage.
+                    add(value, { percentSafe: !Number.isInteger(value) });
+                    // The same value read as a fraction: this is how every rate in the
+                    // pipeline is stored, so the scaled form is always percent-safe.
+                    add(value * 100, { percentSafe: true });
+                    return;
+                  }
+                  if (Array.isArray(value)) { value.forEach(walk); return; }
+                  if (typeof value === 'object') { Object.values(value).forEach(walk); return; }
+                  if (typeof value === 'string') {
+                    // Figures the ENGINE wrote into a sentence are as authoritative as a
+                    // numeric field, and it writes percentages there in display form.
+                    //
+                    // Dates are stripped first. "2025-04-30" tokenises into 2025, -04 and
+                    // -30, and that stray 4 was enough to authorise the v1 letter's
+                    // "inflação de 4,0%". A date is a timestamp, never a rate.
+                    const withoutDates = value
+                      .replace(/\d{4}-\d{2}-\d{2}(?:T[\d:.]+Z?)?/g, ' ')
+                      .replace(/\d{2}\/\d{2}\/\d{4}/g, ' ');
+
+                    // Only tokens carrying a decimal mark or an explicit percent sign count
+                    // as figures. A bare integer inside a sentence is a count ("6 dividendos",
+                    // "244 dias") and must not be able to back a percentage.
+                    for (const m of withoutDates.matchAll(/(-?\d[\d.,]*)\s*(%)?/g)) {
+                      const token = m[1];
+                      const explicitPercent = Boolean(m[2]);
+                      const hasDecimal = /[.,]\d{1,2}(?!\d)/.test(token);
+                      if (!explicitPercent && !hasDecimal) continue;
+                      add(parseLocaleNumber(token), { percentSafe: true });
+                    }
+                  }
+                };
+
+                walk(payload);
+                return { all, percentSafe };
+              }
+
+
+              /**
+               * Numbers a letter uses structurally rather than as data: a calendar year, a
+               * day of the month, a count of items.
+               *
+               * The distinction is carried by NOTATION, not by size. "duas propostas" and "em
+               * abril de 2025" are structure; "9%" and "R$ 4,70" are claims about the world
+               * and must come from the payload.
+               *
+               * An earlier version allowed every integer from 0 to 31 unconditionally, and it
+               * let the v1 letter's "Selic de 9%" and "inflação de 4,0%" through untouched -
+               * two of the four figures that motivated this whole rewrite. A validator that
+               * misses the case it was built for is worse than none, because it certifies.
+               */
+              function isStructural(item) {
+                if (item.is_percent || item.is_money) return false;
+                if (!Number.isInteger(item.value)) return false;
+                if (item.value >= 2015 && item.value <= 2035) return true;   // calendar year
+                return item.value <= 31;                                      // day, or a count
+              }
+
+
+              /** Every numeric token the letter prints, with its notation
+              preserved. */
+
+              function extractPrintedNumbers(letter) {
+                const printed = [];
+                const pattern = /(R\$\s*)?(-?\d[\d.]*(?:,\d+)?)\s*(%|p\.p\.|pontos? percentuais?|ponto percentual)?/gi;
+                let match;
+                while ((match = pattern.exec(String(letter))) !== null) {
+                  const value = parseLocaleNumber(match[2]);
+                  if (!Number.isFinite(value)) continue;
+                  printed.push({
+                    text: match[0].trim(),
+                    value: Math.abs(value),
+                    is_money: Boolean(match[1]),
+                    is_percent: Boolean(match[3]),
+                  });
+                }
+                return printed;
+              }
+
+
+              /**
+               * @param {string} letter  the generated letter
+               * @param {object} payload the data the model was given
+               * @returns {{needs_repair: boolean, violations: string, report: string,
+               *            printed_count: number, allowed_count: number, unsourced: object[]}}
+               */
+              function validateLetterNumbers(letter, payload) {
+                const { all, percentSafe } = buildAllowList(payload);
+                const allList = [...all];
+                const percentList = [...percentSafe];
+                const printed = extractPrintedNumbers(letter);
+
+                const unsourced = [];
+                const seen = new Set();
+                for (const item of printed) {
+                  if (isStructural(item)) continue;
+                  // A percentage may only be backed by a figure that could be a rate.
+                  const list = item.is_percent ? percentList : allList;
+                  if (list.some((a) => Math.abs(a - item.value) <= TOLERANCE)) continue;
+                  if (seen.has(item.text)) continue;
+                  seen.add(item.text);
+                  unsourced.push(item);
+                }
+
+                return {
+                  needs_repair: unsourced.length > 0,
+                  unsourced,
+                  printed_count: printed.length,
+                  allowed_count: allList.length,
+                  violations: unsourced.length
+                    ? unsourced.map((v) => `- "${v.text}" does not appear in the data you were given.`).join('\n')
+                    : 'none',
+                  report:
+                    `Numbers printed: ${printed.length} | allow-list size: ${allList.length} | ` +
+                    `unsourced: ${unsourced.length}` +
+                    (unsourced.length ? `\n  ${unsourced.map((v) => v.text).join('\n  ')}` : ''),
+                };
+              }
+
+
+
+              // --- Rivet Code node entry point
+              -------------------------------------------
+
+              const result = validateLetterNumbers(
+                String(inputs.letter.value ?? ''),
+                inputs.payload.value ?? {},
+              );
+
+
+              return {
+                needs_repair: { type: 'boolean', value: result.needs_repair },
+                violations: { type: 'string', value: result.violations },
+                report: { type: 'string', value: result.report },
+              };
+            inputNames:
+              - letter
+              - payload
+            outputNames:
+              - needs_repair
+              - violations
+              - report
+          outgoingConnections:
+            - needs_repair->"Only if unsourced numbers" n028-if/if
+            - 'report->"Output: validation report" n033-graphOutput/value'
+            - 'violations->"Prompt: repair" n029-prompt/violations'
+          visualData: 2660/300/400/27//
+        '[n028-if]:if "Only if unsourced numbers"':
+          data:
+            unconnectedControlFlowExcluded: true
+          outgoingConnections:
+            - 'output->"Prompt: repair" n029-prompt/draft'
+          visualData: 3110/180/260/28//
+        '[n029-prompt]:prompt "Prompt: repair"':
+          data:
+            enableFunctionCall: false
+            promptText: >-
+              The letter below contains figures that do not appear in the data
+              it was
+
+              built from. Every one of them must go.
+
+
+              ## Offending figures
+
+              {{violations}}
+
+
+              ## What to do
+
+              Rewrite the letter in BRAZILIAN PORTUGUESE, removing or replacing
+              each figure
+
+              listed above. Where a number was carrying the meaning of a
+              sentence, rewrite the
+
+              sentence to say the same thing qualitatively rather than
+              substituting a different
+
+              number. Do not introduce any new figure.
+
+
+              Change nothing else: keep the structure, the tone, the greeting,
+              the sign-off and
+
+              the disclosure block exactly as they are.
+
+
+              ## The letter
+
+              {{draft}}
+            type: user
+            useTypeInput: false
+          outgoingConnections:
+            - 'output->"Chat: repair" n030-chat/prompt'
+          visualData: 3420/180/380/29//
+        '[n030-chat]:chat "Chat: repair"':
+          data:
+            additionalParameters: []
+            cache: false
+            enableFunctionUse: false
+            maxTokens: 2048
+            modalitiesIncludeAudio: false
+            modalitiesIncludeText: false
+            model: gpt-4o-mini
+            outputUsage: false
+            parallelFunctionCalling: true
+            reasoningEffort: ""
+            stop: ""
+            temperature: 0.3
+            top_p: 1
+            useAdditionalParametersInput: false
+            useAsGraphPartialOutput: true
+            useFrequencyPenaltyInput: false
+            useMaxTokensInput: false
+            useModelInput: false
+            usePredictedOutput: false
+            usePresencePenaltyInput: false
+            useReasoningEffortInput: false
+            useServerTokenCalculation: true
+            useStop: false
+            useStopInput: false
+            useTemperatureInput: false
+            useTopP: false
+            useTopPInput: false
+            useUseTopPInput: false
+            useUserInput: false
+          outgoingConnections:
+            - response->"Final letter" n031-coalesce/input1
+          visualData: 3860/180/260/30//
+        '[n031-coalesce]:coalesce "Final letter"':
+          outgoingConnections:
+            - 'output->"Output: letter" n032-graphOutput/value'
+          visualData: 4180/300/260/31//
+        '[n032-graphOutput]:graphOutput "Output: letter"':
+          data:
+            dataType: string
+            id: letter
+          visualData: 4500/240/260/32//
+        '[n033-graphOutput]:graphOutput "Output: validation report"':
+          data:
+            dataType: string
+            id: validation_report
+          visualData: 4500/420/260/33//
+  metadata:
+    description: Language layer for the monthly client letter. Numbers are computed
+      and selected by the Node engine in solution/; this graph writes prose and
+      refuses figures it was not given.
+    id: xp-monthly-advisor-v2
+    title: XP Monthly Advisor v2
+  plugins: []
+  references: []

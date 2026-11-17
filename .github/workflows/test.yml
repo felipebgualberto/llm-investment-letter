@@ -1,0 +1,39 @@
+# Runs the full suite on a clean machine that is not the author's.
+#
+# No `npm install`: the pipeline has zero runtime dependencies, and every
+# external API response the tests read is committed under solution/out/cache,
+# so the suite is offline and deterministic. If it passes here it passes
+# anywhere with Node >= 20 — which is the claim the README makes.
+#
+# `npm run build` is deliberately NOT run: the render step prints the letter
+# to PDF through a local headless browser, which a CI runner does not need to
+# prove the numbers are right.
+
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [20, 22]
+    defaults:
+      run:
+        working-directory: solution
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Test suite
+        run: npm test
+
+      - name: Palette — WCAG contrast and colour-vision separation
+        run: npm run palette

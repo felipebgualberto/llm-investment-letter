@@ -1,0 +1,22 @@
+{
+  "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'Selic'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+  "retrieved_at": "2026-08-27T04:02:15.358Z",
+  "data": {
+    "@odata.context": "https://was-p.bcnet.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata$metadata#ExpectativasMercadoAnuais",
+    "value": [
+      {
+        "Indicador": "Selic",
+        "IndicadorDetalhe": null,
+        "Data": "2025-04-30",
+        "DataReferencia": "2025",
+        "Media": 14.7956,
+        "Mediana": 15,
+        "DesvioPadrao": 0.4208,
+        "Minimo": 13.5,
+        "Maximo": 15.75,
+        "numeroRespondentes": 140,
+        "baseCalculo": 0
+      }
+    ]
+  }
+}

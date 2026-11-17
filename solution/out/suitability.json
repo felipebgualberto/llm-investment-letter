@@ -1,0 +1,305 @@
+{
+  "profile": "Moderado",
+  "profile_slug": "moderado",
+  "policy_version": "1.0.0",
+  "findings": [
+    {
+      "code": "idle_cash_above_policy",
+      "severity": "action_required",
+      "title": "Saldo em conta acima do limite de política",
+      "position": {
+        "label": "Saldo disponível",
+        "value_brl": 74672.62
+      },
+      "measured": {
+        "share_of_net_worth": 0.193023
+      },
+      "threshold": {
+        "share_of_net_worth": 0.1,
+        "source": "house policy",
+        "assumption": true
+      },
+      "quantified": {
+        "excess_cash_brl": 35986.74,
+        "cdi_annualised": 0.1415,
+        "cdi_annualised_source": "BCB SGS 4389, as of 2025-04-30",
+        "forgone_yield_12m_on_excess_brl": 5092.12,
+        "forgone_yield_12m_on_full_balance_brl": 10566.18,
+        "basis": "Idle balance at the CDI rate published for the reference date, 252-business-day basis"
+      },
+      "action": "Alocar o excedente em instrumento compatível com o perfil; ver recomendações."
+    },
+    {
+      "code": "matured_instrument_in_position",
+      "severity": "action_required",
+      "title": "Título vencido ainda consta na posição",
+      "position": {
+        "label": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024",
+        "value_brl": 40478.75,
+        "weight": 0.129662
+      },
+      "measured": {
+        "maturity_date": "2024-09-05",
+        "statement_date": "2025-05-07",
+        "days_since_maturity": 244,
+        "contracted_rate": "IPC-A +5,45%"
+      },
+      "threshold": {
+        "rule": "maturity_date < statement_date",
+        "source": "arithmetic",
+        "assumption": false
+      },
+      "action": "Confirmar a liquidação junto ao emissor e reaplicar os recursos. Enquanto não confirmado, este valor não pode ser considerado remunerado."
+    },
+    {
+      "code": "credit_quality_not_verifiable",
+      "severity": "review",
+      "title": "Cláusula de rating do perfil não verificável com as fontes atuais",
+      "position": {
+        "label": "3 posições",
+        "value_brl": 209224.91
+      },
+      "measured": {
+        "share_of_invested": 0.670193,
+        "positions_exposed": 3,
+        "holdings": [
+          {
+            "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+            "value_brl": 96178.73,
+            "weight": 0.308081,
+            "basis": "sufixo \"CP\" (crédito privado) na denominação do fundo"
+          },
+          {
+            "label": "Brave I FIC FIM CP",
+            "value_brl": 72567.43,
+            "weight": 0.232449,
+            "basis": "sufixo \"CP\" (crédito privado) na denominação do fundo"
+          },
+          {
+            "label": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024",
+            "value_brl": 40478.75,
+            "weight": 0.129662,
+            "basis": "título de emissor bancário"
+          }
+        ]
+      },
+      "threshold": {
+        "rule": "perfil exige renda fixa com classificação BB+ ou superior",
+        "source": "Perfil de investimento, \"Instrumentos de Renda Fixa com Classificação BB+ ou Superior\"",
+        "assumption": false
+      },
+      "caveats": [
+        "Isto NÃO é um apontamento de desenquadramento: nenhuma posição foi avaliada como abaixo de BB+.",
+        "Nenhuma base pública gratuita publica rating de emissor; sem essa fonte, a cláusula não pode ser verificada nem refutada.",
+        "A exposição foi identificada pela denominação do produto e pela classificação ANBIMA, não por análise de carteira do fundo."
+      ],
+      "action": "Obter os ratings dos emissores junto à mesa de crédito ou a uma agência e confrontá-los com a cláusula. Enquanto não houver fonte, a carta cita a cláusula apenas para justificar compras novas, nunca para atestar o que já está na carteira."
+    },
+    {
+      "code": "position_above_concentration_limit",
+      "severity": "review",
+      "title": "Concentração acima do limite de política",
+      "position": {
+        "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+        "value_brl": 96178.73,
+        "weight": 0.308081
+      },
+      "measured": {
+        "share_of_invested": 0.308081
+      },
+      "threshold": {
+        "share_of_invested": 0.2,
+        "source": "house policy",
+        "assumption": true
+      },
+      "action": "Avaliar rebalanceamento gradual; o perfil pede diversificação, sem fixar limite numérico."
+    },
+    {
+      "code": "restricted_product_eligibility_review",
+      "severity": "review",
+      "title": "Produtos destinados a investidor qualificado na carteira",
+      "position": {
+        "label": "3 fundos",
+        "value_brl": 94835.45,
+        "weight": 0.303778
+      },
+      "measured": {
+        "visible_net_worth_brl": 386858.82,
+        "holdings": [
+          {
+            "name": "Brave I FIC FIM CP",
+            "cnpj": "35726300000137",
+            "weight": 0.232449,
+            "target_investor": "Qualificado",
+            "renamed_to": "BRAVE 90 FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+          },
+          {
+            "name": "Truxt Long Bias Advisory FIC FIM",
+            "cnpj": "30830162000118",
+            "weight": 0.040111,
+            "target_investor": "Qualificado",
+            "renamed_to": "TRUXT LONG BIAS ADVISORY FIF EM COTAS DE FI FINANCEIROS MULTIMERCADOS RESPONSABILIDADE LIMITADA"
+          },
+          {
+            "name": "STK Long Biased FIC FIA",
+            "cnpj": "12282747000169",
+            "weight": 0.031218,
+            "target_investor": "Qualificado",
+            "renamed_to": "STK LONG BIASED FIC DE FUNDOS DE INVESTIMENTO FINANCEIRO DE AÇÕES - RESPONSABILIDADE LIMITADA"
+          }
+        ]
+      },
+      "threshold": {
+        "qualified_investor_brl": 1000000,
+        "source": "CVM Resolution 30 definition of investidor qualificado",
+        "assumption": false
+      },
+      "caveats": [
+        "O patrimônio visível na XP é apenas parte dos ativos financeiros do cliente.",
+        "Posições podem ter sido adquiridas antes de o produto ser reclassificado."
+      ],
+      "action": "Verificar o enquadramento do cliente como investidor qualificado antes de qualquer novo aporte nesses produtos."
+    },
+    {
+      "code": "position_above_concentration_limit",
+      "severity": "review",
+      "title": "Concentração acima do limite de política",
+      "position": {
+        "label": "Brave I FIC FIM CP",
+        "value_brl": 72567.43,
+        "weight": 0.232449
+      },
+      "measured": {
+        "share_of_invested": 0.232449
+      },
+      "threshold": {
+        "share_of_invested": 0.2,
+        "source": "house policy",
+        "assumption": true
+      },
+      "action": "Avaliar rebalanceamento gradual; o perfil pede diversificação, sem fixar limite numérico."
+    },
+    {
+      "code": "position_deeply_below_cost",
+      "severity": "review",
+      "title": "Posição muito abaixo do preço médio",
+      "position": {
+        "label": "HAPV3",
+        "value_brl": 6143.14,
+        "weight": 0.019678
+      },
+      "measured": {
+        "return_since_purchase": -0.745839,
+        "average_price": 15.62,
+        "last_price": 3.97,
+        "investment_date": "2022-11-02",
+        "return_reference_month": 0.76444444
+      },
+      "threshold": {
+        "return_since_purchase": -0.5,
+        "source": "house policy",
+        "assumption": true
+      },
+      "action": "Reavaliar a tese de investimento. Um mês forte isolado não altera a posição acumulada; decidir manutenção ou realização com base na aderência ao perfil."
+    },
+    {
+      "code": "ticker_superseded_by_corporate_action",
+      "severity": "informational",
+      "title": "Código de negociação substituído por evento societário",
+      "position": {
+        "label": "MRFG3",
+        "value_brl": 15432.89,
+        "weight": 0.049435
+      },
+      "measured": {
+        "successor": "MBRF3",
+        "successor_name": "MBRF Global Foods Company S.A.",
+        "reason": "Marfrig reorganised with BRF into MBRF"
+      },
+      "threshold": {
+        "rule": "ticker does not resolve at the market data provider",
+        "source": "Yahoo Finance",
+        "assumption": false
+      },
+      "action": "Atualizar o cadastro da posição para MBRF3. Não há impacto econômico; é registro."
+    },
+    {
+      "code": "ticker_superseded_by_corporate_action",
+      "severity": "informational",
+      "title": "Código de negociação substituído por evento societário",
+      "position": {
+        "label": "ARZZ3",
+        "value_brl": 10923.72,
+        "weight": 0.034991
+      },
+      "measured": {
+        "successor": "AZZA3",
+        "successor_name": "Azzas 2154 S.A.",
+        "reason": "Arezzo & Co merged with Grupo Soma to form Azzas 2154"
+      },
+      "threshold": {
+        "rule": "ticker does not resolve at the market data provider",
+        "source": "Yahoo Finance",
+        "assumption": false
+      },
+      "action": "Atualizar o cadastro da posição para AZZA3. Não há impacto econômico; é registro."
+    },
+    {
+      "code": "position_not_measurable",
+      "severity": "informational",
+      "title": "Posição sem rentabilidade mensal apurável",
+      "position": {
+        "label": "Trend Investback FIC FIRF Simples",
+        "value_brl": 305.44,
+        "weight": 0.000978
+      },
+      "measured": {
+        "reason": "No CVM name record - current or historical - contains all of: TREND, INVESTBACK."
+      },
+      "threshold": {
+        "rule": "no primary source for a monthly return",
+        "source": "CVM / price file",
+        "assumption": false
+      },
+      "action": "Confirmar a identificação do produto para que a apuração passe a ser automática."
+    }
+  ],
+  "counts": {
+    "action_required": 2,
+    "review": 5,
+    "informational": 3
+  },
+  "parameters_used": [
+    {
+      "parameter": "idle_cash.max_share_of_net_worth",
+      "value": 0.1,
+      "assumption": true,
+      "rationale": "Cash beyond a working reserve earns nothing while the policy rate is in double digits. The threshold is a house parameter; the profile document sets none."
+    },
+    {
+      "parameter": "eligibility.qualified_investor_threshold_brl",
+      "value": 1000000,
+      "assumption": false,
+      "source": "CVM Resolution 30 definition of investidor qualificado"
+    },
+    {
+      "parameter": "concentration.max_single_position_share_of_invested",
+      "value": 0.2,
+      "assumption": true,
+      "rationale": "The profile calls for 'uma estratégia de diversificação'. It gives no limit, so these are house parameters chosen to make that qualitative instruction checkable."
+    },
+    {
+      "parameter": "concentration.max_single_sleeve_share_of_invested",
+      "value": 0.7,
+      "assumption": true,
+      "rationale": "The profile calls for 'uma estratégia de diversificação'. It gives no limit, so these are house parameters chosen to make that qualitative instruction checkable."
+    },
+    {
+      "parameter": "loss_review.review_below_return_since_purchase",
+      "value": -0.5,
+      "assumption": true,
+      "rationale": "A position down more than half since purchase is surfaced for review. Not a sell signal on its own - it is paired with profile alignment before any action is proposed."
+    }
+  ],
+  "profile_states_no_quantitative_limits": true
+}

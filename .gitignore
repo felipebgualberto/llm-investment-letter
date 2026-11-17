@@ -1,0 +1,16 @@
+# Dependencies. The pipeline has none at runtime; node_modules only holds the
+# dev tool that regenerates the Rivet graph (npm install --no-save).
+node_modules/
+
+# Scratch output from checks, not deliverables: a content-integrity dump, and
+# the HTML/PDF that tools/check-report-pages.js renders to count the report's pages.
+lettertext.txt
+*.check.*
+
+# Office lock files and OS debris
+~$*
+Thumbs.db
+desktop.ini
+.DS_Store
+
+*.log

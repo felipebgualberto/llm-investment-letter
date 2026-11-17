@@ -1,0 +1,34 @@
+{
+  "periodo": "abril de 2025",
+  "rentabilidade_medida": "2,62%",
+  "resultado_em_reais": "R$ 6.932,70",
+  "cobertura_da_carteira": "86,94%",
+  "rentabilidade_do_patrimonio": "1,82%",
+  "custo_do_saldo_parado": "+0,80 p.p.",
+  "o_que_e_custo_do_saldo_parado": "A diferenca entre o retorno da parcela investida e o retorno do patrimonio inteiro. E quanto custa manter parte do dinheiro sem aplicacao.",
+  "maior_contribuicao": {
+    "ativo": "HAPV3",
+    "contribuicao": "+1,01 p.p.",
+    "retorno_no_mes": "76,44%"
+  },
+  "maior_detracao": {
+    "ativo": "MRFG3",
+    "contribuicao": "−1,14 p.p.",
+    "retorno_no_mes": "−16,38%"
+  },
+  "quantas_posicoes_subiram": 9,
+  "quantas_posicoes_cairam": 1,
+  "comparacoes": [
+    {
+      "referencia": "CDI",
+      "variacao_no_mes": "1,06%",
+      "diferenca_para_a_carteira": "+1,57 p.p."
+    },
+    {
+      "referencia": "inflação (IPCA)",
+      "variacao_no_mes": "0,43%",
+      "diferenca_para_a_carteira": "+2,19 p.p.",
+      "ganho_acima_da_inflacao": "2,18%"
+    }
+  ]
+}

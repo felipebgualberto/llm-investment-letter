@@ -1,0 +1,4674 @@
+{
+  "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=2000&%24orderby=Data%20asc&%24select=Data,Mediana,Media,Minimo,Maximo,numeroRespondentes&%24filter=Indicador%20eq%20'IPCA'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20ge%20'2023-01-01'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+  "status": 200,
+  "retrieved_at": "2026-08-29T19:30:21.318Z",
+  "data": {
+    "@odata.context": "https://was-p.bcnet.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata$metadata#ExpectativasMercadoAnuais(Data,Media,Mediana,Minimo,Maximo,numeroRespondentes)",
+    "value": [
+      {
+        "Data": "2023-01-02",
+        "Media": 3.4522,
+        "Mediana": 3.3,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 102
+      },
+      {
+        "Data": "2023-01-03",
+        "Media": 3.4527,
+        "Mediana": 3.3,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 103
+      },
+      {
+        "Data": "2023-01-04",
+        "Media": 3.4527,
+        "Mediana": 3.3,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 103
+      },
+      {
+        "Data": "2023-01-05",
+        "Media": 3.4527,
+        "Mediana": 3.3,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 103
+      },
+      {
+        "Data": "2023-01-06",
+        "Media": 3.4563,
+        "Mediana": 3.3,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 105
+      },
+      {
+        "Data": "2023-01-09",
+        "Media": 3.4606,
+        "Mediana": 3.4,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 104
+      },
+      {
+        "Data": "2023-01-10",
+        "Media": 3.4615,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 105
+      },
+      {
+        "Data": "2023-01-11",
+        "Media": 3.4639,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 105
+      },
+      {
+        "Data": "2023-01-12",
+        "Media": 3.4587,
+        "Mediana": 3.45,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 104
+      },
+      {
+        "Data": "2023-01-13",
+        "Media": 3.4606,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 104
+      },
+      {
+        "Data": "2023-01-16",
+        "Media": 3.477,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 104
+      },
+      {
+        "Data": "2023-01-17",
+        "Media": 3.477,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 104
+      },
+      {
+        "Data": "2023-01-18",
+        "Media": 3.4772,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 105
+      },
+      {
+        "Data": "2023-01-19",
+        "Media": 3.5171,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 107
+      },
+      {
+        "Data": "2023-01-20",
+        "Media": 3.5577,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 109
+      },
+      {
+        "Data": "2023-01-23",
+        "Media": 3.5714,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 107
+      },
+      {
+        "Data": "2023-01-24",
+        "Media": 3.5707,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 108
+      },
+      {
+        "Data": "2023-01-25",
+        "Media": 3.583,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 110
+      },
+      {
+        "Data": "2023-01-26",
+        "Media": 3.583,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 110
+      },
+      {
+        "Data": "2023-01-27",
+        "Media": 3.6084,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-01-30",
+        "Media": 3.6057,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-01-31",
+        "Media": 3.6057,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-02-01",
+        "Media": 3.6162,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 113
+      },
+      {
+        "Data": "2023-02-02",
+        "Media": 3.6202,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-02-03",
+        "Media": 3.6734,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 111
+      },
+      {
+        "Data": "2023-02-06",
+        "Media": 3.6795,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 110
+      },
+      {
+        "Data": "2023-02-07",
+        "Media": 3.6852,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-02-08",
+        "Media": 3.6852,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 112
+      },
+      {
+        "Data": "2023-02-09",
+        "Media": 3.6916,
+        "Mediana": 3.5,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 113
+      },
+      {
+        "Data": "2023-02-10",
+        "Media": 3.7515,
+        "Mediana": 3.6,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 114
+      },
+      {
+        "Data": "2023-02-13",
+        "Media": 3.7644,
+        "Mediana": 3.6,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-02-14",
+        "Media": 3.7707,
+        "Mediana": 3.65,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-02-15",
+        "Media": 3.7707,
+        "Mediana": 3.65,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-02-16",
+        "Media": 3.775,
+        "Mediana": 3.7,
+        "Minimo": 2,
+        "Maximo": 5.58,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-02-17",
+        "Media": 3.8334,
+        "Mediana": 3.78,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-02-22",
+        "Media": 3.8517,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-02-23",
+        "Media": 3.8601,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-02-24",
+        "Media": 3.8571,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-02-27",
+        "Media": 3.8611,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-02-28",
+        "Media": 3.8611,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-03-01",
+        "Media": 3.8622,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-03-02",
+        "Media": 3.8604,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-03-03",
+        "Media": 3.8819,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-03-06",
+        "Media": 3.8636,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-03-07",
+        "Media": 3.8636,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-03-08",
+        "Media": 3.8601,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-03-09",
+        "Media": 3.8601,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-03-10",
+        "Media": 3.8647,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-03-13",
+        "Media": 3.8535,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-03-14",
+        "Media": 3.855,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-03-15",
+        "Media": 3.8546,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-03-16",
+        "Media": 3.8566,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-03-17",
+        "Media": 3.8986,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 6,
+        "numeroRespondentes": 117
+      },
+      {
+        "Data": "2023-03-20",
+        "Media": 3.8762,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-03-21",
+        "Media": 3.8762,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-03-22",
+        "Media": 3.8762,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-03-23",
+        "Media": 3.8805,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-03-24",
+        "Media": 3.9108,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-03-27",
+        "Media": 3.921,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-03-28",
+        "Media": 3.9175,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-03-29",
+        "Media": 3.9175,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-03-30",
+        "Media": 3.9182,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-03-31",
+        "Media": 3.9231,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 121
+      },
+      {
+        "Data": "2023-04-03",
+        "Media": 3.9223,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-04",
+        "Media": 3.9223,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-05",
+        "Media": 3.9223,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-06",
+        "Media": 3.9312,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-04-10",
+        "Media": 3.9572,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-04-11",
+        "Media": 3.96,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 118
+      },
+      {
+        "Data": "2023-04-12",
+        "Media": 3.9604,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-13",
+        "Media": 3.9638,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-04-14",
+        "Media": 3.9833,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 121
+      },
+      {
+        "Data": "2023-04-17",
+        "Media": 3.9931,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-18",
+        "Media": 3.994,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-04-19",
+        "Media": 4.002,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.7,
+        "numeroRespondentes": 121
+      },
+      {
+        "Data": "2023-04-20",
+        "Media": 3.9988,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-04-24",
+        "Media": 3.9727,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-04-25",
+        "Media": 3.9729,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-04-26",
+        "Media": 3.9729,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 116
+      },
+      {
+        "Data": "2023-04-27",
+        "Media": 3.9683,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 115
+      },
+      {
+        "Data": "2023-04-28",
+        "Media": 3.9768,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-05-02",
+        "Media": 3.988,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-05-03",
+        "Media": 3.988,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 119
+      },
+      {
+        "Data": "2023-05-04",
+        "Media": 3.9832,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.63,
+        "numeroRespondentes": 120
+      },
+      {
+        "Data": "2023-05-05",
+        "Media": 3.9785,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-08",
+        "Media": 3.9785,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-09",
+        "Media": 3.9785,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-10",
+        "Media": 3.9785,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-11",
+        "Media": 3.9785,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-12",
+        "Media": 3.9689,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-15",
+        "Media": 3.9641,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 121
+      },
+      {
+        "Data": "2023-05-16",
+        "Media": 3.9685,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-17",
+        "Media": 3.9606,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 123
+      },
+      {
+        "Data": "2023-05-18",
+        "Media": 3.9275,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 123
+      },
+      {
+        "Data": "2023-05-19",
+        "Media": 3.9183,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-05-22",
+        "Media": 3.924,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-05-23",
+        "Media": 3.9164,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-05-24",
+        "Media": 3.914,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-05-25",
+        "Media": 3.9151,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.62,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-05-26",
+        "Media": 3.9176,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-05-29",
+        "Media": 3.9246,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-05-30",
+        "Media": 3.9248,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-05-31",
+        "Media": 3.9174,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-06-01",
+        "Media": 3.9174,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-06-02",
+        "Media": 3.9114,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-06-05",
+        "Media": 3.9047,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-06-06",
+        "Media": 3.9055,
+        "Mediana": 4,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 123
+      },
+      {
+        "Data": "2023-06-07",
+        "Media": 3.9014,
+        "Mediana": 3.91,
+        "Minimo": 2,
+        "Maximo": 5.6,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-06-09",
+        "Media": 3.8817,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-06-12",
+        "Media": 3.8848,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-06-13",
+        "Media": 3.8817,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-06-14",
+        "Media": 3.8685,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-06-15",
+        "Media": 3.8695,
+        "Mediana": 3.9,
+        "Minimo": 2,
+        "Maximo": 5.5,
+        "numeroRespondentes": 127
+      },
+      {
+        "Data": "2023-06-16",
+        "Media": 3.8082,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-06-19",
+        "Media": 3.7981,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-06-20",
+        "Media": 3.7989,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-06-21",
+        "Media": 3.7989,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-06-22",
+        "Media": 3.801,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-06-23",
+        "Media": 3.7889,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-06-26",
+        "Media": 3.7788,
+        "Mediana": 3.79,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-06-27",
+        "Media": 3.775,
+        "Mediana": 3.79,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-06-28",
+        "Media": 3.7765,
+        "Mediana": 3.8,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-06-29",
+        "Media": 3.7744,
+        "Mediana": 3.79,
+        "Minimo": 2,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-06-30",
+        "Media": 3.6989,
+        "Mediana": 3.6,
+        "Minimo": 2,
+        "Maximo": 5.23,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-07-03",
+        "Media": 3.6869,
+        "Mediana": 3.6,
+        "Minimo": 2,
+        "Maximo": 5.23,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-07-04",
+        "Media": 3.6831,
+        "Mediana": 3.6,
+        "Minimo": 2,
+        "Maximo": 5.23,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-07-05",
+        "Media": 3.6936,
+        "Mediana": 3.6,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-07-06",
+        "Media": 3.6877,
+        "Mediana": 3.6,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-07-07",
+        "Media": 3.6867,
+        "Mediana": 3.595,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-07-10",
+        "Media": 3.6853,
+        "Mediana": 3.59,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-07-11",
+        "Media": 3.6833,
+        "Mediana": 3.55,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-07-12",
+        "Media": 3.6833,
+        "Mediana": 3.55,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-07-13",
+        "Media": 3.6797,
+        "Mediana": 3.545,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-07-14",
+        "Media": 3.6793,
+        "Mediana": 3.545,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-07-17",
+        "Media": 3.6657,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-07-18",
+        "Media": 3.6657,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-07-19",
+        "Media": 3.6687,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-07-20",
+        "Media": 3.6693,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 127
+      },
+      {
+        "Data": "2023-07-21",
+        "Media": 3.6379,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-07-24",
+        "Media": 3.6389,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-07-25",
+        "Media": 3.6389,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-07-26",
+        "Media": 3.6393,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.23,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-07-27",
+        "Media": 3.64,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-07-28",
+        "Media": 3.6359,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-07-31",
+        "Media": 3.6352,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.21,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-08-01",
+        "Media": 3.6236,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-08-02",
+        "Media": 3.6302,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-03",
+        "Media": 3.6362,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-08-04",
+        "Media": 3.6362,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-07",
+        "Media": 3.6353,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-08",
+        "Media": 3.6353,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-09",
+        "Media": 3.6353,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-10",
+        "Media": 3.633,
+        "Mediana": 3.5,
+        "Minimo": 2.75,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-11",
+        "Media": 3.6116,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-14",
+        "Media": 3.6172,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-08-15",
+        "Media": 3.6194,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-08-16",
+        "Media": 3.6157,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-17",
+        "Media": 3.6157,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-18",
+        "Media": 3.6197,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 135
+      },
+      {
+        "Data": "2023-08-21",
+        "Media": 3.6191,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-08-22",
+        "Media": 3.6191,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-08-23",
+        "Media": 3.6221,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-08-24",
+        "Media": 3.6221,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-08-25",
+        "Media": 3.6175,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 135
+      },
+      {
+        "Data": "2023-08-28",
+        "Media": 3.6149,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-29",
+        "Media": 3.6149,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-30",
+        "Media": 3.6149,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-08-31",
+        "Media": 3.6149,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-09-01",
+        "Media": 3.6148,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-09-04",
+        "Media": 3.6134,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-05",
+        "Media": 3.6118,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-06",
+        "Media": 3.6098,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-09-08",
+        "Media": 3.6079,
+        "Mediana": 3.5,
+        "Minimo": 2.8088,
+        "Maximo": 5.21,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-09-11",
+        "Media": 3.6118,
+        "Mediana": 3.5,
+        "Minimo": 3,
+        "Maximo": 5.21,
+        "numeroRespondentes": 126
+      },
+      {
+        "Data": "2023-09-12",
+        "Media": 3.6049,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.21,
+        "numeroRespondentes": 127
+      },
+      {
+        "Data": "2023-09-13",
+        "Media": 3.6072,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-09-14",
+        "Media": 3.6021,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-09-15",
+        "Media": 3.6075,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-09-18",
+        "Media": 3.6099,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-09-19",
+        "Media": 3.6099,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-09-20",
+        "Media": 3.6099,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-09-21",
+        "Media": 3.6053,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-22",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-25",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-26",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-27",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-28",
+        "Media": 3.5978,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-09-29",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-10-02",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-10-03",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-10-04",
+        "Media": 3.5973,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-10-05",
+        "Media": 3.5958,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-10-06",
+        "Media": 3.5997,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-10-09",
+        "Media": 3.6027,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-10-10",
+        "Media": 3.6024,
+        "Mediana": 3.5,
+        "Minimo": 2.7395,
+        "Maximo": 5.22,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-10-11",
+        "Media": 3.5987,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-10-13",
+        "Media": 3.5995,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-10-16",
+        "Media": 3.5998,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 122
+      },
+      {
+        "Data": "2023-10-17",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 123
+      },
+      {
+        "Data": "2023-10-18",
+        "Media": 3.5958,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 124
+      },
+      {
+        "Data": "2023-10-19",
+        "Media": 3.5998,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 125
+      },
+      {
+        "Data": "2023-10-20",
+        "Media": 3.6006,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-10-23",
+        "Media": 3.608,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-10-24",
+        "Media": 3.5994,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-10-25",
+        "Media": 3.5994,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-10-26",
+        "Media": 3.5998,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-10-27",
+        "Media": 3.6031,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-10-30",
+        "Media": 3.6054,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-10-31",
+        "Media": 3.6029,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-01",
+        "Media": 3.6029,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-03",
+        "Media": 3.6065,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-06",
+        "Media": 3.6031,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-07",
+        "Media": 3.6031,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-08",
+        "Media": 3.6031,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-11-09",
+        "Media": 3.6001,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-10",
+        "Media": 3.6011,
+        "Mediana": 3.5,
+        "Minimo": 2.7341,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-13",
+        "Media": 3.5993,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-14",
+        "Media": 3.5993,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-16",
+        "Media": 3.5982,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5.22,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-17",
+        "Media": 3.6014,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-11-20",
+        "Media": 3.5857,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5,
+        "numeroRespondentes": 127
+      },
+      {
+        "Data": "2023-11-21",
+        "Media": 3.5908,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-11-22",
+        "Media": 3.5956,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-11-23",
+        "Media": 3.5964,
+        "Mediana": 3.5,
+        "Minimo": 2.6512,
+        "Maximo": 5,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-11-24",
+        "Media": 3.5968,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-11-27",
+        "Media": 3.5922,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-11-28",
+        "Media": 3.5926,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-11-29",
+        "Media": 3.5926,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-11-30",
+        "Media": 3.5926,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 128
+      },
+      {
+        "Data": "2023-12-01",
+        "Media": 3.5894,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 129
+      },
+      {
+        "Data": "2023-12-04",
+        "Media": 3.593,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 130
+      },
+      {
+        "Data": "2023-12-05",
+        "Media": 3.5913,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-12-06",
+        "Media": 3.5908,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-12-07",
+        "Media": 3.5864,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2023-12-08",
+        "Media": 3.577,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 135
+      },
+      {
+        "Data": "2023-12-11",
+        "Media": 3.5788,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-12-12",
+        "Media": 3.5848,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-12-13",
+        "Media": 3.5848,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-12-14",
+        "Media": 3.581,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-12-15",
+        "Media": 3.5816,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-12-18",
+        "Media": 3.5815,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 131
+      },
+      {
+        "Data": "2023-12-19",
+        "Media": 3.5786,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2023-12-20",
+        "Media": 3.5777,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-12-21",
+        "Media": 3.5812,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2023-12-22",
+        "Media": 3.5676,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2023-12-26",
+        "Media": 3.5669,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 138
+      },
+      {
+        "Data": "2023-12-27",
+        "Media": 3.5669,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 138
+      },
+      {
+        "Data": "2023-12-28",
+        "Media": 3.5669,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 137
+      },
+      {
+        "Data": "2023-12-29",
+        "Media": 3.5657,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 137
+      },
+      {
+        "Data": "2024-01-02",
+        "Media": 3.5669,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 135
+      },
+      {
+        "Data": "2024-01-03",
+        "Media": 3.5669,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 135
+      },
+      {
+        "Data": "2024-01-04",
+        "Media": 3.5651,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 132
+      },
+      {
+        "Data": "2024-01-05",
+        "Media": 3.5626,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2024-01-08",
+        "Media": 3.558,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2024-01-09",
+        "Media": 3.5578,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2024-01-10",
+        "Media": 3.565,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 133
+      },
+      {
+        "Data": "2024-01-11",
+        "Media": 3.5652,
+        "Mediana": 3.5,
+        "Minimo": 2.4,
+        "Maximo": 5,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2024-01-12",
+        "Media": 3.5899,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-01-15",
+        "Media": 3.5775,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 137
+      },
+      {
+        "Data": "2024-01-16",
+        "Media": 3.5774,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 137
+      },
+      {
+        "Data": "2024-01-17",
+        "Media": 3.5869,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-01-18",
+        "Media": 3.5827,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-01-19",
+        "Media": 3.5847,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-01-22",
+        "Media": 3.5905,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2024-01-23",
+        "Media": 3.595,
+        "Mediana": 3.5001,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-01-24",
+        "Media": 3.5871,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-01-25",
+        "Media": 3.5875,
+        "Mediana": 3.5001,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-01-26",
+        "Media": 3.5861,
+        "Mediana": 3.5,
+        "Minimo": 2.7,
+        "Maximo": 5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-01-29",
+        "Media": 3.5892,
+        "Mediana": 3.5,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-01-30",
+        "Media": 3.586,
+        "Mediana": 3.5,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-01-31",
+        "Media": 3.586,
+        "Mediana": 3.5,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-02-01",
+        "Media": 3.5897,
+        "Mediana": 3.5,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-02-02",
+        "Media": 3.5915,
+        "Mediana": 3.5001,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-02-05",
+        "Media": 3.5935,
+        "Mediana": 3.5022,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-06",
+        "Media": 3.5931,
+        "Mediana": 3.5022,
+        "Minimo": 2.9488,
+        "Maximo": 5,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-07",
+        "Media": 3.5959,
+        "Mediana": 3.5022,
+        "Minimo": 2.9488,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-08",
+        "Media": 3.5977,
+        "Mediana": 3.5043,
+        "Minimo": 2.9488,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-09",
+        "Media": 3.5999,
+        "Mediana": 3.5096,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-02-14",
+        "Media": 3.5998,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-02-15",
+        "Media": 3.5998,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-02-16",
+        "Media": 3.6011,
+        "Mediana": 3.5247,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-02-19",
+        "Media": 3.5955,
+        "Mediana": 3.5193,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-20",
+        "Media": 3.5962,
+        "Mediana": 3.5204,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-21",
+        "Media": 3.5958,
+        "Mediana": 3.5204,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-02-22",
+        "Media": 3.5854,
+        "Mediana": 3.5147,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-02-23",
+        "Media": 3.5805,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-02-26",
+        "Media": 3.5922,
+        "Mediana": 3.5204,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-02-27",
+        "Media": 3.5895,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-02-28",
+        "Media": 3.5895,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-02-29",
+        "Media": 3.5896,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-03-01",
+        "Media": 3.59,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-03-04",
+        "Media": 3.5884,
+        "Mediana": 3.5046,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-03-05",
+        "Media": 3.5869,
+        "Mediana": 3.5044,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-03-06",
+        "Media": 3.5862,
+        "Mediana": 3.5044,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-03-07",
+        "Media": 3.5852,
+        "Mediana": 3.5042,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-03-08",
+        "Media": 3.5873,
+        "Mediana": 3.505,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-03-11",
+        "Media": 3.583,
+        "Mediana": 3.5042,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-03-12",
+        "Media": 3.5803,
+        "Mediana": 3.5042,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2024-03-13",
+        "Media": 3.5825,
+        "Mediana": 3.5044,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2024-03-14",
+        "Media": 3.5833,
+        "Mediana": 3.5046,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2024-03-15",
+        "Media": 3.6024,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-03-18",
+        "Media": 3.6006,
+        "Mediana": 3.5158,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-03-19",
+        "Media": 3.6006,
+        "Mediana": 3.5158,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-03-20",
+        "Media": 3.5976,
+        "Mediana": 3.5098,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-03-21",
+        "Media": 3.5976,
+        "Mediana": 3.5098,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-03-22",
+        "Media": 3.6,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-03-25",
+        "Media": 3.6033,
+        "Mediana": 3.5098,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-03-26",
+        "Media": 3.6033,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-03-27",
+        "Media": 3.6033,
+        "Mediana": 3.5145,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-03-28",
+        "Media": 3.6032,
+        "Mediana": 3.51,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-04-01",
+        "Media": 3.6075,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-04-02",
+        "Media": 3.6078,
+        "Mediana": 3.517,
+        "Minimo": 3,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-04-03",
+        "Media": 3.6105,
+        "Mediana": 3.5238,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-04-04",
+        "Media": 3.612,
+        "Mediana": 3.5204,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-04-05",
+        "Media": 3.6212,
+        "Mediana": 3.5256,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-04-08",
+        "Media": 3.6251,
+        "Mediana": 3.5256,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2024-04-09",
+        "Media": 3.6256,
+        "Mediana": 3.5287,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-04-10",
+        "Media": 3.6237,
+        "Mediana": 3.5287,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-04-11",
+        "Media": 3.6269,
+        "Mediana": 3.5287,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-04-12",
+        "Media": 3.6398,
+        "Mediana": 3.5561,
+        "Minimo": 2.9993,
+        "Maximo": 5.1,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-04-15",
+        "Media": 3.639,
+        "Mediana": 3.5611,
+        "Minimo": 2.9993,
+        "Maximo": 5.02,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-04-16",
+        "Media": 3.6431,
+        "Mediana": 3.5886,
+        "Minimo": 2.9993,
+        "Maximo": 5.02,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-04-17",
+        "Media": 3.6428,
+        "Mediana": 3.5871,
+        "Minimo": 2.9993,
+        "Maximo": 5.02,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-04-18",
+        "Media": 3.6503,
+        "Mediana": 3.5961,
+        "Minimo": 2.9993,
+        "Maximo": 5.02,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-04-19",
+        "Media": 3.6835,
+        "Mediana": 3.6,
+        "Minimo": 2.9993,
+        "Maximo": 5.02,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-04-22",
+        "Media": 3.6862,
+        "Mediana": 3.6,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-04-23",
+        "Media": 3.6862,
+        "Mediana": 3.6,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-04-24",
+        "Media": 3.6862,
+        "Mediana": 3.6,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-04-25",
+        "Media": 3.6854,
+        "Mediana": 3.6,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-04-26",
+        "Media": 3.685,
+        "Mediana": 3.6039,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-04-29",
+        "Media": 3.6915,
+        "Mediana": 3.612,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-04-30",
+        "Media": 3.6977,
+        "Mediana": 3.628,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-05-02",
+        "Media": 3.6938,
+        "Mediana": 3.6231,
+        "Minimo": 2.9863,
+        "Maximo": 5.02,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-05-03",
+        "Media": 3.7139,
+        "Mediana": 3.6394,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-05-06",
+        "Media": 3.7145,
+        "Mediana": 3.64,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-05-07",
+        "Media": 3.7152,
+        "Mediana": 3.6492,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-05-08",
+        "Media": 3.7158,
+        "Mediana": 3.6492,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-05-09",
+        "Media": 3.7277,
+        "Mediana": 3.6496,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-05-10",
+        "Media": 3.7506,
+        "Mediana": 3.6597,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-05-13",
+        "Media": 3.7551,
+        "Mediana": 3.66,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-05-14",
+        "Media": 3.7555,
+        "Mediana": 3.66,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-05-15",
+        "Media": 3.7539,
+        "Mediana": 3.66,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-05-16",
+        "Media": 3.7596,
+        "Mediana": 3.6999,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-05-17",
+        "Media": 3.7794,
+        "Mediana": 3.741,
+        "Minimo": 2.9863,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-05-20",
+        "Media": 3.7848,
+        "Mediana": 3.7496,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-05-21",
+        "Media": 3.7843,
+        "Mediana": 3.7496,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-05-22",
+        "Media": 3.7887,
+        "Mediana": 3.7498,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-05-23",
+        "Media": 3.7761,
+        "Mediana": 3.7458,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-05-24",
+        "Media": 3.776,
+        "Mediana": 3.7458,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-05-27",
+        "Media": 3.7789,
+        "Mediana": 3.7498,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-05-28",
+        "Media": 3.7789,
+        "Mediana": 3.75,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-05-29",
+        "Media": 3.7809,
+        "Mediana": 3.75,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-05-31",
+        "Media": 3.796,
+        "Mediana": 3.765,
+        "Minimo": 2.5493,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-06-03",
+        "Media": 3.8094,
+        "Mediana": 3.7728,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-06-04",
+        "Media": 3.8101,
+        "Mediana": 3.7732,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-06-05",
+        "Media": 3.8101,
+        "Mediana": 3.7732,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-06-06",
+        "Media": 3.8101,
+        "Mediana": 3.7732,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-06-07",
+        "Media": 3.8097,
+        "Mediana": 3.7767,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-06-10",
+        "Media": 3.8126,
+        "Mediana": 3.7733,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-06-11",
+        "Media": 3.818,
+        "Mediana": 3.78,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-06-12",
+        "Media": 3.8139,
+        "Mediana": 3.78,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-06-13",
+        "Media": 3.8199,
+        "Mediana": 3.783,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-06-14",
+        "Media": 3.8466,
+        "Mediana": 3.8043,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-06-17",
+        "Media": 3.854,
+        "Mediana": 3.8222,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-06-18",
+        "Media": 3.8545,
+        "Mediana": 3.8253,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-06-19",
+        "Media": 3.8578,
+        "Mediana": 3.8454,
+        "Minimo": 2.915,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-06-20",
+        "Media": 3.8602,
+        "Mediana": 3.8359,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-06-21",
+        "Media": 3.873,
+        "Mediana": 3.8454,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-06-24",
+        "Media": 3.8747,
+        "Mediana": 3.8455,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-06-25",
+        "Media": 3.8767,
+        "Mediana": 3.8478,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-06-26",
+        "Media": 3.8815,
+        "Mediana": 3.85,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-06-27",
+        "Media": 3.8842,
+        "Mediana": 3.851,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-06-28",
+        "Media": 3.8932,
+        "Mediana": 3.8656,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-01",
+        "Media": 3.8959,
+        "Mediana": 3.8754,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-07-02",
+        "Media": 3.8933,
+        "Mediana": 3.87,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-03",
+        "Media": 3.897,
+        "Mediana": 3.8851,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-04",
+        "Media": 3.8975,
+        "Mediana": 3.8851,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-05",
+        "Media": 3.9037,
+        "Mediana": 3.8776,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-07-08",
+        "Media": 3.9071,
+        "Mediana": 3.8851,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-09",
+        "Media": 3.9073,
+        "Mediana": 3.8851,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-07-10",
+        "Media": 3.9092,
+        "Mediana": 3.8969,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-07-11",
+        "Media": 3.9093,
+        "Mediana": 3.8971,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-07-12",
+        "Media": 3.9122,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-07-15",
+        "Media": 3.9249,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-07-16",
+        "Media": 3.9249,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2024-07-17",
+        "Media": 3.9248,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2024-07-18",
+        "Media": 3.9298,
+        "Mediana": 3.9021,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2024-07-19",
+        "Media": 3.9382,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-22",
+        "Media": 3.9349,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-07-23",
+        "Media": 3.9353,
+        "Mediana": 3.9,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-07-24",
+        "Media": 3.9371,
+        "Mediana": 3.9021,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-07-25",
+        "Media": 3.9428,
+        "Mediana": 3.915,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-07-26",
+        "Media": 3.9504,
+        "Mediana": 3.9587,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-07-29",
+        "Media": 3.9505,
+        "Mediana": 3.9587,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-30",
+        "Media": 3.9509,
+        "Mediana": 3.9597,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-07-31",
+        "Media": 3.9509,
+        "Mediana": 3.9597,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-08-01",
+        "Media": 3.9515,
+        "Mediana": 3.9597,
+        "Minimo": 2.989,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-08-02",
+        "Media": 3.9591,
+        "Mediana": 3.9805,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-08-05",
+        "Media": 3.9615,
+        "Mediana": 3.9805,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-08-06",
+        "Media": 3.9579,
+        "Mediana": 3.98,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-08-07",
+        "Media": 3.9573,
+        "Mediana": 3.979,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-08-08",
+        "Media": 3.9533,
+        "Mediana": 3.9597,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-09",
+        "Media": 3.9606,
+        "Mediana": 3.9689,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-08-12",
+        "Media": 3.9607,
+        "Mediana": 3.9449,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-08-13",
+        "Media": 3.9618,
+        "Mediana": 3.9649,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-08-14",
+        "Media": 3.9613,
+        "Mediana": 3.9597,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 153
+      },
+      {
+        "Data": "2024-08-15",
+        "Media": 3.9567,
+        "Mediana": 3.97,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-08-16",
+        "Media": 3.9375,
+        "Mediana": 3.907,
+        "Minimo": 3,
+        "Maximo": 5.7,
+        "numeroRespondentes": 153
+      },
+      {
+        "Data": "2024-08-19",
+        "Media": 3.9412,
+        "Mediana": 3.9,
+        "Minimo": 3.1,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-08-20",
+        "Media": 3.9399,
+        "Mediana": 3.9011,
+        "Minimo": 3.1,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-08-21",
+        "Media": 3.9432,
+        "Mediana": 3.907,
+        "Minimo": 3.1,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-22",
+        "Media": 3.9481,
+        "Mediana": 3.9075,
+        "Minimo": 3.1,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-23",
+        "Media": 3.9372,
+        "Mediana": 3.9279,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 153
+      },
+      {
+        "Data": "2024-08-26",
+        "Media": 3.9356,
+        "Mediana": 3.9279,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-27",
+        "Media": 3.9359,
+        "Mediana": 3.9279,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-28",
+        "Media": 3.9366,
+        "Mediana": 3.9279,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-08-29",
+        "Media": 3.9337,
+        "Mediana": 3.9166,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-08-30",
+        "Media": 3.9333,
+        "Mediana": 3.9151,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-09-02",
+        "Media": 3.9405,
+        "Mediana": 3.9279,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-09-03",
+        "Media": 3.94,
+        "Mediana": 3.9231,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-09-04",
+        "Media": 3.942,
+        "Mediana": 3.9231,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-09-05",
+        "Media": 3.9401,
+        "Mediana": 3.9231,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2024-09-06",
+        "Media": 3.9418,
+        "Mediana": 3.9216,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-09-09",
+        "Media": 3.9488,
+        "Mediana": 3.9243,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-09-10",
+        "Media": 3.9513,
+        "Mediana": 3.9261,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-09-11",
+        "Media": 3.9502,
+        "Mediana": 3.9261,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-09-12",
+        "Media": 3.9613,
+        "Mediana": 3.95,
+        "Minimo": 3.1994,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-09-13",
+        "Media": 3.9802,
+        "Mediana": 3.9526,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-16",
+        "Media": 3.9872,
+        "Mediana": 3.9575,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-17",
+        "Media": 3.993,
+        "Mediana": 3.9648,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-18",
+        "Media": 3.9891,
+        "Mediana": 3.9552,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-09-19",
+        "Media": 3.9902,
+        "Mediana": 3.9575,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-20",
+        "Media": 3.9938,
+        "Mediana": 3.9699,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-09-23",
+        "Media": 3.9929,
+        "Mediana": 3.9648,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-24",
+        "Media": 3.9924,
+        "Mediana": 3.9648,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-09-25",
+        "Media": 3.9923,
+        "Mediana": 3.9699,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-09-26",
+        "Media": 3.99,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-09-27",
+        "Media": 3.9878,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-09-30",
+        "Media": 3.9923,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-10-01",
+        "Media": 3.9923,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-10-02",
+        "Media": 3.9918,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-10-03",
+        "Media": 3.9917,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-10-04",
+        "Media": 3.9929,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-10-07",
+        "Media": 3.9901,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-10-08",
+        "Media": 3.988,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-10-09",
+        "Media": 3.9924,
+        "Mediana": 3.9549,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-10-10",
+        "Media": 3.9931,
+        "Mediana": 3.9589,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-10-11",
+        "Media": 4.0031,
+        "Mediana": 3.9597,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-10-14",
+        "Media": 4.006,
+        "Mediana": 3.97,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-10-15",
+        "Media": 4.0082,
+        "Mediana": 3.96,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2024-10-16",
+        "Media": 4.0111,
+        "Mediana": 3.985,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-10-17",
+        "Media": 4.0135,
+        "Mediana": 4,
+        "Minimo": 3.2507,
+        "Maximo": 5.7,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2024-10-18",
+        "Media": 4.0384,
+        "Mediana": 3.9909,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-21",
+        "Media": 4.034,
+        "Mediana": 3.9909,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-22",
+        "Media": 4.0377,
+        "Mediana": 3.9959,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-23",
+        "Media": 4.0384,
+        "Mediana": 3.9959,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-24",
+        "Media": 4.0458,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-25",
+        "Media": 4.0579,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-10-28",
+        "Media": 4.0561,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-29",
+        "Media": 4.0575,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-10-30",
+        "Media": 4.0633,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2024-10-31",
+        "Media": 4.067,
+        "Mediana": 4,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2024-11-01",
+        "Media": 4.1328,
+        "Mediana": 4.0318,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-04",
+        "Media": 4.1333,
+        "Mediana": 4.0318,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-05",
+        "Media": 4.1356,
+        "Mediana": 4.0318,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-06",
+        "Media": 4.1356,
+        "Mediana": 4.0318,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-07",
+        "Media": 4.1379,
+        "Mediana": 4.0315,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-11-08",
+        "Media": 4.1706,
+        "Mediana": 4.1,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-11",
+        "Media": 4.1742,
+        "Mediana": 4.1,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-12",
+        "Media": 4.1825,
+        "Mediana": 4.1,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-13",
+        "Media": 4.1878,
+        "Mediana": 4.1,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-14",
+        "Media": 4.1992,
+        "Mediana": 4.1235,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-18",
+        "Media": 4.2071,
+        "Mediana": 4.1241,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-11-19",
+        "Media": 4.2225,
+        "Mediana": 4.1465,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2024-11-21",
+        "Media": 4.2311,
+        "Mediana": 4.1673,
+        "Minimo": 3.3639,
+        "Maximo": 5.7,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2024-11-22",
+        "Media": 4.4366,
+        "Mediana": 4.3426,
+        "Minimo": 3.4749,
+        "Maximo": 5.9001,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-25",
+        "Media": 4.4408,
+        "Mediana": 4.3426,
+        "Minimo": 3.4749,
+        "Maximo": 5.9001,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-26",
+        "Media": 4.4442,
+        "Mediana": 4.3432,
+        "Minimo": 3.4749,
+        "Maximo": 5.9001,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-27",
+        "Media": 4.4519,
+        "Mediana": 4.3844,
+        "Minimo": 3.3794,
+        "Maximo": 5.9001,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-11-28",
+        "Media": 4.4666,
+        "Mediana": 4.3923,
+        "Minimo": 3.3794,
+        "Maximo": 5.9001,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-11-29",
+        "Media": 4.4985,
+        "Mediana": 4.4,
+        "Minimo": 3.3794,
+        "Maximo": 5.9708,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-12-02",
+        "Media": 4.5453,
+        "Mediana": 4.44,
+        "Minimo": 3.3794,
+        "Maximo": 5.9708,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-12-03",
+        "Media": 4.5526,
+        "Mediana": 4.4883,
+        "Minimo": 3.3794,
+        "Maximo": 5.9708,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-04",
+        "Media": 4.5545,
+        "Mediana": 4.4883,
+        "Minimo": 3.3794,
+        "Maximo": 5.9708,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-05",
+        "Media": 4.5751,
+        "Mediana": 4.507,
+        "Minimo": 3.3794,
+        "Maximo": 5.9708,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-06",
+        "Media": 4.6638,
+        "Mediana": 4.5918,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-12-09",
+        "Media": 4.6893,
+        "Mediana": 4.6053,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-12-10",
+        "Media": 4.6954,
+        "Mediana": 4.6185,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-12-11",
+        "Media": 4.6963,
+        "Mediana": 4.6119,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-12",
+        "Media": 4.6957,
+        "Mediana": 4.6043,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-13",
+        "Media": 4.7138,
+        "Mediana": 4.6006,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-16",
+        "Media": 4.7172,
+        "Mediana": 4.5979,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-12-17",
+        "Media": 4.7353,
+        "Mediana": 4.655,
+        "Minimo": 3.4959,
+        "Maximo": 6.5,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-12-18",
+        "Media": 4.7516,
+        "Mediana": 4.6602,
+        "Minimo": 3.5024,
+        "Maximo": 6.5,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-12-19",
+        "Media": 4.7554,
+        "Mediana": 4.6653,
+        "Minimo": 3.5024,
+        "Maximo": 6.5,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-12-20",
+        "Media": 4.875,
+        "Mediana": 4.8379,
+        "Minimo": 3.5024,
+        "Maximo": 6.5,
+        "numeroRespondentes": 152
+      },
+      {
+        "Data": "2024-12-23",
+        "Media": 4.9106,
+        "Mediana": 4.9,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-24",
+        "Media": 4.9106,
+        "Mediana": 4.9,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2024-12-26",
+        "Media": 4.9312,
+        "Mediana": 4.9252,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2024-12-27",
+        "Media": 4.9515,
+        "Mediana": 4.9593,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2024-12-30",
+        "Media": 4.9768,
+        "Mediana": 4.9932,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2024-12-31",
+        "Media": 4.9768,
+        "Mediana": 4.9932,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-01-02",
+        "Media": 4.9885,
+        "Mediana": 4.9944,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-01-03",
+        "Media": 4.9957,
+        "Mediana": 4.9932,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-01-06",
+        "Media": 5.0238,
+        "Mediana": 4.9977,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 138
+      },
+      {
+        "Data": "2025-01-07",
+        "Media": 5.0218,
+        "Mediana": 4.9944,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2025-01-08",
+        "Media": 5.025,
+        "Mediana": 4.9956,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-01-09",
+        "Media": 5.0266,
+        "Mediana": 4.9956,
+        "Minimo": 3.6416,
+        "Maximo": 6.5,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-01-10",
+        "Media": 5.0786,
+        "Mediana": 5.0001,
+        "Minimo": 3.6416,
+        "Maximo": 6.6896,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-01-13",
+        "Media": 5.1003,
+        "Mediana": 5.0243,
+        "Minimo": 3.6416,
+        "Maximo": 6.6896,
+        "numeroRespondentes": 140
+      },
+      {
+        "Data": "2025-01-14",
+        "Media": 5.107,
+        "Mediana": 5.0551,
+        "Minimo": 3.6416,
+        "Maximo": 6.6896,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-01-15",
+        "Media": 5.1089,
+        "Mediana": 5.0551,
+        "Minimo": 3.6416,
+        "Maximo": 6.6896,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-01-16",
+        "Media": 5.1269,
+        "Mediana": 5.0632,
+        "Minimo": 3.6416,
+        "Maximo": 6.6896,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2025-01-17",
+        "Media": 5.1469,
+        "Mediana": 5.0764,
+        "Minimo": 3.6416,
+        "Maximo": 7.0468,
+        "numeroRespondentes": 139
+      },
+      {
+        "Data": "2025-01-20",
+        "Media": 5.1625,
+        "Mediana": 5.0698,
+        "Minimo": 3.6416,
+        "Maximo": 7.0468,
+        "numeroRespondentes": 106
+      },
+      {
+        "Data": "2025-01-21",
+        "Media": 5.1923,
+        "Mediana": 5.0984,
+        "Minimo": 3.6416,
+        "Maximo": 7.0468,
+        "numeroRespondentes": 108
+      },
+      {
+        "Data": "2025-01-22",
+        "Media": 5.2101,
+        "Mediana": 5.14,
+        "Minimo": 3.6416,
+        "Maximo": 7.0468,
+        "numeroRespondentes": 111
+      },
+      {
+        "Data": "2025-01-23",
+        "Media": 5.2317,
+        "Mediana": 5.141,
+        "Minimo": 3.9645,
+        "Maximo": 7.0468,
+        "numeroRespondentes": 114
+      },
+      {
+        "Data": "2025-01-24",
+        "Media": 5.419,
+        "Mediana": 5.5,
+        "Minimo": 3.9645,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-01-27",
+        "Media": 5.4395,
+        "Mediana": 5.5001,
+        "Minimo": 3.9645,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2025-01-28",
+        "Media": 5.4541,
+        "Mediana": 5.5035,
+        "Minimo": 3.9645,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2025-01-29",
+        "Media": 5.4556,
+        "Mediana": 5.5075,
+        "Minimo": 3.9645,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2025-01-30",
+        "Media": 5.4683,
+        "Mediana": 5.5082,
+        "Minimo": 3.98,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-01-31",
+        "Media": 5.465,
+        "Mediana": 5.51,
+        "Minimo": 3.7986,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-02-03",
+        "Media": 5.4851,
+        "Mediana": 5.5082,
+        "Minimo": 3.7986,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-02-04",
+        "Media": 5.4854,
+        "Mediana": 5.5082,
+        "Minimo": 3.7986,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-02-05",
+        "Media": 5.4991,
+        "Mediana": 5.51,
+        "Minimo": 3.7986,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-02-06",
+        "Media": 5.5109,
+        "Mediana": 5.52,
+        "Minimo": 3.7986,
+        "Maximo": 7.1854,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-02-07",
+        "Media": 5.5353,
+        "Mediana": 5.5767,
+        "Minimo": 3.7986,
+        "Maximo": 7.1462,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-02-10",
+        "Media": 5.5371,
+        "Mediana": 5.5832,
+        "Minimo": 3.7986,
+        "Maximo": 7.1462,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-02-11",
+        "Media": 5.5395,
+        "Mediana": 5.5814,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-02-12",
+        "Media": 5.5422,
+        "Mediana": 5.5814,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-02-13",
+        "Media": 5.5528,
+        "Mediana": 5.5944,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-02-14",
+        "Media": 5.5533,
+        "Mediana": 5.6026,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-02-17",
+        "Media": 5.5584,
+        "Mediana": 5.6132,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-02-18",
+        "Media": 5.5622,
+        "Mediana": 5.6216,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2025-02-19",
+        "Media": 5.566,
+        "Mediana": 5.6365,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2025-02-20",
+        "Media": 5.5761,
+        "Mediana": 5.6423,
+        "Minimo": 3.4425,
+        "Maximo": 7.0606,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2025-02-21",
+        "Media": 5.5927,
+        "Mediana": 5.6461,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 151
+      },
+      {
+        "Data": "2025-02-24",
+        "Media": 5.6043,
+        "Mediana": 5.6507,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2025-02-25",
+        "Media": 5.5957,
+        "Mediana": 5.646,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-02-26",
+        "Media": 5.5965,
+        "Mediana": 5.6481,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-02-27",
+        "Media": 5.594,
+        "Mediana": 5.6461,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-02-28",
+        "Media": 5.6,
+        "Mediana": 5.65,
+        "Minimo": 3.4425,
+        "Maximo": 7,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-03-05",
+        "Media": 5.6193,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-03-06",
+        "Media": 5.6252,
+        "Mediana": 5.6553,
+        "Minimo": 4.35,
+        "Maximo": 7,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-03-07",
+        "Media": 5.631,
+        "Mediana": 5.6755,
+        "Minimo": 4.35,
+        "Maximo": 7,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2025-03-10",
+        "Media": 5.6255,
+        "Mediana": 5.6664,
+        "Minimo": 4.35,
+        "Maximo": 7,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-03-11",
+        "Media": 5.6269,
+        "Mediana": 5.6749,
+        "Minimo": 4.35,
+        "Maximo": 7,
+        "numeroRespondentes": 141
+      },
+      {
+        "Data": "2025-03-12",
+        "Media": 5.6109,
+        "Mediana": 5.6357,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-03-13",
+        "Media": 5.619,
+        "Mediana": 5.643,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2025-03-14",
+        "Media": 5.642,
+        "Mediana": 5.6569,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-03-17",
+        "Media": 5.6398,
+        "Mediana": 5.6569,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2025-03-18",
+        "Media": 5.6381,
+        "Mediana": 5.6568,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-03-19",
+        "Media": 5.6383,
+        "Mediana": 5.6568,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 149
+      },
+      {
+        "Data": "2025-03-20",
+        "Media": 5.6433,
+        "Mediana": 5.6569,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 148
+      },
+      {
+        "Data": "2025-03-21",
+        "Media": 5.6428,
+        "Mediana": 5.6496,
+        "Minimo": 4.35,
+        "Maximo": 7.5133,
+        "numeroRespondentes": 150
+      },
+      {
+        "Data": "2025-03-24",
+        "Media": 5.6268,
+        "Mediana": 5.6492,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-03-25",
+        "Media": 5.6331,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-03-26",
+        "Media": 5.6331,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-03-27",
+        "Media": 5.6333,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2025-03-28",
+        "Media": 5.6336,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-03-31",
+        "Media": 5.6332,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-04-01",
+        "Media": 5.6331,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-04-02",
+        "Media": 5.6331,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-04-03",
+        "Media": 5.6331,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-04-04",
+        "Media": 5.6303,
+        "Mediana": 5.65,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 145
+      },
+      {
+        "Data": "2025-04-07",
+        "Media": 5.6284,
+        "Mediana": 5.649,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 144
+      },
+      {
+        "Data": "2025-04-08",
+        "Media": 5.6263,
+        "Mediana": 5.6462,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-09",
+        "Media": 5.6263,
+        "Mediana": 5.6462,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-10",
+        "Media": 5.6263,
+        "Mediana": 5.6462,
+        "Minimo": 4.35,
+        "Maximo": 7.0201,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-11",
+        "Media": 5.6249,
+        "Mediana": 5.646,
+        "Minimo": 4.35,
+        "Maximo": 6.9442,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-04-14",
+        "Media": 5.6125,
+        "Mediana": 5.6198,
+        "Minimo": 4.35,
+        "Maximo": 6.9442,
+        "numeroRespondentes": 134
+      },
+      {
+        "Data": "2025-04-15",
+        "Media": 5.6116,
+        "Mediana": 5.6198,
+        "Minimo": 4.35,
+        "Maximo": 6.9442,
+        "numeroRespondentes": 136
+      },
+      {
+        "Data": "2025-04-16",
+        "Media": 5.6102,
+        "Mediana": 5.6245,
+        "Minimo": 4.35,
+        "Maximo": 6.9442,
+        "numeroRespondentes": 137
+      },
+      {
+        "Data": "2025-04-17",
+        "Media": 5.5765,
+        "Mediana": 5.5662,
+        "Minimo": 4.35,
+        "Maximo": 6.9442,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-22",
+        "Media": 5.5729,
+        "Mediana": 5.5709,
+        "Minimo": 4.35,
+        "Maximo": 6.6381,
+        "numeroRespondentes": 142
+      },
+      {
+        "Data": "2025-04-23",
+        "Media": 5.5701,
+        "Mediana": 5.57,
+        "Minimo": 4.35,
+        "Maximo": 6.6381,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-04-24",
+        "Media": 5.5652,
+        "Mediana": 5.5623,
+        "Minimo": 4.35,
+        "Maximo": 6.6381,
+        "numeroRespondentes": 143
+      },
+      {
+        "Data": "2025-04-25",
+        "Media": 5.5582,
+        "Mediana": 5.55,
+        "Minimo": 4.35,
+        "Maximo": 6.6381,
+        "numeroRespondentes": 147
+      },
+      {
+        "Data": "2025-04-28",
+        "Media": 5.5605,
+        "Mediana": 5.556,
+        "Minimo": 4.35,
+        "Maximo": 6.67,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-29",
+        "Media": 5.5595,
+        "Mediana": 5.5513,
+        "Minimo": 4.35,
+        "Maximo": 6.67,
+        "numeroRespondentes": 146
+      },
+      {
+        "Data": "2025-04-30",
+        "Media": 5.5561,
+        "Mediana": 5.551,
+        "Minimo": 4.35,
+        "Maximo": 6.67,
+        "numeroRespondentes": 148
+      }
+    ]
+  }
+}

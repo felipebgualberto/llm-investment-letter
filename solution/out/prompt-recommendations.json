@@ -1,0 +1,24 @@
+{
+  "propostas": [
+    {
+      "titulo": "Proposta: alocar o saldo parado em renda fixa pós-fixada",
+      "valor": "R$ 35.986,74",
+      "motivos": [
+        "Saldo disponível de R$ 74.672,62 representa 19,30% do patrimônio.",
+        "A 14,15% ao ano, aplicar R$ 35.986,74 recupera R$ 5.092,12 em 12 meses.",
+        "Etapa seguinte, condicionada à liquidação do CDB vencido: mais R$ 40.478,75, totalizando R$ 76.465,49 a realocar.",
+        "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+      ]
+    },
+    {
+      "titulo": "Pendência: confirmar liquidação de título vencido",
+      "valor": "R$ 40.478,75",
+      "motivos": [
+        "CDB BANCO C6 CONSIGNADO S.A. - SET/2024 venceu em 05/09/2024, 244 dias antes da data do extrato.",
+        "Enquanto a liquidação não for confirmada, este valor não pode ser tratado como remunerado."
+      ],
+      "vencimento": "05/09/2024"
+    }
+  ],
+  "outras_preparadas": 4
+}

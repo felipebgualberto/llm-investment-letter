@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 169" width="100%" height="auto" preserveAspectRatio="xMinYMin meet" style="display:block;width:100%;height:auto;max-width:620px" role="img" aria-label="Onde está o seu patrimônio">
+  <style>
+    .t  { font: 600 13px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .st { font: 400 10.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+    .l  { font: 400 11px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #111111; }
+    .v  { font: 600 11px system-ui, -apple-system, 'Segoe UI', sans-serif; }
+    .ax { font: 400 9.5px system-ui, -apple-system, 'Segoe UI', sans-serif; fill: #6b7280; }
+  </style>
+  <text class="t" x="0" y="14">Onde está o seu patrimônio</text>
+  <text class="st" x="0" y="30">Total de R$ 386.858,82 na data do extrato</text>
+  <rect x="0.0" y="52" width="433.0" height="34" fill="#111111" rx="3"/><text class="v" x="216.5" y="73" text-anchor="middle" fill="#ffffff">70,2%</text>
+  <rect x="435.0" y="52" width="63.4" height="34" fill="#FFC709" /><text class="v" x="466.6" y="73" text-anchor="middle" fill="#111111">10,5%</text>
+  <rect x="500.3" y="52" width="119.7" height="34" fill="#8a8f98" rx="3"/><text class="v" x="560.2" y="73" text-anchor="middle" fill="#ffffff">19,3%</text>
+  <rect x="0" y="102" width="9" height="9" rx="2" fill="#111111"/>
+  <text class="l" x="15" y="110">Investido e apurado</text>
+  <text class="v" x="620" y="110" text-anchor="end" fill="#111111">R$ 271.402,01</text>
+  <rect x="0" y="121" width="9" height="9" rx="2" fill="#FFC709"/>
+  <text class="l" x="15" y="129">Investido sem apuração</text>
+  <text class="v" x="620" y="129" text-anchor="end" fill="#111111">R$ 40.784,19</text>
+  <rect x="0" y="140" width="9" height="9" rx="2" fill="#8a8f98"/>
+  <text class="l" x="15" y="148">Saldo em conta, sem aplicação</text>
+  <text class="v" x="620" y="148" text-anchor="end" fill="#111111">R$ 74.672,62</text>
+</svg>

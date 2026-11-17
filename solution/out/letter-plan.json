@@ -1,0 +1,1300 @@
+{
+  "budget": {
+    "max_words": 800
+  },
+  "letter": {
+    "client": {
+      "name": "Albert da Silva",
+      "account": "792854"
+    },
+    "advisor": {
+      "code": "A7699",
+      "name": "Antonio Bicudo"
+    },
+    "period": {
+      "start": "2025-04-01",
+      "end": "2025-04-30",
+      "label_pt": "abril de 2025"
+    },
+    "headline": {
+      "measured_return": {
+        "value": 0.02621363,
+        "display": "2,62%"
+      },
+      "pnl": {
+        "value": 6932.7,
+        "display": "R$ 6.932,70"
+      },
+      "coverage_of_invested": {
+        "value": 0.869359,
+        "display": "86,94%"
+      },
+      "net_worth_return": {
+        "value": 0.0182475,
+        "display": "1,82%"
+      },
+      "idle_cash_drag_pp": {
+        "value": 0.7966,
+        "display": "+0,80 p.p."
+      },
+      "net_worth": {
+        "value": 386858.82,
+        "display": "R$ 386.858,82"
+      },
+      "fund_cost_annual": {
+        "value": 1980.67,
+        "display": "R$ 1.980,67"
+      },
+      "fund_cost_pct": {
+        "value": 0.009383,
+        "display": "0,94% a.a."
+      },
+      "cdi_month": {
+        "value": 0.0105588,
+        "display": "1,06%"
+      },
+      "pct_of_cdi": {
+        "value": 248.26,
+        "display": "248% do CDI"
+      }
+    },
+    "findings": [
+      {
+        "code": "idle_cash_above_policy",
+        "severity": "action_required",
+        "title": "Saldo em conta acima do limite de política",
+        "position": {
+          "label": "Saldo disponível",
+          "value_brl": 74672.62
+        },
+        "measured": {
+          "share_of_net_worth": 0.193023
+        },
+        "threshold": {
+          "share_of_net_worth": 0.1,
+          "source": "house policy",
+          "assumption": true
+        },
+        "quantified": {
+          "excess_cash_brl": 35986.74,
+          "cdi_annualised": 0.1415,
+          "cdi_annualised_source": "BCB SGS 4389, as of 2025-04-30",
+          "forgone_yield_12m_on_excess_brl": 5092.12,
+          "forgone_yield_12m_on_full_balance_brl": 10566.18,
+          "basis": "Idle balance at the CDI rate published for the reference date, 252-business-day basis"
+        },
+        "action": "Alocar o excedente em instrumento compatível com o perfil; ver recomendações."
+      },
+      {
+        "code": "matured_instrument_in_position",
+        "severity": "action_required",
+        "title": "Título vencido ainda consta na posição",
+        "position": {
+          "label": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024",
+          "value_brl": 40478.75,
+          "weight": 0.129662
+        },
+        "measured": {
+          "maturity_date": "2024-09-05",
+          "statement_date": "2025-05-07",
+          "days_since_maturity": 244,
+          "contracted_rate": "IPC-A +5,45%"
+        },
+        "threshold": {
+          "rule": "maturity_date < statement_date",
+          "source": "arithmetic",
+          "assumption": false
+        },
+        "action": "Confirmar a liquidação junto ao emissor e reaplicar os recursos. Enquanto não confirmado, este valor não pode ser considerado remunerado."
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "deploy-idle-cash",
+        "addresses_finding": {
+          "code": "idle_cash_above_policy",
+          "position": "Saldo disponível"
+        },
+        "action": "evaluate_allocation",
+        "priority": 1,
+        "instrument_class": "renda_fixa_pos_fixada",
+        "headline": "Proposta: alocar o saldo parado em renda fixa pós-fixada",
+        "amount_brl": 35986.74,
+        "evidence": {
+          "idle_cash_brl": 74672.62,
+          "share_of_net_worth": 0.193023,
+          "policy_limit": 0.1,
+          "cdi_annualised": 0.1415,
+          "matured_and_pending_brl": 40478.75,
+          "combined_idle_brl": 115151.37
+        },
+        "profile_basis": {
+          "quote": "Instrumentos de Renda Fixa com Classificação BB+ ou Superior",
+          "source": "Client risk profile, Produtos Financeiros Compatíveis, item b"
+        },
+        "house_basis": {
+          "indicator": "Selic",
+          "house_value": 15.5,
+          "consensus_median": 15,
+          "consensus_range": [
+            13.5,
+            15.75
+          ],
+          "percentile_in_range": 88.9,
+          "respondents": 140,
+          "survey_date": "2025-04-30",
+          "stance": "above_consensus",
+          "tilt": "favour_post_fixed_income",
+          "rationale": "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+        },
+        "rationale_inputs": [
+          "Saldo disponível de R$ 74.672,62 representa 19,30% do patrimônio.",
+          "A 14,15% ao ano, aplicar R$ 35.986,74 recupera R$ 5.092,12 em 12 meses.",
+          "Etapa seguinte, condicionada à liquidação do CDB vencido: mais R$ 40.478,75, totalizando R$ 76.465,49 a realocar.",
+          "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+        ],
+        "requires_advisor_confirmation": true
+      },
+      {
+        "id": "settle-cdb-banco-c6-consignado-s-a-set-2024",
+        "addresses_finding": {
+          "code": "matured_instrument_in_position",
+          "position": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024"
+        },
+        "action": "confirm_settlement",
+        "priority": 1,
+        "headline": "Pendência: confirmar liquidação de título vencido",
+        "amount_brl": 40478.75,
+        "evidence": {
+          "maturity_date": "2024-09-05",
+          "statement_date": "2025-05-07",
+          "days_since_maturity": 244,
+          "contracted_rate": "IPC-A +5,45%",
+          "weight": 0.129662
+        },
+        "rationale_inputs": [
+          "CDB BANCO C6 CONSIGNADO S.A. - SET/2024 venceu em 05/09/2024, 244 dias antes da data do extrato.",
+          "Enquanto a liquidação não for confirmada, este valor não pode ser tratado como remunerado."
+        ],
+        "requires_advisor_confirmation": true
+      }
+    ],
+    "equity_ideas": {
+      "buy": [
+        {
+          "ticker": "PETR4",
+          "dividend_yield": {
+            "value": 0.251058,
+            "display": "25,1%"
+          },
+          "dividend_events": 6,
+          "volatility": {
+            "value": 0.259666,
+            "display": "26,0%"
+          }
+        },
+        {
+          "ticker": "BBAS3",
+          "dividend_yield": {
+            "value": 0.09069,
+            "display": "9,1%"
+          },
+          "dividend_events": 7,
+          "volatility": {
+            "value": 0.19186,
+            "display": "19,2%"
+          }
+        },
+        {
+          "ticker": "VALE3",
+          "dividend_yield": {
+            "value": 0.089977,
+            "display": "9,0%"
+          },
+          "dividend_events": 3,
+          "volatility": {
+            "value": 0.256914,
+            "display": "25,7%"
+          }
+        }
+      ],
+      "review": [
+        {
+          "ticker": "MRFG3",
+          "value_brl": {
+            "value": 15432.89,
+            "display": "R$ 15.432,89"
+          },
+          "reasons_pt": [
+            "1 pagamento(s) de dividendo nos últimos 12 meses, contra o mínimo de 2 adotado para o perfil"
+          ],
+          "reason_short_pt": "1 pagamento em 12 meses, mínimo 2",
+          "return_since_purchase": null
+        },
+        {
+          "ticker": "HAPV3",
+          "value_brl": {
+            "value": 6143.14,
+            "display": "R$ 6.143,14"
+          },
+          "reasons_pt": [
+            "0 pagamento(s) de dividendo nos últimos 12 meses, contra o mínimo de 2 adotado para o perfil",
+            "dividend yield de 0,00%, contra o mínimo de 2,00%"
+          ],
+          "reason_short_pt": "nenhum pagamento de dividendo em 12 meses · retorno em dividendos de 0,0%",
+          "return_since_purchase": {
+            "value": -0.745839,
+            "display": "−74,6%"
+          }
+        }
+      ],
+      "screen": {
+        "quote": "Ações de Empresas Consolidadas com Dividendos",
+        "min_yield": {
+          "value": 0.02,
+          "display": "2%"
+        },
+        "min_events": 2,
+        "lookback_months": 12,
+        "assumption": true
+      },
+      "failed_share": {
+        "value": 0.35774149631440216,
+        "display": "35,8%"
+      },
+      "failed_value": {
+        "value": 21576.03,
+        "display": "R$ 21.576,03"
+      },
+      "note_pt": "Sugestões para avaliar com seu assessor. Nenhuma é ordem de compra ou venda."
+    },
+    "attribution": {
+      "contributors": [
+        {
+          "label": "HAPV3",
+          "contribution_pp": 1.0064,
+          "return": 0.76444444,
+          "display": "+1,01 p.p.",
+          "return_display": "76,44%"
+        },
+        {
+          "label": "LREN3",
+          "contribution_pp": 0.8629,
+          "return": 0.08938907,
+          "display": "+0,86 p.p.",
+          "return_display": "8,94%"
+        }
+      ],
+      "detractors": [
+        {
+          "label": "MRFG3",
+          "contribution_pp": -1.1432,
+          "return": -0.16381418,
+          "display": "−1,14 p.p.",
+          "return_display": "−16,38%"
+        }
+      ],
+      "remainder": {
+        "label_pt": "demais posições",
+        "count": 7,
+        "contribution_pp": 1.8953,
+        "display": "+1,90 p.p."
+      },
+      "total_pp": 2.6214,
+      "total_display": "+2,62 p.p.",
+      "detractor_count": 1,
+      "contributor_count": 9,
+      "sleeve_of": {
+        "LREN3": "stocks",
+        "MRFG3": "stocks",
+        "ARZZ3": "stocks",
+        "HAPV3": "stocks",
+        "Riza Lotus Plus Advisory FIC FIRF REF DI CP": "funds",
+        "Brave I FIC FIM CP": "funds",
+        "Truxt Long Bias Advisory FIC FIM": "funds",
+        "STK Long Biased FIC FIA": "funds",
+        "Constellation Institucional Advisory FIC FIA": "funds",
+        "Ibiuna Hedge ST Advisory FIC FIM": "funds"
+      },
+      "sleeve_movers": {
+        "stocks": [
+          {
+            "label": "MRFG3",
+            "contribution_pp": -1.1432,
+            "return": -0.16381418
+          },
+          {
+            "label": "HAPV3",
+            "contribution_pp": 1.0064,
+            "return": 0.76444444
+          },
+          {
+            "label": "LREN3",
+            "contribution_pp": 0.8629,
+            "return": 0.08938907
+          },
+          {
+            "label": "ARZZ3",
+            "contribution_pp": 0.0022,
+            "return": 0.0005305
+          }
+        ],
+        "funds": [
+          {
+            "label": "Truxt Long Bias Advisory FIC FIM",
+            "contribution_pp": 0.4369,
+            "return": 0.10165652
+          },
+          {
+            "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+            "contribution_pp": 0.4361,
+            "return": 0.01213808
+          },
+          {
+            "label": "Brave I FIC FIM CP",
+            "contribution_pp": 0.3227,
+            "return": 0.0119
+          },
+          {
+            "label": "Constellation Institucional Advisory FIC FIA",
+            "contribution_pp": 0.3209,
+            "return": 0.1112859
+          },
+          {
+            "label": "STK Long Biased FIC FIA",
+            "contribution_pp": 0.2268,
+            "return": 0.06558325
+          },
+          {
+            "label": "Ibiuna Hedge ST Advisory FIC FIM",
+            "contribution_pp": 0.1497,
+            "return": 0.03532844
+          }
+        ]
+      }
+    },
+    "benchmarks": {
+      "cdi": {
+        "value": 0.0105588,
+        "excess_pp": 1.5655,
+        "pct_of_cdi": 248.26,
+        "label_pt": "CDI",
+        "display": "1,06%",
+        "excess_display": "+1,57 p.p.",
+        "real_return_display": null
+      },
+      "ipca": {
+        "value": 0.0043,
+        "excess_pp": 2.1914,
+        "real_return": 0.0218198,
+        "label_pt": "inflação (IPCA)",
+        "display": "0,43%",
+        "excess_display": "+2,19 p.p.",
+        "real_return_display": "2,18%"
+      }
+    },
+    "disclosures": [
+      {
+        "id": "past_performance",
+        "text_pt": "Rentabilidade passada não é garantia de rentabilidade futura."
+      },
+      {
+        "id": "trailing_yield",
+        "text_pt": "Os dividend yields citados são apurados sobre os 12 meses encerrados na data de referência e não constituem projeção."
+      },
+      {
+        "id": "fund_quota_date",
+        "text_pt": "As posições em fundos refletem cotas informadas pelos gestores com data de 04/04/2024; os valores em reais são indicativos."
+      },
+      {
+        "id": "advisor_confirmation",
+        "text_pt": "As sugestões desta carta são candidatas à análise do seu assessor e não constituem ordem de compra ou venda."
+      },
+      {
+        "id": "fgc_coverage",
+        "text_pt": "Aplicações em CDB contam com cobertura do FGC até os limites vigentes, por CPF e por instituição."
+      },
+      {
+        "id": "source_divergence",
+        "text_pt": "Onde a base de preços da XP diverge do fechamento de mercado, a carta reporta a diferença e mantém o valor do seu extrato."
+      }
+    ],
+    "disclosures_are_rendered_separately": true
+  },
+  "advisor_annex": {
+    "findings": [
+      {
+        "code": "credit_quality_not_verifiable",
+        "severity": "review",
+        "title": "Cláusula de rating do perfil não verificável com as fontes atuais",
+        "position": {
+          "label": "3 posições",
+          "value_brl": 209224.91
+        },
+        "measured": {
+          "share_of_invested": 0.670193,
+          "positions_exposed": 3,
+          "holdings": [
+            {
+              "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+              "value_brl": 96178.73,
+              "weight": 0.308081,
+              "basis": "sufixo \"CP\" (crédito privado) na denominação do fundo"
+            },
+            {
+              "label": "Brave I FIC FIM CP",
+              "value_brl": 72567.43,
+              "weight": 0.232449,
+              "basis": "sufixo \"CP\" (crédito privado) na denominação do fundo"
+            },
+            {
+              "label": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024",
+              "value_brl": 40478.75,
+              "weight": 0.129662,
+              "basis": "título de emissor bancário"
+            }
+          ]
+        },
+        "threshold": {
+          "rule": "perfil exige renda fixa com classificação BB+ ou superior",
+          "source": "Perfil de investimento, \"Instrumentos de Renda Fixa com Classificação BB+ ou Superior\"",
+          "assumption": false
+        },
+        "caveats": [
+          "Isto NÃO é um apontamento de desenquadramento: nenhuma posição foi avaliada como abaixo de BB+.",
+          "Nenhuma base pública gratuita publica rating de emissor; sem essa fonte, a cláusula não pode ser verificada nem refutada.",
+          "A exposição foi identificada pela denominação do produto e pela classificação ANBIMA, não por análise de carteira do fundo."
+        ],
+        "action": "Obter os ratings dos emissores junto à mesa de crédito ou a uma agência e confrontá-los com a cláusula. Enquanto não houver fonte, a carta cita a cláusula apenas para justificar compras novas, nunca para atestar o que já está na carteira."
+      },
+      {
+        "code": "position_above_concentration_limit",
+        "severity": "review",
+        "title": "Concentração acima do limite de política",
+        "position": {
+          "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+          "value_brl": 96178.73,
+          "weight": 0.308081
+        },
+        "measured": {
+          "share_of_invested": 0.308081
+        },
+        "threshold": {
+          "share_of_invested": 0.2,
+          "source": "house policy",
+          "assumption": true
+        },
+        "action": "Avaliar rebalanceamento gradual; o perfil pede diversificação, sem fixar limite numérico."
+      },
+      {
+        "code": "restricted_product_eligibility_review",
+        "severity": "review",
+        "title": "Produtos destinados a investidor qualificado na carteira",
+        "position": {
+          "label": "3 fundos",
+          "value_brl": 94835.45,
+          "weight": 0.303778
+        },
+        "measured": {
+          "visible_net_worth_brl": 386858.82,
+          "holdings": [
+            {
+              "name": "Brave I FIC FIM CP",
+              "cnpj": "35726300000137",
+              "weight": 0.232449,
+              "target_investor": "Qualificado",
+              "renamed_to": "BRAVE 90 FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO EM DIREITOS CREDITÓRIOS"
+            },
+            {
+              "name": "Truxt Long Bias Advisory FIC FIM",
+              "cnpj": "30830162000118",
+              "weight": 0.040111,
+              "target_investor": "Qualificado",
+              "renamed_to": "TRUXT LONG BIAS ADVISORY FIF EM COTAS DE FI FINANCEIROS MULTIMERCADOS RESPONSABILIDADE LIMITADA"
+            },
+            {
+              "name": "STK Long Biased FIC FIA",
+              "cnpj": "12282747000169",
+              "weight": 0.031218,
+              "target_investor": "Qualificado",
+              "renamed_to": "STK LONG BIASED FIC DE FUNDOS DE INVESTIMENTO FINANCEIRO DE AÇÕES - RESPONSABILIDADE LIMITADA"
+            }
+          ]
+        },
+        "threshold": {
+          "qualified_investor_brl": 1000000,
+          "source": "CVM Resolution 30 definition of investidor qualificado",
+          "assumption": false
+        },
+        "caveats": [
+          "O patrimônio visível na XP é apenas parte dos ativos financeiros do cliente.",
+          "Posições podem ter sido adquiridas antes de o produto ser reclassificado."
+        ],
+        "action": "Verificar o enquadramento do cliente como investidor qualificado antes de qualquer novo aporte nesses produtos."
+      },
+      {
+        "code": "position_above_concentration_limit",
+        "severity": "review",
+        "title": "Concentração acima do limite de política",
+        "position": {
+          "label": "Brave I FIC FIM CP",
+          "value_brl": 72567.43,
+          "weight": 0.232449
+        },
+        "measured": {
+          "share_of_invested": 0.232449
+        },
+        "threshold": {
+          "share_of_invested": 0.2,
+          "source": "house policy",
+          "assumption": true
+        },
+        "action": "Avaliar rebalanceamento gradual; o perfil pede diversificação, sem fixar limite numérico."
+      },
+      {
+        "code": "position_deeply_below_cost",
+        "severity": "review",
+        "title": "Posição muito abaixo do preço médio",
+        "position": {
+          "label": "HAPV3",
+          "value_brl": 6143.14,
+          "weight": 0.019678
+        },
+        "measured": {
+          "return_since_purchase": -0.745839,
+          "average_price": 15.62,
+          "last_price": 3.97,
+          "investment_date": "2022-11-02",
+          "return_reference_month": 0.76444444
+        },
+        "threshold": {
+          "return_since_purchase": -0.5,
+          "source": "house policy",
+          "assumption": true
+        },
+        "action": "Reavaliar a tese de investimento. Um mês forte isolado não altera a posição acumulada; decidir manutenção ou realização com base na aderência ao perfil."
+      },
+      {
+        "code": "ticker_superseded_by_corporate_action",
+        "severity": "informational",
+        "title": "Código de negociação substituído por evento societário",
+        "position": {
+          "label": "MRFG3",
+          "value_brl": 15432.89,
+          "weight": 0.049435
+        },
+        "measured": {
+          "successor": "MBRF3",
+          "successor_name": "MBRF Global Foods Company S.A.",
+          "reason": "Marfrig reorganised with BRF into MBRF"
+        },
+        "threshold": {
+          "rule": "ticker does not resolve at the market data provider",
+          "source": "Yahoo Finance",
+          "assumption": false
+        },
+        "action": "Atualizar o cadastro da posição para MBRF3. Não há impacto econômico; é registro."
+      },
+      {
+        "code": "ticker_superseded_by_corporate_action",
+        "severity": "informational",
+        "title": "Código de negociação substituído por evento societário",
+        "position": {
+          "label": "ARZZ3",
+          "value_brl": 10923.72,
+          "weight": 0.034991
+        },
+        "measured": {
+          "successor": "AZZA3",
+          "successor_name": "Azzas 2154 S.A.",
+          "reason": "Arezzo & Co merged with Grupo Soma to form Azzas 2154"
+        },
+        "threshold": {
+          "rule": "ticker does not resolve at the market data provider",
+          "source": "Yahoo Finance",
+          "assumption": false
+        },
+        "action": "Atualizar o cadastro da posição para AZZA3. Não há impacto econômico; é registro."
+      },
+      {
+        "code": "position_not_measurable",
+        "severity": "informational",
+        "title": "Posição sem rentabilidade mensal apurável",
+        "position": {
+          "label": "Trend Investback FIC FIRF Simples",
+          "value_brl": 305.44,
+          "weight": 0.000978
+        },
+        "measured": {
+          "reason": "No CVM name record - current or historical - contains all of: TREND, INVESTBACK."
+        },
+        "threshold": {
+          "rule": "no primary source for a monthly return",
+          "source": "CVM / price file",
+          "assumption": false
+        },
+        "action": "Confirmar a identificação do produto para que a apuração passe a ser automática."
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "buy-petr4",
+        "addresses_finding": null,
+        "action": "evaluate_purchase",
+        "priority": 2,
+        "instrument_class": "acoes",
+        "ticker": "PETR4",
+        "headline": "Candidato para análise: PETR4",
+        "evidence": {
+          "trailing_dividend_yield": 0.251058,
+          "dividend_events": 6,
+          "dividends_paid_per_share": 7.529228,
+          "annualised_volatility": 0.259666,
+          "max_drawdown": -0.289,
+          "last_close": 29.99,
+          "monthly_return": 0.06666667,
+          "window": {
+            "start": "2024-04-30",
+            "end": "2025-04-30",
+            "months": 12
+          }
+        },
+        "profile_basis": {
+          "quote": "Ações de Empresas Consolidadas com Dividendos",
+          "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+          "screen": {
+            "min_trailing_dividend_yield": 0.02,
+            "min_dividend_events": 2,
+            "assumption": true
+          }
+        },
+        "price_reconciliation": {
+          "xp_price_file": 37.12,
+          "market_close": 29.99,
+          "market_close_date": "2025-04-30",
+          "gap": 0.237746,
+          "status": "divergent",
+          "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+        },
+        "rationale_inputs": [
+          "Pagou 6 dividendos nos últimos 12 meses, dividend yield de 25,11% sobre o preço de mercado.",
+          "Volatilidade anualizada de 25,97%.",
+          "Candidato extraído da lista de ativos precificados pela própria XP.",
+          "Atenção: o arquivo de preços da XP marca R$ 37,12 contra fechamento de mercado de R$ 29,99 em 2025-04-30 (23,8%). Confirmar a fonte de preço antes de dimensionar a ordem."
+        ],
+        "source": {
+          "provider": "Yahoo Finance",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/PETR4.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+          "retrieved_at": "2026-08-28T20:07:45.369Z"
+        },
+        "requires_advisor_confirmation": true
+      },
+      {
+        "id": "buy-bbas3",
+        "addresses_finding": null,
+        "action": "evaluate_purchase",
+        "priority": 3,
+        "instrument_class": "acoes",
+        "ticker": "BBAS3",
+        "headline": "Candidato para análise: BBAS3",
+        "evidence": {
+          "trailing_dividend_yield": 0.09069,
+          "dividend_events": 7,
+          "dividends_paid_per_share": 2.623661,
+          "annualised_volatility": 0.19186,
+          "max_drawdown": -0.188653,
+          "last_close": 28.93,
+          "monthly_return": 0.05204461,
+          "window": {
+            "start": "2024-04-30",
+            "end": "2025-04-30",
+            "months": 12
+          }
+        },
+        "profile_basis": {
+          "quote": "Ações de Empresas Consolidadas com Dividendos",
+          "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+          "screen": {
+            "min_trailing_dividend_yield": 0.02,
+            "min_dividend_events": 2,
+            "assumption": true
+          }
+        },
+        "price_reconciliation": {
+          "xp_price_file": 28.3,
+          "market_close": 28.93,
+          "market_close_date": "2025-04-30",
+          "gap": -0.021777,
+          "status": "consistent",
+          "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+        },
+        "rationale_inputs": [
+          "Pagou 7 dividendos nos últimos 12 meses, dividend yield de 9,07% sobre o preço de mercado.",
+          "Volatilidade anualizada de 19,19%.",
+          "Candidato extraído da lista de ativos precificados pela própria XP."
+        ],
+        "source": {
+          "provider": "Yahoo Finance",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/BBAS3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+          "retrieved_at": "2026-08-28T20:07:45.376Z"
+        },
+        "requires_advisor_confirmation": true
+      },
+      {
+        "id": "buy-vale3",
+        "addresses_finding": null,
+        "action": "evaluate_purchase",
+        "priority": 4,
+        "instrument_class": "acoes",
+        "ticker": "VALE3",
+        "headline": "Candidato para análise: VALE3",
+        "evidence": {
+          "trailing_dividend_yield": 0.089977,
+          "dividend_events": 3,
+          "dividends_paid_per_share": 4.756176,
+          "annualised_volatility": 0.256914,
+          "max_drawdown": -0.256573,
+          "last_close": 52.86,
+          "monthly_return": 0.03846154,
+          "window": {
+            "start": "2024-04-30",
+            "end": "2025-04-30",
+            "months": 12
+          }
+        },
+        "profile_basis": {
+          "quote": "Ações de Empresas Consolidadas com Dividendos",
+          "source": "Client risk profile, Produtos Financeiros Compatíveis, item a",
+          "screen": {
+            "min_trailing_dividend_yield": 0.02,
+            "min_dividend_events": 2,
+            "assumption": true
+          }
+        },
+        "price_reconciliation": {
+          "xp_price_file": 63.45,
+          "market_close": 52.86,
+          "market_close_date": "2025-04-30",
+          "gap": 0.200341,
+          "status": "divergent",
+          "note": "Dividend yield is computed from market data on both sides. The price file is reconciled against it, not blended with it."
+        },
+        "rationale_inputs": [
+          "Pagou 3 dividendos nos últimos 12 meses, dividend yield de 9,00% sobre o preço de mercado.",
+          "Volatilidade anualizada de 25,69%.",
+          "Candidato extraído da lista de ativos precificados pela própria XP.",
+          "Atenção: o arquivo de preços da XP marca R$ 63,45 contra fechamento de mercado de R$ 52,86 em 2025-04-30 (20,0%). Confirmar a fonte de preço antes de dimensionar a ordem."
+        ],
+        "source": {
+          "provider": "Yahoo Finance",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/VALE3.SA?period1=1714435200&period2=1746316800&interval=1d&events=div",
+          "retrieved_at": "2026-08-28T20:07:45.316Z"
+        },
+        "requires_advisor_confirmation": true
+      },
+      {
+        "id": "review-hapv3",
+        "addresses_finding": {
+          "code": "position_deeply_below_cost",
+          "position": "HAPV3"
+        },
+        "action": "review_for_reduction",
+        "priority": 5,
+        "ticker": "HAPV3",
+        "headline": "Revisão sugerida: posição em HAPV3",
+        "amount_brl": 6143.14,
+        "evidence": {
+          "return_since_purchase": -0.745839,
+          "return_reference_month": 0.76444444,
+          "average_price": 15.62,
+          "last_price": 3.97,
+          "weight": 0.019678
+        },
+        "rationale_inputs": [
+          "Acumula -74,58% desde a compra em 2022-11-02.",
+          "No mês de referência a posição variou 76,44%, o que não altera o resultado acumulado.",
+          "A revisão se apoia no perfil, que privilegia empresas consolidadas pagadoras de dividendos, e não no movimento do mês."
+        ],
+        "requires_advisor_confirmation": true
+      }
+    ],
+    "benchmarks": {
+      "ibovespa": {
+        "value": 0.03690312,
+        "excess_pp": -1.0689,
+        "label_pt": "Ibovespa",
+        "display": "3,69%",
+        "excess_display": "−1,07 p.p.",
+        "real_return_display": null
+      }
+    },
+    "full_attribution": [
+      {
+        "label": "LREN3",
+        "contribution_pp": 0.8629,
+        "return": 0.08938907,
+        "pnl": 2282.1
+      },
+      {
+        "label": "MRFG3",
+        "contribution_pp": -1.1432,
+        "return": -0.16381418,
+        "pnl": -3023.4
+      },
+      {
+        "label": "ARZZ3",
+        "contribution_pp": 0.0022,
+        "return": 0.0005305,
+        "pnl": 5.79
+      },
+      {
+        "label": "HAPV3",
+        "contribution_pp": 1.0064,
+        "return": 0.76444444,
+        "pnl": 2661.51
+      },
+      {
+        "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+        "contribution_pp": 0.4361,
+        "return": 0.01213808,
+        "pnl": 1153.42
+      },
+      {
+        "label": "Brave I FIC FIM CP",
+        "contribution_pp": 0.3227,
+        "return": 0.0119,
+        "pnl": 853.4
+      },
+      {
+        "label": "Truxt Long Bias Advisory FIC FIM",
+        "contribution_pp": 0.4369,
+        "return": 0.10165652,
+        "pnl": 1155.49
+      },
+      {
+        "label": "STK Long Biased FIC FIA",
+        "contribution_pp": 0.2268,
+        "return": 0.06558325,
+        "pnl": 599.83
+      },
+      {
+        "label": "Constellation Institucional Advisory FIC FIA",
+        "contribution_pp": 0.3209,
+        "return": 0.1112859,
+        "pnl": 848.7
+      },
+      {
+        "label": "Ibiuna Hedge ST Advisory FIC FIM",
+        "contribution_pp": 0.1497,
+        "return": 0.03532844,
+        "pnl": 395.86
+      }
+    ],
+    "fund_costs": {
+      "lines": [
+        {
+          "label": "Brave I FIC FIM CP",
+          "cnpj": "35726300000137",
+          "market_value": 72567.43,
+          "administration_pct": 0.9,
+          "administration_in_force_since": "2020-11-23",
+          "annual_cost_brl": 653.11,
+          "performance": {
+            "rate_pct": 0,
+            "in_force_since": "2020-11-23",
+            "terms": null
+          }
+        },
+        {
+          "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+          "cnpj": "43917493000131",
+          "market_value": 96178.73,
+          "administration_pct": 0.5,
+          "administration_in_force_since": "2021-11-01",
+          "annual_cost_brl": 480.89,
+          "performance": {
+            "rate_pct": 0,
+            "in_force_since": "2021-11-01",
+            "terms": null
+          }
+        },
+        {
+          "label": "Truxt Long Bias Advisory FIC FIM",
+          "cnpj": "30830162000118",
+          "market_value": 12522.05,
+          "administration_pct": 1.9,
+          "administration_in_force_since": "2022-12-29",
+          "annual_cost_brl": 237.92,
+          "performance": {
+            "rate_pct": 20,
+            "in_force_since": "2022-12-29",
+            "terms": "A TAXA DE PERFORMANCE SERÁ DE 20% DO QUE EXCEDER A 100% DO IPCAIMAB"
+          }
+        },
+        {
+          "label": "Ibiuna Hedge ST Advisory FIC FIM",
+          "cnpj": "30493349000173",
+          "market_value": 11601.02,
+          "administration_pct": 1.96,
+          "administration_in_force_since": "2018-07-16",
+          "annual_cost_brl": 227.38,
+          "performance": {
+            "rate_pct": 0,
+            "in_force_since": "2019-11-01",
+            "terms": null
+          }
+        },
+        {
+          "label": "STK Long Biased FIC FIA",
+          "cnpj": "12282747000169",
+          "market_value": 9745.97,
+          "administration_pct": 2,
+          "administration_in_force_since": "2019-04-03",
+          "annual_cost_brl": 194.92,
+          "performance": {
+            "rate_pct": 20,
+            "in_force_since": "2020-10-19",
+            "terms": "Para informacoes adicionais, vide o Regulamento"
+          }
+        },
+        {
+          "label": "Constellation Institucional Advisory FIC FIA",
+          "cnpj": "34462109000162",
+          "market_value": 8475.02,
+          "administration_pct": 2.2,
+          "administration_in_force_since": "2021-09-06",
+          "annual_cost_brl": 186.45,
+          "performance": {
+            "rate_pct": 20,
+            "in_force_since": "2021-09-06",
+            "terms": "Para informacoes adicionais, vide o Regulamento"
+          }
+        },
+        {
+          "label": "Trend Investback FIC FIRF Simples",
+          "cnpj": null,
+          "market_value": 305.44,
+          "administration_pct": null,
+          "annual_cost_brl": null,
+          "performance": null,
+          "reason": "no fee published for the reference date"
+        }
+      ],
+      "priced_value_brl": 211090.22,
+      "unpriced_value_brl": 305.44,
+      "coverage": 0.9985551264392089,
+      "annual_cost_brl": 1980.67,
+      "monthly_cost_brl": 165.06,
+      "weighted_average_pct": 0.9383,
+      "basis": "Administration fee only, applied to the position value on the statement date. Performance fees are reported as declared rates and are not converted to reais, because they depend on a high-water mark no public dataset carries."
+    },
+    "funds_vs_declared_benchmark": {
+      "rows": [
+        {
+          "label": "Truxt Long Bias Advisory FIC FIM",
+          "cnpj": "30830162000118",
+          "fund_return": 0.10165652,
+          "declared_benchmark": "DI de um dia",
+          "anbima_class": "Multimercados Livre",
+          "benchmark_key": "cdi",
+          "benchmark_label_pt": "CDI",
+          "benchmark_return": 0.0105588,
+          "excess_pp": 9.1098,
+          "pct_of_benchmark": 962.77,
+          "status": "compared"
+        },
+        {
+          "label": "Constellation Institucional Advisory FIC FIA",
+          "cnpj": "34462109000162",
+          "fund_return": 0.1112859,
+          "declared_benchmark": "Ibovespa",
+          "anbima_class": "Ações Valor/Crescimento",
+          "benchmark_key": "ibovespa",
+          "benchmark_label_pt": "Ibovespa",
+          "benchmark_return": 0.03690312,
+          "excess_pp": 7.4383,
+          "pct_of_benchmark": 301.56,
+          "status": "compared"
+        },
+        {
+          "label": "Ibiuna Hedge ST Advisory FIC FIM",
+          "cnpj": "30493349000173",
+          "fund_return": 0.03532844,
+          "declared_benchmark": "DI de um dia",
+          "anbima_class": "Multimercados Macro",
+          "benchmark_key": "cdi",
+          "benchmark_label_pt": "CDI",
+          "benchmark_return": 0.0105588,
+          "excess_pp": 2.477,
+          "pct_of_benchmark": 334.59,
+          "status": "compared"
+        },
+        {
+          "label": "Riza Lotus Plus Advisory FIC FIRF REF DI CP",
+          "cnpj": "43917493000131",
+          "fund_return": 0.01213808,
+          "declared_benchmark": "DI de um dia",
+          "anbima_class": "Renda Fixa Duração Livre Grau de Invest.",
+          "benchmark_key": "cdi",
+          "benchmark_label_pt": "CDI",
+          "benchmark_return": 0.0105588,
+          "excess_pp": 0.1579,
+          "pct_of_benchmark": 114.96,
+          "status": "compared"
+        },
+        {
+          "label": "Brave I FIC FIM CP",
+          "cnpj": "35726300000137",
+          "fund_return": 0.0119,
+          "declared_benchmark": null,
+          "anbima_class": null,
+          "benchmark_key": null,
+          "benchmark_label_pt": null,
+          "benchmark_return": null,
+          "excess_pp": null,
+          "pct_of_benchmark": null,
+          "status": "no_declared_benchmark",
+          "reason": "O fundo não declarou indicador de desempenho no registro da CVM. Nenhum benchmark foi atribuído por inferência."
+        },
+        {
+          "label": "STK Long Biased FIC FIA",
+          "cnpj": "12282747000169",
+          "fund_return": 0.06558325,
+          "declared_benchmark": null,
+          "anbima_class": "Ações Valor/Crescimento",
+          "benchmark_key": null,
+          "benchmark_label_pt": null,
+          "benchmark_return": null,
+          "excess_pp": null,
+          "pct_of_benchmark": null,
+          "status": "no_declared_benchmark",
+          "reason": "O fundo não declarou indicador de desempenho no registro da CVM. Nenhum benchmark foi atribuído por inferência."
+        }
+      ],
+      "summary": {
+        "compared": 4,
+        "total": 6,
+        "beat": 4,
+        "trailed": 0,
+        "basis": "Cada fundo comparado ao indicador que ele próprio declarou à CVM (Indicador_Desempenho, registro_classe.csv). Um mês isolado; não é alfa."
+      }
+    },
+    "data_quality_flags": [
+      {
+        "code": "source_row_order_inverted",
+        "severity": "info",
+        "detail": "\"Ibiuna Hedge ST Advisory FIC FIM\" appears after its values in the source file; recovered by type-based reading.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Riza Lotus Plus Advisory FIC FIRF REF DI CP: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Brave I FIC FIM CP: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Trend Investback FIC FIRF Simples: quota dated 2024-04-05, 397 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Truxt Long Bias Advisory FIC FIM: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "STK Long Biased FIC FIA: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Constellation Institucional Advisory FIC FIA: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "stale_quota_date",
+        "severity": "warning",
+        "detail": "Ibiuna Hedge ST Advisory FIC FIM: quota dated 2024-04-04, 398 days before the statement date 2025-05-07. Monthly performance cannot be derived from this figure.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "matured_instrument_still_listed",
+        "severity": "warning",
+        "detail": "CDB BANCO C6 CONSIGNADO S.A. - SET/2024: matured on 2024-09-05, before the statement date 2025-05-07.",
+        "origin": "portfolio_parser"
+      },
+      {
+        "code": "ticker_superseded",
+        "severity": "warning",
+        "detail": "MRFG3 no longer trades: replaced by MBRF3 (MBRF Global Foods Company S.A.). Marfrig reorganised with BRF into MBRF.",
+        "origin": "market_data"
+      },
+      {
+        "code": "ticker_superseded",
+        "severity": "warning",
+        "detail": "ARZZ3 no longer trades: replaced by AZZA3 (Azzas 2154 S.A.). Arezzo & Co merged with Grupo Soma to form Azzas 2154.",
+        "origin": "market_data"
+      },
+      {
+        "code": "holding_return_divergent",
+        "severity": "warning",
+        "detail": "LREN3: the price file implies 8.94% for the month while LREN3 closed at 19.46% (gap -10.5214 p.p.). The statement remains the system of record; the divergence is disclosed, not resolved."
+      },
+      {
+        "code": "holding_return_divergent",
+        "severity": "warning",
+        "detail": "MRFG3: the price file implies -16.38% for the month while MBRF3 closed at 18.94% (gap -35.3183 p.p., opposite sign). The statement remains the system of record; the divergence is disclosed, not resolved."
+      },
+      {
+        "code": "holding_return_divergent",
+        "severity": "warning",
+        "detail": "ARZZ3: the price file implies 0.05% for the month while AZZA3 closed at 29.96% (gap -29.9061 p.p.). The statement remains the system of record; the divergence is disclosed, not resolved."
+      },
+      {
+        "code": "holding_return_divergent",
+        "severity": "warning",
+        "detail": "HAPV3: the price file implies 76.44% for the month while HAPV3 closed at 4.98% (gap 71.4671 p.p.). The statement remains the system of record; the divergence is disclosed, not resolved."
+      },
+      {
+        "code": "no_cash_flow_assumption",
+        "severity": "info",
+        "detail": "Fund start values are derived as V1/(1+r), which assumes no contributions or redemptions during the reference month. A mid-month flow would require a money-weighted return, which the available inputs cannot support."
+      },
+      {
+        "code": "fee_version_not_yet_in_force",
+        "severity": "info",
+        "detail": "1 TAXA_ADM row(s) start after 2025-04-30 and were ignored. Using the newest row instead of the one in force would report a fee that did not exist on the statement date.",
+        "origin": "cvm_fees"
+      }
+    ]
+  },
+  "omissions": [
+    {
+      "kind": "findings_summarised",
+      "count": 5,
+      "severity": "review",
+      "disclosure_pt": "Outros 5 pontos de atenção de menor urgência foram identificados e serão tratados por seu assessor."
+    },
+    {
+      "kind": "findings_to_annex",
+      "count": 3,
+      "severity": "informational",
+      "disclosure_pt": null
+    },
+    {
+      "kind": "recommendations_deferred",
+      "count": 4,
+      "disclosure_pt": "Outras 4 sugestões foram preparadas e estão à disposição para discussão com seu assessor."
+    }
+  ],
+  "checks": {
+    "attribution_reconciles": true,
+    "shown_plus_remainder_pp": 2.6214,
+    "headline_pp": 2.6214
+  },
+  "prompt_payloads": {
+    "macro": {
+      "ano_de_referencia": 2025,
+      "data_da_pesquisa": "30/04/2025",
+      "instituicoes_consultadas": 140,
+      "o_que_isso_significa": "O ambiente de juros altos por mais tempo favorece a renda fixa PÓS-FIXADA e os títulos indexados à inflação, que acompanham a taxa. Não diga que juros altos prejudicam a renda fixa: isso vale para prefixados e prazos longos, não para o que está sendo proposto.",
+      "indicadores": [
+        {
+          "indicador": "Selic",
+          "projecao_da_xp": "15,50%",
+          "mediana_do_mercado": "15,00%",
+          "menor_projecao": "13,50%",
+          "maior_projecao": "15,75%",
+          "posicao_da_xp_na_faixa": "percentil 88,9",
+          "xp_esta": "acima do consenso"
+        },
+        {
+          "indicador": "IPCA",
+          "projecao_da_xp": "6,10%",
+          "mediana_do_mercado": "5,55%",
+          "menor_projecao": "4,35%",
+          "maior_projecao": "6,67%",
+          "posicao_da_xp_na_faixa": "percentil 75,4",
+          "xp_esta": "acima do consenso"
+        }
+      ]
+    },
+    "performance": {
+      "periodo": "abril de 2025",
+      "rentabilidade_medida": "2,62%",
+      "resultado_em_reais": "R$ 6.932,70",
+      "cobertura_da_carteira": "86,94%",
+      "rentabilidade_do_patrimonio": "1,82%",
+      "custo_do_saldo_parado": "+0,80 p.p.",
+      "o_que_e_custo_do_saldo_parado": "A diferenca entre o retorno da parcela investida e o retorno do patrimonio inteiro. E quanto custa manter parte do dinheiro sem aplicacao.",
+      "maior_contribuicao": {
+        "ativo": "HAPV3",
+        "contribuicao": "+1,01 p.p.",
+        "retorno_no_mes": "76,44%"
+      },
+      "maior_detracao": {
+        "ativo": "MRFG3",
+        "contribuicao": "−1,14 p.p.",
+        "retorno_no_mes": "−16,38%"
+      },
+      "quantas_posicoes_subiram": 9,
+      "quantas_posicoes_cairam": 1,
+      "comparacoes": [
+        {
+          "referencia": "CDI",
+          "variacao_no_mes": "1,06%",
+          "diferenca_para_a_carteira": "+1,57 p.p."
+        },
+        {
+          "referencia": "inflação (IPCA)",
+          "variacao_no_mes": "0,43%",
+          "diferenca_para_a_carteira": "+2,19 p.p.",
+          "ganho_acima_da_inflacao": "2,18%"
+        }
+      ]
+    },
+    "recommendations": {
+      "propostas": [
+        {
+          "titulo": "Proposta: alocar o saldo parado em renda fixa pós-fixada",
+          "valor": "R$ 35.986,74",
+          "motivos": [
+            "Saldo disponível de R$ 74.672,62 representa 19,30% do patrimônio.",
+            "A 14,15% ao ano, aplicar R$ 35.986,74 recupera R$ 5.092,12 em 12 meses.",
+            "Etapa seguinte, condicionada à liquidação do CDB vencido: mais R$ 40.478,75, totalizando R$ 76.465,49 a realocar.",
+            "A casa projeta Selic de 15,50% contra mediana de 15,00% entre 140 instituições (percentil 88,9 da faixa). Expectativa de juro alto por mais tempo favorece pós-fixado e indexados à inflação."
+          ]
+        },
+        {
+          "titulo": "Pendência: confirmar liquidação de título vencido",
+          "valor": "R$ 40.478,75",
+          "motivos": [
+            "CDB BANCO C6 CONSIGNADO S.A. - SET/2024 venceu em 05/09/2024, 244 dias antes da data do extrato.",
+            "Enquanto a liquidação não for confirmada, este valor não pode ser tratado como remunerado."
+          ],
+          "vencimento": "05/09/2024"
+        }
+      ],
+      "outras_preparadas": 4
+    },
+    "composer": {
+      "cliente": "Albert da Silva",
+      "assessor": "Antonio Bicudo",
+      "codigo_do_assessor": "A7699",
+      "periodo": "abril de 2025",
+      "aviso": "As informações de conformidade e os avisos sobre o que não coube nesta carta são impressos separadamente. Não os reproduza nem os mencione."
+    }
+  },
+  "selection_rule": "config/suitability-policy.json -> letter_budget"
+}

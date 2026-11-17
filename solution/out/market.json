@@ -1,0 +1,833 @@
+{
+  "reference_month": "2025-04",
+  "period": {
+    "start": "2025-04-01",
+    "end": "2025-04-30",
+    "label_pt": "abril de 2025"
+  },
+  "benchmarks": {
+    "cdi": {
+      "indicator": "CDI",
+      "period": {
+        "start": "2025-04-01",
+        "end": "2025-04-30"
+      },
+      "business_days": 20,
+      "value": 0.0105588,
+      "method": "compounded daily factors",
+      "annualised": {
+        "value": 0.1415,
+        "basis": "252 business days",
+        "published": {
+          "value": 0.1415,
+          "as_of": "2025-04-30",
+          "source": {
+            "provider": "BCB SGS",
+            "series": 4389,
+            "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.4389/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+            "retrieved_at": "2026-08-28T20:59:40.705Z"
+          }
+        },
+        "derived": 0.1415002,
+        "cross_check": {
+          "gap": 2e-7,
+          "status": "consistent"
+        }
+      },
+      "source": {
+        "provider": "BCB SGS",
+        "series": 12,
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.12/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+        "retrieved_at": "2026-08-27T04:02:14.762Z"
+      }
+    },
+    "ipca": {
+      "indicator": "IPCA",
+      "period": {
+        "start": "2025-04-01",
+        "end": "2025-04-30"
+      },
+      "value": 0.0043,
+      "source": {
+        "provider": "BCB SGS",
+        "series": 433,
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+        "retrieved_at": "2026-08-27T04:02:14.793Z"
+      }
+    },
+    "ibovespa": {
+      "symbol": "^BVSP",
+      "name": "IBOVESPA",
+      "from": {
+        "date": "2025-03-31",
+        "close": 130260
+      },
+      "to": {
+        "date": "2025-04-30",
+        "close": 135067
+      },
+      "value": 0.03690312,
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EBVSP?period1=1740787200&period2=1746316800&interval=1d",
+        "retrieved_at": "2026-08-27T04:02:14.902Z"
+      }
+    },
+    "selic_target": {
+      "indicator": "Selic target",
+      "as_of": "2025-04-30",
+      "value_pct_year": 14.25,
+      "source": {
+        "provider": "BCB SGS",
+        "series": 432,
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.432/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+        "retrieved_at": "2026-08-27T04:02:14.767Z"
+      }
+    },
+    "usd_brl": {
+      "indicator": "USD/BRL",
+      "as_of": "2025-04-30",
+      "value": 5.6608,
+      "source": {
+        "provider": "BCB SGS",
+        "series": 1,
+        "url": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados?formato=json&dataInicial=01/04/2025&dataFinal=30/04/2025",
+        "retrieved_at": "2026-08-27T04:02:14.770Z"
+      }
+    }
+  },
+  "consensus": {
+    "Selic": {
+      "indicator": "Selic",
+      "reference_year": "2025",
+      "survey_date": "2025-04-30",
+      "median": 15,
+      "mean": 14.7956,
+      "min": 13.5,
+      "max": 15.75,
+      "std_dev": 0.4208,
+      "respondents": 140,
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'Selic'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-27T04:02:15.358Z"
+      }
+    },
+    "IPCA": {
+      "indicator": "IPCA",
+      "reference_year": "2025",
+      "survey_date": "2025-04-30",
+      "median": 5.551,
+      "mean": 5.5561,
+      "min": 4.35,
+      "max": 6.67,
+      "std_dev": 0.3646,
+      "respondents": 148,
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'IPCA'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-27T04:02:15.793Z"
+      }
+    },
+    "Câmbio": {
+      "indicator": "Câmbio",
+      "reference_year": "2025",
+      "survey_date": "2025-04-30",
+      "median": 5.9,
+      "mean": 5.8787,
+      "min": 5.5,
+      "max": 6.3,
+      "std_dev": 0.1439,
+      "respondents": 118,
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'C%C3%A2mbio'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-27T04:02:16.005Z"
+      }
+    },
+    "PIB Total": {
+      "indicator": "PIB Total",
+      "reference_year": "2025",
+      "survey_date": "2025-04-30",
+      "median": 2,
+      "mean": 2.0309,
+      "min": 1.2571,
+      "max": 2.9572,
+      "std_dev": 0.2984,
+      "respondents": 111,
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=1&%24orderby=Data%20desc&%24filter=Indicador%20eq%20'PIB%20Total'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-27T04:02:16.162Z"
+      }
+    }
+  },
+  "house_view_vs_consensus": [
+    {
+      "indicator": "Selic",
+      "unit": "% a.a.",
+      "direction": "higher_is_tighter",
+      "reference_year": 2025,
+      "survey_date": "2025-04-30",
+      "respondents": 140,
+      "house_value": 15.5,
+      "consensus_median": 15,
+      "gap_vs_median": 0.5,
+      "percentile_in_range": 88.9,
+      "at_or_beyond_extreme": false,
+      "stance": "above_consensus",
+      "consensus_min": 13.5,
+      "consensus_max": 15.75
+    },
+    {
+      "indicator": "IPCA",
+      "unit": "% a.a.",
+      "direction": "higher_is_worse",
+      "reference_year": 2025,
+      "survey_date": "2025-04-30",
+      "respondents": 148,
+      "house_value": 6.1,
+      "consensus_median": 5.551,
+      "gap_vs_median": 0.549,
+      "percentile_in_range": 75.4,
+      "at_or_beyond_extreme": false,
+      "stance": "above_consensus",
+      "consensus_min": 4.35,
+      "consensus_max": 6.67
+    },
+    {
+      "indicator": "Câmbio",
+      "unit": "R$/US$",
+      "direction": "higher_is_weaker_brl",
+      "reference_year": 2025,
+      "survey_date": "2025-04-30",
+      "respondents": 118,
+      "house_value": 6.2,
+      "consensus_median": 5.9,
+      "gap_vs_median": 0.3,
+      "percentile_in_range": 87.5,
+      "at_or_beyond_extreme": false,
+      "stance": "above_consensus",
+      "consensus_min": 5.5,
+      "consensus_max": 6.3
+    },
+    {
+      "indicator": "PIB Total",
+      "unit": "%",
+      "direction": "higher_is_better",
+      "reference_year": 2025,
+      "survey_date": "2025-04-30",
+      "respondents": 111,
+      "house_value": 2,
+      "consensus_median": 2,
+      "gap_vs_median": 0,
+      "percentile_in_range": 43.7,
+      "at_or_beyond_extreme": false,
+      "stance": "at_consensus",
+      "consensus_min": 1.2571,
+      "consensus_max": 2.9572
+    }
+  ],
+  "consensus_history": {
+    "Selic": {
+      "indicator": "Selic",
+      "reference_year": "2025",
+      "period": {
+        "start": "2023-01-01",
+        "end": "2025-04-30"
+      },
+      "points": [
+        {
+          "date": "2023-01-31",
+          "median": 8.625,
+          "mean": 8.763,
+          "min": 6,
+          "max": 12,
+          "respondents": 96
+        },
+        {
+          "date": "2023-02-28",
+          "median": 9,
+          "mean": 8.9325,
+          "min": 6,
+          "max": 11,
+          "respondents": 108
+        },
+        {
+          "date": "2023-03-31",
+          "median": 9,
+          "mean": 8.8868,
+          "min": 6,
+          "max": 11,
+          "respondents": 106
+        },
+        {
+          "date": "2023-04-28",
+          "median": 9,
+          "mean": 8.9325,
+          "min": 6,
+          "max": 11,
+          "respondents": 105
+        },
+        {
+          "date": "2023-05-31",
+          "median": 9,
+          "mean": 9.0344,
+          "min": 7,
+          "max": 12.5,
+          "respondents": 109
+        },
+        {
+          "date": "2023-06-30",
+          "median": 9,
+          "mean": 8.8375,
+          "min": 7,
+          "max": 11.25,
+          "respondents": 118
+        },
+        {
+          "date": "2023-07-31",
+          "median": 8.75,
+          "mean": 8.6723,
+          "min": 7,
+          "max": 11.25,
+          "respondents": 115
+        },
+        {
+          "date": "2023-08-31",
+          "median": 8.5,
+          "mean": 8.5447,
+          "min": 6,
+          "max": 10.5,
+          "respondents": 119
+        },
+        {
+          "date": "2023-09-29",
+          "median": 8.5,
+          "mean": 8.5914,
+          "min": 6.5,
+          "max": 10.5,
+          "respondents": 118
+        },
+        {
+          "date": "2023-10-31",
+          "median": 8.625,
+          "mean": 8.676,
+          "min": 6.5,
+          "max": 10.5,
+          "respondents": 126
+        },
+        {
+          "date": "2023-11-30",
+          "median": 8.625,
+          "mean": 8.704,
+          "min": 6,
+          "max": 10.75,
+          "respondents": 124
+        },
+        {
+          "date": "2023-12-29",
+          "median": 8.5,
+          "mean": 8.5599,
+          "min": 3.5,
+          "max": 10.5,
+          "respondents": 134
+        },
+        {
+          "date": "2024-01-31",
+          "median": 8.5,
+          "mean": 8.5702,
+          "min": 7,
+          "max": 10.5,
+          "respondents": 139
+        },
+        {
+          "date": "2024-02-29",
+          "median": 8.5,
+          "mean": 8.5223,
+          "min": 7,
+          "max": 10,
+          "respondents": 129
+        },
+        {
+          "date": "2024-03-28",
+          "median": 8.5,
+          "mean": 8.5935,
+          "min": 7,
+          "max": 10,
+          "respondents": 137
+        },
+        {
+          "date": "2024-04-30",
+          "median": 9,
+          "mean": 8.9355,
+          "min": 7,
+          "max": 10.25,
+          "respondents": 139
+        },
+        {
+          "date": "2024-05-31",
+          "median": 9.183,
+          "mean": 9.232,
+          "min": 7.5,
+          "max": 10.5,
+          "respondents": 143
+        },
+        {
+          "date": "2024-06-28",
+          "median": 9.5,
+          "mean": 9.6623,
+          "min": 7.5,
+          "max": 12.5,
+          "respondents": 143
+        },
+        {
+          "date": "2024-07-31",
+          "median": 9.5,
+          "mean": 9.817,
+          "min": 7.5,
+          "max": 12.5,
+          "respondents": 138
+        },
+        {
+          "date": "2024-08-30",
+          "median": 10,
+          "mean": 10.1903,
+          "min": 7.5,
+          "max": 12.5,
+          "respondents": 145
+        },
+        {
+          "date": "2024-09-30",
+          "median": 10.75,
+          "mean": 10.9426,
+          "min": 9,
+          "max": 13,
+          "respondents": 142
+        },
+        {
+          "date": "2024-10-31",
+          "median": 11.25,
+          "mean": 11.3496,
+          "min": 9.5,
+          "max": 13.5,
+          "respondents": 133
+        },
+        {
+          "date": "2024-11-29",
+          "median": 12.625,
+          "mean": 12.5995,
+          "min": 10,
+          "max": 15,
+          "respondents": 140
+        },
+        {
+          "date": "2024-12-31",
+          "median": 14.75,
+          "mean": 14.5914,
+          "min": 11.75,
+          "max": 16.325,
+          "respondents": 143
+        },
+        {
+          "date": "2025-01-31",
+          "median": 15,
+          "mean": 15.0398,
+          "min": 12.25,
+          "max": 16.25,
+          "respondents": 132
+        },
+        {
+          "date": "2025-02-28",
+          "median": 15,
+          "mean": 14.9834,
+          "min": 12.25,
+          "max": 16.25,
+          "respondents": 141
+        },
+        {
+          "date": "2025-03-31",
+          "median": 15,
+          "mean": 14.9613,
+          "min": 13.25,
+          "max": 15.75,
+          "respondents": 139
+        },
+        {
+          "date": "2025-04-30",
+          "median": 15,
+          "mean": 14.7956,
+          "min": 13.5,
+          "max": 15.75,
+          "respondents": 140
+        }
+      ],
+      "observations": 583,
+      "sampling": "last survey of each month",
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=2000&%24orderby=Data%20asc&%24select=Data,Mediana,Media,Minimo,Maximo,numeroRespondentes&%24filter=Indicador%20eq%20'Selic'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20ge%20'2023-01-01'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-29T19:30:20.592Z"
+      }
+    },
+    "IPCA": {
+      "indicator": "IPCA",
+      "reference_year": "2025",
+      "period": {
+        "start": "2023-01-01",
+        "end": "2025-04-30"
+      },
+      "points": [
+        {
+          "date": "2023-01-31",
+          "median": 3.5,
+          "mean": 3.6057,
+          "min": 2,
+          "max": 5.58,
+          "respondents": 112
+        },
+        {
+          "date": "2023-02-28",
+          "median": 3.8,
+          "mean": 3.8611,
+          "min": 2,
+          "max": 6,
+          "respondents": 117
+        },
+        {
+          "date": "2023-03-31",
+          "median": 4,
+          "mean": 3.9231,
+          "min": 2,
+          "max": 5.7,
+          "respondents": 121
+        },
+        {
+          "date": "2023-04-28",
+          "median": 4,
+          "mean": 3.9768,
+          "min": 2,
+          "max": 5.63,
+          "respondents": 120
+        },
+        {
+          "date": "2023-05-31",
+          "median": 4,
+          "mean": 3.9174,
+          "min": 2,
+          "max": 5.6,
+          "respondents": 125
+        },
+        {
+          "date": "2023-06-30",
+          "median": 3.6,
+          "mean": 3.6989,
+          "min": 2,
+          "max": 5.23,
+          "respondents": 131
+        },
+        {
+          "date": "2023-07-31",
+          "median": 3.5,
+          "mean": 3.6352,
+          "min": 3,
+          "max": 5.21,
+          "respondents": 129
+        },
+        {
+          "date": "2023-08-31",
+          "median": 3.5,
+          "mean": 3.6149,
+          "min": 2.8088,
+          "max": 5.21,
+          "respondents": 132
+        },
+        {
+          "date": "2023-09-29",
+          "median": 3.5,
+          "mean": 3.5982,
+          "min": 2.7395,
+          "max": 5.22,
+          "respondents": 130
+        },
+        {
+          "date": "2023-10-31",
+          "median": 3.5,
+          "mean": 3.6029,
+          "min": 2.7341,
+          "max": 5.22,
+          "respondents": 133
+        },
+        {
+          "date": "2023-11-30",
+          "median": 3.5,
+          "mean": 3.5926,
+          "min": 2.4,
+          "max": 5,
+          "respondents": 128
+        },
+        {
+          "date": "2023-12-29",
+          "median": 3.5,
+          "mean": 3.5657,
+          "min": 2.4,
+          "max": 5,
+          "respondents": 137
+        },
+        {
+          "date": "2024-01-31",
+          "median": 3.5,
+          "mean": 3.586,
+          "min": 2.9488,
+          "max": 5,
+          "respondents": 148
+        },
+        {
+          "date": "2024-02-29",
+          "median": 3.517,
+          "mean": 3.5896,
+          "min": 3,
+          "max": 5.1,
+          "respondents": 143
+        },
+        {
+          "date": "2024-03-28",
+          "median": 3.51,
+          "mean": 3.6032,
+          "min": 3,
+          "max": 5.1,
+          "respondents": 145
+        },
+        {
+          "date": "2024-04-30",
+          "median": 3.628,
+          "mean": 3.6977,
+          "min": 2.9863,
+          "max": 5.02,
+          "respondents": 147
+        },
+        {
+          "date": "2024-05-31",
+          "median": 3.765,
+          "mean": 3.796,
+          "min": 2.5493,
+          "max": 5.7,
+          "respondents": 152
+        },
+        {
+          "date": "2024-06-28",
+          "median": 3.8656,
+          "mean": 3.8932,
+          "min": 2.989,
+          "max": 5.7,
+          "respondents": 147
+        },
+        {
+          "date": "2024-07-31",
+          "median": 3.9597,
+          "mean": 3.9509,
+          "min": 2.989,
+          "max": 5.7,
+          "respondents": 147
+        },
+        {
+          "date": "2024-08-30",
+          "median": 3.9151,
+          "mean": 3.9333,
+          "min": 3.1994,
+          "max": 5.7,
+          "respondents": 150
+        },
+        {
+          "date": "2024-09-30",
+          "median": 3.97,
+          "mean": 3.9923,
+          "min": 3.2507,
+          "max": 5.7,
+          "respondents": 147
+        },
+        {
+          "date": "2024-10-31",
+          "median": 4,
+          "mean": 4.067,
+          "min": 3.3639,
+          "max": 5.7,
+          "respondents": 146
+        },
+        {
+          "date": "2024-11-29",
+          "median": 4.4,
+          "mean": 4.4985,
+          "min": 3.3794,
+          "max": 5.9708,
+          "respondents": 152
+        },
+        {
+          "date": "2024-12-31",
+          "median": 4.9932,
+          "mean": 4.9768,
+          "min": 3.6416,
+          "max": 6.5,
+          "respondents": 149
+        },
+        {
+          "date": "2025-01-31",
+          "median": 5.51,
+          "mean": 5.465,
+          "min": 3.7986,
+          "max": 7.1854,
+          "respondents": 143
+        },
+        {
+          "date": "2025-02-28",
+          "median": 5.65,
+          "mean": 5.6,
+          "min": 3.4425,
+          "max": 7,
+          "respondents": 147
+        },
+        {
+          "date": "2025-03-31",
+          "median": 5.65,
+          "mean": 5.6332,
+          "min": 4.35,
+          "max": 7.0201,
+          "respondents": 145
+        },
+        {
+          "date": "2025-04-30",
+          "median": 5.551,
+          "mean": 5.5561,
+          "min": 4.35,
+          "max": 6.67,
+          "respondents": 148
+        }
+      ],
+      "observations": 583,
+      "sampling": "last survey of each month",
+      "source": {
+        "provider": "BCB Focus (Olinda)",
+        "url": "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/odata/ExpectativasMercadoAnuais?%24format=json&%24top=2000&%24orderby=Data%20asc&%24select=Data,Mediana,Media,Minimo,Maximo,numeroRespondentes&%24filter=Indicador%20eq%20'IPCA'%20and%20DataReferencia%20eq%20'2025'%20and%20Data%20ge%20'2023-01-01'%20and%20Data%20le%20'2025-04-30'%20and%20baseCalculo%20eq%200",
+        "retrieved_at": "2026-08-29T19:30:21.318Z"
+      }
+    }
+  },
+  "house_view_as_of": "2025-02-06",
+  "ticker_validation": [
+    {
+      "ticker": "LREN3",
+      "status": "active",
+      "name": "Lojas Renner S.A."
+    },
+    {
+      "ticker": "MRFG3",
+      "status": "superseded",
+      "successor": "MBRF3",
+      "successor_name": "MBRF Global Foods Company S.A.",
+      "reason": "Marfrig reorganised with BRF into MBRF"
+    },
+    {
+      "ticker": "ARZZ3",
+      "status": "superseded",
+      "successor": "AZZA3",
+      "successor_name": "Azzas 2154 S.A.",
+      "reason": "Arezzo & Co merged with Grupo Soma to form Azzas 2154"
+    },
+    {
+      "ticker": "HAPV3",
+      "status": "active",
+      "name": "Hapvida Participações e Investimentos S.A."
+    }
+  ],
+  "held_return_reference": [
+    {
+      "ticker": "LREN3",
+      "resolved_symbol": "LREN3",
+      "via_successor": null,
+      "value": 0.19460345,
+      "from": {
+        "date": "2025-03-31",
+        "close": 12.23
+      },
+      "to": {
+        "date": "2025-04-30",
+        "close": 14.61
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/LREN3.SA?period1=1740787200&period2=1746316800&interval=1d",
+        "retrieved_at": "2026-08-27T04:02:16.385Z"
+      }
+    },
+    {
+      "ticker": "MRFG3",
+      "resolved_symbol": "MBRF3",
+      "via_successor": "MBRF3",
+      "value": 0.18936878,
+      "from": {
+        "date": "2025-03-31",
+        "close": 18.06
+      },
+      "to": {
+        "date": "2025-04-30",
+        "close": 21.48
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/MBRF3.SA?period1=1740787200&period2=1746316800&interval=1d",
+        "retrieved_at": "2026-08-27T04:02:16.638Z"
+      }
+    },
+    {
+      "ticker": "ARZZ3",
+      "resolved_symbol": "AZZA3",
+      "via_successor": "AZZA3",
+      "value": 0.29959184,
+      "from": {
+        "date": "2025-03-31",
+        "close": 24.5
+      },
+      "to": {
+        "date": "2025-04-30",
+        "close": 31.84
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/AZZA3.SA?period1=1740787200&period2=1746316800&interval=1d",
+        "retrieved_at": "2026-08-27T04:02:16.633Z"
+      }
+    },
+    {
+      "ticker": "HAPV3",
+      "resolved_symbol": "HAPV3",
+      "via_successor": null,
+      "value": 0.04977381,
+      "from": {
+        "date": "2025-03-31",
+        "close": 33.15
+      },
+      "to": {
+        "date": "2025-04-30",
+        "close": 34.8
+      },
+      "source": {
+        "provider": "Yahoo Finance",
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/HAPV3.SA?period1=1740787200&period2=1746316800&interval=1d",
+        "retrieved_at": "2026-08-27T04:02:16.417Z"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "code": "ticker_superseded",
+      "severity": "warning",
+      "detail": "MRFG3 no longer trades: replaced by MBRF3 (MBRF Global Foods Company S.A.). Marfrig reorganised with BRF into MBRF."
+    },
+    {
+      "code": "ticker_superseded",
+      "severity": "warning",
+      "detail": "ARZZ3 no longer trades: replaced by AZZA3 (Azzas 2154 S.A.). Arezzo & Co merged with Grupo Soma to form Azzas 2154."
+    }
+  ],
+  "built_at": "2026-09-30T02:04:59.869Z"
+}
